@@ -1,0 +1,83 @@
+/* Eagan Farlin Container */
+#im-eagan-farlin{
+  text-align: center;
+  padding: 5% 8%;
+}
+
+.im {
+  font-size: 5rem;
+  font-family: 'Pangolin', cursive;
+  margin-bottom: -2.5%;
+  margin-top: 1.5%;
+}
+
+.eagan-farlin {
+  font-size: 9.5rem;
+  margin-bottom: 2.5%;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.quick-description-of-me {
+  font-size: 2rem;
+  margin: 2.5% 30%;
+  margin-top: -0.5%;
+  margin-bottom: -0.5%;
+}
+
+/* Arrow Down */
+.arrow-down {
+  width: 8rem;
+  height: 7rem;
+}
+
+.arrow-down-container {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* Navigation Bar */
+.narbar-brand {
+  font-size: 5rem;
+}
+
+.info-logo-navbar {
+  width: 2rem;
+}
+
+/* About Me */
+#about-me {
+  padding: 5% 20%;
+  padding-top: 1%;
+}
+
+.about-me {
+  margin-bottom: 5%;
+}
+
+.about-me-right {
+  text-align: right;
+  padding-left: 65%;
+}
+
+.about-me-left {
+  text-align: left;
+  padding-right: 65%;
+}
+
+.about-me-center {
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+/* More Stuff Coming Soon */
+#more-stuff-coming-soon {
+  text-align: center;
+  padding: 11% 30%;
+}
+
+.more-stuff-coming-soon {
+  font-size: 5rem;
+  font-family: "Indie Flower", cursive;
+}
