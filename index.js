@@ -16,7 +16,7 @@ $("body").ready(function() {
 });
 
 
-$("body").hover(function () {
+$("body").hover(function() {
 
   var i = 0;
 
@@ -29,8 +29,19 @@ $("body").hover(function () {
 
 });
 
-$(window).scroll(function () {
+$(window).scroll(function() {
 
-  $("#navbar").addClass("navbar-position-fixed");
-  
+  var yLevel = window.scrollY;
+  console.log(yLevel);
+
+  if (yLevel > 624){
+
+    $(".navbar").css("position", "fixed").css("top", "1px");
+
+  } else {
+
+    $(".navbar").css("position", "static");
+
+  }
+
 });
