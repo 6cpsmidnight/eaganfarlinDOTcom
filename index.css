@@ -1,5 +1,5 @@
 /* Eagan Farlin Container */
-#im-eagan-farlin{
+#im-eagan-farlin {
   text-align: center;
   padding: 5% 8%;
 }
@@ -33,10 +33,14 @@
 .arrow-down-container {
   text-align: center;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 0%;
 }
 
 /* Navigation Bar */
+#navbar {
+  width: 100%;
+}
+
 .narbar-brand {
   font-size: 5rem;
 }
@@ -47,7 +51,7 @@
 
 /* About Me */
 #about-me {
-  padding: 5% 20%;
+  padding: 5% 25%;
   padding-top: 1%;
 }
 
