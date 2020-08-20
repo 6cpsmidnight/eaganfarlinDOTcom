@@ -14,7 +14,7 @@
   <title>Eagan Farlin</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="External-Code/index.css">
 
   <!-- Boostrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/sketchy/bootstrap.min.css" integrity="sha384-RxqHG2ilm4r6aFRpGmBbGTjsqwfqHOKy1ArsMhHusnRO47jcGqpIQqlQK/kmGy9R" crossorigin="anonymous">
@@ -24,9 +24,6 @@
 
   <!-- Google Fonts CDN -->
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pangolin&family=Permanent+Marker&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 </head>
 
@@ -51,7 +48,7 @@
 
     <a class="navbar-brand" href="#">
       <img src="Images/Info-Logo.png" class="info-logo-navbar" alt="info logo">
-      Home
+      <span class="navbar-brand-home">Home</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -64,10 +61,8 @@
             Websites <span class="sr-only">(current)</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item disabled" href="#">List Of Websites</a>
-            <a class="dropdown-item disabled" href="#">Github</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#more-stuff-coming-soon">Coming Soon...</a>
+            <a class="dropdown-item" href="Websites/List-Of-Websites/list-of-websites.html">List Of Websites</a>
+            <a class="dropdown-item" href="https://github.com/Cyber1012">Github</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -75,10 +70,10 @@
             Contact Me
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item disabled" href="#">Proffesional Contacts</a>
             <a class="dropdown-item disabled" href="#">Personal Contacts</a>
+            <a class="dropdown-item disabled" href="#">Profesional Contacts</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#more-stuff-coming-soon">Coming Soon...</a>
+            <a class="dropdown-item" href="#more-stuff-coming-soon">Page(s) Coming Soon...</a>
           </div>
         </li>
         <li class="nav-item">
@@ -97,16 +92,19 @@
   <!-- About Me -->
   <div id="about-me">
 
-    <p class="about-me about-me-left">I'm a website developer, you can check out all my <a href="#more-stuff-coming-soon" class="text-info">public websites here</a>. And here is also my <a href="https://github.com/Cyber1012"
-        class="text-info">Github</a>.</p>
-    <p class="about-me about-me-right">I'm also a <a href="https://www.minecraft.net/" class="text-info">Minecraft</a> gamer, tough time to time I find some random game on the <a href="https://www.apple.com/ios/app-store/" class="text-info">app
-        store</a>, play it for a week, then forget about it and just pretty much only play <a href="https://www.minecraft.net/" class="text-info">Minecraft</a></p>
-    <p class="about-me about-me-center">At the time of writing this I'm currently focusing on improving my <a href="https://www.javascript.com/" class="text-info">Javascript</a> and <a href="https://jquery.com/" class="text-info">jQuery</a> skills.
-      If you know anything about the <a href="https://en.wikipedia.org/wiki/World_Wide_Web" class="text-info">World
-        Wide Web</a>, you know that <a href="https://www.javascript.com/" class="text-info">Javascript</a> is the main language of the <a href="https://en.wikipedia.org/wiki/World_Wide_Web" class="text-info">WWW</a>. In fact, <a
-        href="https://stackoverflow.com/" class="text-info">Stack Overflow</a> did a <a href="https://insights.stackoverflow.com/survey/2019" class="text-info">survey</a> in 2019, and
-      the <a href="https://insights.stackoverflow.com/survey/2019#most-popular-technologies" class="text-info">most popular coding language</a> was <a href="https://www.javascript.com/" class="text-info">Javascript</a>, followed by <a
-        href="https://www.python.org/" class="text-info">Phyton</a> and <a href="https://www.java.com/en/" class="text-info">Java</a>.</p>
+    <p class="about-me about-me-left">I'm a website developer, you can check out all my <a href="#more-stuff-coming-soon" class="text-info about-me-links">public websites here</a>. And here is also my <a href="https://github.com/Cyber1012"
+        class="text-info about-me-links">Github</a>.</p>
+    <p class="about-me about-me-right">I'm also a <a href="https://www.minecraft.net/" class="text-info about-me-links">Minecraft</a> gamer, tough time to time I find some random game on the <a href="https://www.apple.com/ios/app-store/"
+        class="text-info about-me-links">app
+        store</a>, play it for a week, then forget about it and just pretty much only play <a href="https://www.minecraft.net/" class="text-info about-me-links">Minecraft</a></p>
+    <p class="about-me about-me-center">At the time of writing this I'm currently focusing on improving my <a href="https://www.javascript.com/" class="text-info about-me-links">Javascript</a> and <a href="https://jquery.com/"
+        class="text-info about-me-links">jQuery</a> skills.
+      If you know anything about the <a href="https://en.wikipedia.org/wiki/World_Wide_Web" class="text-info about-me-links">World
+        Wide Web</a>, you know that <a href="https://www.javascript.com/" class="text-info about-me-links">Javascript</a> is the main language of the <a href="https://en.wikipedia.org/wiki/World_Wide_Web" class="text-info about-me-links">WWW</a>. In
+      fact, <a href="https://stackoverflow.com/" class="text-info about-me-links">Stack Overflow</a> did a <a href="https://insights.stackoverflow.com/survey/2020" class="text-info about-me-links">survey</a> in 2020, and
+      the <a href="https://insights.stackoverflow.com/survey/2012#most-popular-technologies" class="text-info about-me-links">most popular programming language</a> was <a href="https://www.javascript.com/"
+        class="text-info about-me-links">Javascript</a>,
+      followed by <a href="https://www.python.org/" class="text-info about-me-links">Phyton</a> and <a href="https://www.java.com/en/" class="text-info about-me-links">Java</a>.</p>
     <p class="about-me about-me-right">It was created on September 1995, in about 10 days, tough it wasn't as good as it is today, but that was it's creation. And we now know it as the language it is today.</p>
 
   </div>
@@ -127,7 +125,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Javascript -->
-  <script src="index.js" charset="utf-8"></script>
+  <script src="External-Code/index.js" charset="utf-8"></script>
 
 </body>
 
