@@ -1,3 +1,6 @@
+// Notes
+alert("Note: This Beta Is Heavily Under Development, And Is Not Ready For Mobile.");
+
 var yLevel = window.scrollY;
 
 var i = 0;
