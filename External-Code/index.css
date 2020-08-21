@@ -1,8 +1,3 @@
-/* List Items */
-li {
-  list-style-type: none;
-}
-
 /* Eagan Farlin Container */
 #im-eagan-farlin {
   text-align: center;
@@ -62,6 +57,10 @@ li {
 
 .navbar-item {
   font-size: 1.5rem;
+}
+
+li {
+  list-style-type: none;
 }
 
 /* About Me */
