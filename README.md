@@ -1,2 +1,2 @@
-# main-website
-Eagan's current main website.
+Welcome to Eagan's main website!
+Stay as long as you want.
