@@ -1,3 +1,13 @@
+/* Loading Screen */
+#loading-screen{
+  position: fixed;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 2;
+  text-align: center;
+  padding-top: 15%;
+}
+
 /* Eagan Farlin Container */
 #im-eagan-farlin {
   text-align: center;

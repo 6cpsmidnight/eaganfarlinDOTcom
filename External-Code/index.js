@@ -1,3 +1,6 @@
+// Notes
+alert("This site is under heavy development and is not ready for mobile.");
+
 var yLevel = window.scrollY;
 
 var i = 0;
