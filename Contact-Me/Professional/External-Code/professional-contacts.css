@@ -1,0 +1,60 @@
+/* Loading Screen */
+#loading-screen {
+  position: fixed;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 2;
+  text-align: center;
+  padding-top: 15%;
+}
+
+/* Navigation Bar */
+#navbar {
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+}
+
+.navbar-brand-home {
+  font-size: 1.75rem;
+}
+
+.info-logo-navbar {
+  width: 3rem;
+}
+
+.navbar-item {
+  font-size: 1.5rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Contacts */
+#contacts {
+  padding-top: 250px;
+  padding-bottom: 250px;
+  text-align: center;
+}
+
+.my-professional-email {
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+  font-size: 5rem;
+}
+
+.email-link {
+  text-decoration: none;
+}
+
+/* More Stuff Coming Soon */
+#more-stuff-coming-soon {
+  text-align: center;
+  padding: 11% 30%;
+}
+
+.more-stuff-coming-soon {
+  font-size: 5rem;
+  font-family: "Indie Flower", cursive;
+}
