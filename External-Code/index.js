@@ -8,6 +8,7 @@ var i = 0;
 while (i < 5) {
 
   $(".arrow-down").fadeToggle(1000).fadeToggle(1000);
+
   i++;
 
 }
@@ -20,6 +21,7 @@ $("body").hover(function() {
   while (i < 5) {
 
     $(".arrow-down").fadeToggle(1000).fadeToggle(1000);
+    
     i++;
 
   }
