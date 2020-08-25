@@ -105,6 +105,37 @@ li {
   padding-right: 30%;
 }
 
+/* Footer */
+#footer {
+  padding: 0.5% 0.5%;
+  padding-top: -0.5%;
+}
+
+.footer-links {
+  text-align: left;
+  margin-bottom: -7.5%;
+  padding-right: 100%;
+}
+
+.footer-icons {
+  width: 50px;
+  margin-bottom: 2%;
+}
+
+.footer-site-info {
+  margin-top: -2%;
+  text-align: center;
+  font-size: 1.5rem
+}
+
+.footer-site-info-icons {
+  width: 30px;
+}
+
+.footer-site-info .copyright {
+  font-size: 1.25rem;
+}
+
 /* More Stuff Coming Soon */
 #more-stuff-coming-soon {
   text-align: center;
