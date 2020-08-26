@@ -38,8 +38,8 @@ li {
 
 /* List Of Websites */
 #list-of-websites {
-  padding: 3% 10%;
-  margin-bottom: 10%;
+  padding: 5% 10%;
+  margin-bottom: 5%;
 }
 
 .list-of-websites {
@@ -49,7 +49,6 @@ li {
   margin-top: 3%;
   font-family: "Pangolin", cursive;
 }
-
 
 .list-of-websites-desc {
   margin-bottom: 5%;
@@ -70,13 +69,13 @@ li {
 
 .footer-links {
   text-align: left;
-  margin-bottom: -7.5%;
+  margin-bottom: -10%;
   padding-right: 100%;
 }
 
 .footer-icons {
   width: 50px;
-  margin-bottom: 2%;
+  margin-bottom: -2%;
 }
 
 .footer-site-info {
@@ -91,17 +90,6 @@ li {
 
 .footer-site-info .copyright {
   font-size: 1.25rem;
-}
-
-/* More Stuff Coming Soon */
-#more-stuff-coming-soon {
-  text-align: center;
-  padding: 11% 30%;
-}
-
-.more-stuff-coming-soon {
-  font-size: 5rem;
-  font-family: "Indie Flower", cursive;
 }
 
 /* Media Queries */
