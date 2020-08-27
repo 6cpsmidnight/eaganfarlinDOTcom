@@ -89,14 +89,14 @@ li {
   margin-bottom: 5%;
 }
 
-.about-me-right {
-  text-align: right;
-  padding-left: 50%;
-}
-
 .about-me-left {
   text-align: left;
   padding-right: 50%;
+}
+
+.about-me-right {
+  text-align: right;
+  padding-left: 50%;
 }
 
 .about-me-center {
@@ -139,13 +139,72 @@ li {
 /* Media Queries */
 @media (max-width: 1200px) {
 
+}
+
+@media (max-width: 992px) {
+
+  /* Arrow Down */
   .arrow-down {
     opacity: 100%;
   }
 
-}
+  /* About Me */
+  #about-me {
+    padding: 5% 10%;
+    padding-top: 15%;
+    margin-top: -5%;
+  }
 
-@media (max-width: 992px) {
+  .about-me {
+    margin-bottom: 10%;
+    font-size: 2rem;
+  }
+
+  .about-me-left {
+    text-align: center;
+    margin-right: -50%;
+  }
+
+  .about-me-right {
+    text-align: center;
+    margin-left: -50%;
+  }
+
+  .about-me-center {
+    text-align: center;
+    margin-left: -25%;
+    margin-right: -25%;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 0.5% 0.5%;
+    padding-top: -0.5%;
+  }
+
+  .footer-links {
+    text-align: center;
+    margin-left: 35%;
+    margin-bottom: 15%;
+    margin-top: 10%;
+  }
+
+  .footer-icons {
+    width: 100px;
+  }
+
+  .footer-site-info {
+    text-align: center;
+    font-size: 2rem
+  }
+
+  .footer-site-info-icons {
+    width: 50px;
+  }
+
+  .footer-site-info .copyright {
+    font-size: 1.5rem;
+  }
 
 }
 
