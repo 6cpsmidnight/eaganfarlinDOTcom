@@ -75,15 +75,75 @@ li {
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
 
-  .arrow-down {
-    opacity: 100%;
+  /* Body */
+  body {
+    text-align: center;
   }
 
-}
+  /* Loading Screen */
+  #loading-screen{
+    padding-top: 7%;
+  }
 
-@media (max-width: 992px) {
+  /* Navigation Bar */
+  .info-logo-navbar {
+    width: 5rem;
+  }
+
+  .navbar-brand-home {
+    font-size: 3.5rem;
+  }
+
+  .navbar-toggler {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .nav-item {
+    font-size: 1.5rem;
+  }
+
+  .dropdown-item {
+    font-size: 1.5rem;
+  }
+
+  .navbar-github-logo {
+    width: 50px;
+    margin-right: 8px;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 1% 1%;
+    padding-top: -0.5%;
+  }
+
+  .footer-links {
+    text-align: center;
+    margin-left: 40%;
+    margin-bottom: 15%;
+    margin-top: 7%;
+    padding-right: -100%;
+  }
+
+  .footer-icons {
+    width: 150px;
+  }
+
+  .footer-site-info {
+    text-align: center;
+    font-size: 2rem
+  }
+
+  .footer-site-info-icons {
+    width: 50px;
+  }
+
+  .footer-site-info .copyright {
+    font-size: 1.5rem;
+  }
 
 }
 

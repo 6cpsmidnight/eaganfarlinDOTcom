@@ -11,7 +11,8 @@
 /* Eagan Farlin Container */
 #im-eagan-farlin {
   text-align: center;
-  padding: 5% 8%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .im {
@@ -57,16 +58,17 @@
   z-index: 1;
 }
 
-.navbar-brand-home {
-  font-size: 1.75rem;
-}
-
 .info-logo-navbar {
-  width: 3rem;
+  width: 5rem;
+  margin-top: -10%;
 }
 
-.navbar-item {
-  font-size: 1.5rem;
+.navbar-brand-home {
+  font-size: 3rem;
+}
+
+.nav-item {
+  font-size: 1.25rem;
 }
 
 li {
@@ -86,6 +88,7 @@ li {
 }
 
 .about-me {
+  font-size: 1.25rem;
   margin-bottom: 5%;
 }
 
@@ -137,15 +140,76 @@ li {
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
-
-}
-
 @media (max-width: 992px) {
+
+  /* Body */
+  body {
+    text-align: center;
+  }
+
+  /* Loading Screen */
+  #loading-screen{
+    padding-top: 7%;
+  }
+
+  /* Eagan Farlin Container */
+  #im-eagan-farlin {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  .im {
+    font-size: 5rem;
+    margin-bottom: -2.5%;
+    margin-top: 0.5%;
+  }
+
+  .eagan-farlin {
+    font-size: 9.5rem;
+    margin-bottom: 2.5%;
+  }
+
+  .quick-description-of-me {
+    font-size: 3rem;
+    margin: 2.5% 30%;
+    margin-top: -0.5%;
+    margin-bottom: -0.5%;
+  }
 
   /* Arrow Down */
   .arrow-down {
     opacity: 100%;
+    margin-bottom: 3%;
+    height: 10rem;
+    width: 10rem;
+  }
+
+  /* Navigation Bar */
+  .info-logo-navbar {
+    width: 5rem;
+  }
+
+  .navbar-brand-home {
+    font-size: 3.5rem;
+  }
+
+  .navbar-toggler {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .nav-item {
+    font-size: 1.5rem;
+  }
+
+  .dropdown-item {
+    font-size: 1.5rem;
+  }
+
+  .navbar-github-logo {
+    width: 50px;
+    margin-right: 8px;
   }
 
   /* About Me */
@@ -178,19 +242,20 @@ li {
 
   /* Footer */
   #footer {
-    padding: 0.5% 0.5%;
+    padding: 1% 1%;
     padding-top: -0.5%;
   }
 
   .footer-links {
     text-align: center;
-    margin-left: 35%;
+    margin-left: 40%;
     margin-bottom: 15%;
-    margin-top: 10%;
+    margin-top: 7%;
+    padding-right: -100%;
   }
 
   .footer-icons {
-    width: 100px;
+    width: 150px;
   }
 
   .footer-site-info {

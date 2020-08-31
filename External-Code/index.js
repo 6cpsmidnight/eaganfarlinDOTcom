@@ -15,7 +15,6 @@ while (i < 5) {
 
 }
 
-
 $("body").hover(function() {
 
   var i = 0;
@@ -34,15 +33,35 @@ $(window).scroll(function() {
 
   yLevel = window.scrollY;
 
-  console.log("For testing purposes: your Y Level is " + yLevel + ".");
+  var widthOfScreen = $(window).width();
 
-  if (yLevel > 629) {
+  console.log("For testing purposes: your y Level is " + yLevel + ".");
 
-    $(".navbar").css("position", "fixed").css("top", "0.5rem");
+  console.log("For testing purposes: your width of screen is " + widthOfScreen + ".");
 
-  } else {
+  if (widthOfScreen > 992) {
 
-    $(".navbar").css("position", "static");
+    if (yLevel > 629) {
+
+      $(".navbar").css("position", "fixed").css("top", "0.5rem");
+
+    } else {
+
+      $(".navbar").css("position", "static");
+
+    }
+
+  } else if (widthOfScreen < 992) {
+
+    if (yLevel > 810) {
+
+      $(".navbar").css("position", "fixed").css("top", "0.5rem");
+
+    } else {
+
+      $(".navbar").css("position", "static");
+
+    }
 
   }
 
