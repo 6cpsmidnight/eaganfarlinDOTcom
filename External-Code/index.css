@@ -30,9 +30,9 @@
 
 .quick-description-of-me {
   font-size: 2rem;
-  margin: 2.5% 30%;
-  margin-top: -0.5%;
-  margin-bottom: -0.5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 30%;
 }
 
 /* Arrow Down */
@@ -171,9 +171,9 @@ li {
 
   .quick-description-of-me {
     font-size: 3rem;
-    margin: 2.5% 30%;
-    margin-top: -0.5%;
-    margin-bottom: -0.5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 30%;
   }
 
   /* Arrow Down */
