@@ -128,10 +128,10 @@ li {
   #footer {
     padding: 1% 1%;
     padding-top: -0.5%;
+    text-align: center;
   }
 
   .footer-links {
-    text-align: center;
     margin-left: 40%;
     margin-bottom: 15%;
     margin-top: 7%;
