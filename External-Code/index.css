@@ -6,6 +6,7 @@
   z-index: 2;
   text-align: center;
   padding-top: 15%;
+  opacity: 0%;
 }
 
 /* Eagan Farlin Container */
@@ -16,29 +17,30 @@
 }
 
 .im {
-  font-size: 5rem;
+  font-size: 7vw;
   font-family: "Pangolin", cursive;
   margin-bottom: -2.5%;
   margin-top: 1.5%;
 }
 
 .eagan-farlin {
-  font-size: 9.5rem;
+  font-size: 10vw;
   margin-bottom: 2.5%;
   font-family: "Permanent Marker", cursive;
 }
 
 .quick-description-of-me {
-  font-size: 2rem;
+  font-size: 2vw;
   margin-top: 2%;
+  margin-right: 30%;
   margin-bottom: 2%;
   margin-left: 30%;
 }
 
 /* Arrow Down */
 .arrow-down {
-  width: 8rem;
-  height: 7.25rem;
+  width: 8vw;
+  height: 7.25vw;
   opacity: 60%;
 }
 
@@ -59,16 +61,16 @@
 }
 
 .info-logo-navbar {
-  width: 5rem;
+  width: 5vw;
   margin-top: -10%;
 }
 
 .navbar-brand-home {
-  font-size: 3rem;
+  font-size: 3vw;
 }
 
 .nav-item {
-  font-size: 1.25rem;
+  font-size: 1.25vw;
 }
 
 li {
@@ -89,7 +91,7 @@ li {
 }
 
 .about-me {
-  font-size: 1.25rem;
+  font-size: 1.25vw;
   margin-bottom: 5%;
 }
 
@@ -128,7 +130,7 @@ li {
 .footer-site-info {
   margin-top: -2%;
   text-align: center;
-  font-size: 1.5rem
+  font-size: 1.5vw
 }
 
 .footer-site-info-icons {
@@ -136,7 +138,7 @@ li {
 }
 
 .footer-site-info .copyright {
-  font-size: 1.25rem;
+  font-size: 1.25vw;
 }
 
 /* Media Queries */
@@ -159,51 +161,48 @@ li {
   }
 
   .im {
-    font-size: 5rem;
+    font-size: 5vw;
     margin-bottom: -2.5%;
     margin-top: 0.5%;
   }
 
   .eagan-farlin {
-    font-size: 9.5rem;
+    font-size: 9.5vw;
     margin-bottom: 2.5%;
   }
 
   .quick-description-of-me {
-    font-size: 3rem;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 30%;
+    font-size: 3vw;
   }
 
   /* Arrow Down */
   .arrow-down {
     opacity: 100%;
     margin-bottom: 3%;
-    height: 10rem;
-    width: 10rem;
+    height: 10vw;
+    width: 10vw;
   }
 
   /* Navigation Bar */
   .info-logo-navbar {
-    width: 5rem;
+    width: 5vw;
   }
 
   .navbar-brand-home {
-    font-size: 3.5rem;
+    font-size: 3.5vw;
   }
 
   .navbar-toggler {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4.5vw;
+    height: 4.5vw;
   }
 
   .nav-item {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
   }
 
   .dropdown-item {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
   }
 
   .navbar-github-logo {
@@ -220,7 +219,7 @@ li {
 
   .about-me {
     margin-bottom: 10%;
-    font-size: 2rem;
+    font-size: 2vw;
   }
 
   .about-me-left {
@@ -258,7 +257,7 @@ li {
 
   .footer-site-info {
     text-align: center;
-    font-size: 2rem
+    font-size: 2vw
   }
 
   .footer-site-info-icons {
@@ -266,7 +265,7 @@ li {
   }
 
   .footer-site-info .copyright {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
   }
 
 }

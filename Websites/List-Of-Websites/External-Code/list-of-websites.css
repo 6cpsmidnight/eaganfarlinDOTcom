@@ -16,15 +16,15 @@
 }
 
 .navbar-brand-home {
-  font-size: 1.75rem;
+  font-size: 1.75vw;
 }
 
 .info-logo-navbar {
-  width: 3rem;
+  width: 3vw;
 }
 
 .navbar-item {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 li {
@@ -43,7 +43,7 @@ li {
 }
 
 .list-of-websites {
-  font-size: 4rem;
+  font-size: 4vw;
   margin-bottom: 2%;
   margin-left: 15%;
   margin-top: 3%;
@@ -57,7 +57,7 @@ li {
 
 .website-item {
   margin-left: 12%;
-  font-size: 1.4rem;
+  font-size: 1.4vw;
   list-style-type: none;
 }
 
@@ -81,7 +81,7 @@ li {
 .footer-site-info {
   margin-top: -2%;
   text-align: center;
-  font-size: 1.5rem
+  font-size: 1.5vw
 }
 
 .footer-site-info-icons {
@@ -89,7 +89,7 @@ li {
 }
 
 .footer-site-info .copyright {
-  font-size: 1.25rem;
+  font-size: 1.25vw;
 }
 
 /* Media Queries */
@@ -107,24 +107,24 @@ li {
 
   /* Navigation Bar */
   .info-logo-navbar {
-    width: 5rem;
+    width: 5vw;
   }
 
   .navbar-brand-home {
-    font-size: 3.5rem;
+    font-size: 3.5vw;
   }
 
   .navbar-toggler {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4.5vw;
+    height: 4.5vw;
   }
 
   .nav-item {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
   }
 
   .dropdown-item {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
   }
 
   .navbar-github-logo {
@@ -152,7 +152,7 @@ li {
 
   .footer-site-info {
     text-align: center;
-    font-size: 2rem
+    font-size: 2vw
   }
 
   .footer-site-info-icons {
@@ -160,7 +160,7 @@ li {
   }
 
   .footer-site-info .copyright {
-    font-size: 1.5rem;
+    font-size: 1.5vw;
   }
 
 }
