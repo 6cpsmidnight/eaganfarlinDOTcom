@@ -96,34 +96,26 @@ li {
 
 .about-me-left {
   text-align: left;
-  padding-right: 50%;
 }
 
 .about-me-right {
   text-align: right;
-  padding-left: 50%;
-}
-
-.about-me-center {
-  padding-left: 25%;
-  padding-right: 25%;
 }
 
 /* Footer */
 #footer {
-  padding: 0.5% 0.5%;
   padding-top: -0.5%;
 }
 
 .footer-links {
-  text-align: left;
   margin-bottom: -10%;
-  padding-right: 100%;
+  text-align: left;
 }
 
 .footer-icons {
   width: 3.125vw;
   margin-bottom: -2%;
+  margin-right: 20%;
 }
 
 .footer-site-info {
@@ -212,22 +204,14 @@ li {
 
   .about-me-left {
     text-align: center;
-    margin-right: -50%;
   }
 
   .about-me-right {
     text-align: center;
-    margin-left: -50%;
-  }
-
-  .about-me-center {
-    margin-left: -25%;
-    margin-right: -25%;
   }
 
   /* Footer */
   #footer {
-    padding: 1% 1%;
     padding-top: -0.5%;
     text-align: center;
   }
@@ -255,6 +239,7 @@ li {
   .footer-site-info .copyright {
     font-size: 1.5vw;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -339,10 +324,6 @@ li {
   }
 
   /* Footer */
-  .footer-links {
-    margin-left: 40%;
-  }
-
   .footer-icons {
     width: 20vw;
   }
@@ -350,8 +331,6 @@ li {
   .footer-site-info {
     text-align: center;
     font-size: 7.5vw;
-    padding-left: 15%;
-    padding-right: 15%;
   }
 
   .footer-site-info-icons {
@@ -361,4 +340,5 @@ li {
   .footer-site-info .copyright {
     font-size: 6vw;
   }
+
 }

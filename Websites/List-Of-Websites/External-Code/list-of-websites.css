@@ -12,19 +12,19 @@
 #navbar {
   width: 100%;
   z-index: 1;
-  position: fixed;
-}
-
-.navbar-brand-home {
-  font-size: 1.75vw;
 }
 
 .info-logo-navbar {
-  width: 3vw;
+  width: 5vw;
+  margin-top: -10%;
 }
 
-.navbar-item {
-  font-size: 1.5vw;
+.navbar-brand-home {
+  font-size: 3vw;
+}
+
+.nav-item {
+  font-size: 1.25vw;
 }
 
 li {
@@ -36,52 +36,26 @@ li {
   margin-left: -8px;
 }
 
-/* List Of Websites */
-#list-of-websites {
-  padding: 5% 10%;
-  margin-bottom: 5%;
-}
-
-.list-of-websites {
-  font-size: 4vw;
-  margin-bottom: 2%;
-  margin-left: 15%;
-  margin-top: 3%;
-  font-family: "Pangolin", cursive;
-}
-
-.list-of-websites-desc {
-  margin-bottom: 5%;
-  margin-left: 5%;
-}
-
-.website-item {
-  margin-left: 12%;
-  font-size: 1.4vw;
-  list-style-type: none;
-}
-
 /* Footer */
 #footer {
-  padding: 0.5% 0.5%;
   padding-top: -0.5%;
 }
 
 .footer-links {
-  text-align: left;
   margin-bottom: -10%;
-  padding-right: 100%;
+  text-align: left;
 }
 
 .footer-icons {
-  width: 50px;
+  width: 3.125vw;
   margin-bottom: -2%;
+  margin-right: 20%;
 }
 
 .footer-site-info {
   margin-top: -2%;
   text-align: center;
-  font-size: 1.5vw
+  font-size: 1.5vw;
 }
 
 .footer-site-info-icons {
@@ -129,7 +103,6 @@ li {
 
   /* Footer */
   #footer {
-    padding: 1% 1%;
     padding-top: -0.5%;
     text-align: center;
   }
@@ -157,6 +130,7 @@ li {
   .footer-site-info .copyright {
     font-size: 1.5vw;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -201,10 +175,6 @@ li {
   }
 
   /* Footer */
-  .footer-links {
-    margin-left: 40%;
-  }
-
   .footer-icons {
     width: 20vw;
   }
@@ -212,8 +182,6 @@ li {
   .footer-site-info {
     text-align: center;
     font-size: 7.5vw;
-    padding-left: 15%;
-    padding-right: 15%;
   }
 
   .footer-site-info-icons {
@@ -223,4 +191,5 @@ li {
   .footer-site-info .copyright {
     font-size: 6vw;
   }
+
 }
