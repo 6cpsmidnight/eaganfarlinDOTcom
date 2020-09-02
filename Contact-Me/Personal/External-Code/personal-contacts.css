@@ -149,47 +149,51 @@ li {
   }
 
   .loading-screen {
-    width: 90vw;
+    width: 50vh;
   }
 
   /* Navigation Bar */
   .info-logo-navbar {
-    width: 25vw;
+    width: 15vh;
   }
 
   .navbar-brand-home {
-    font-size: 15vw;
+    font-size: 10vh;
   }
 
   .nav-item {
-    font-size: 5vw;
+    font-size: 4vh;
   }
 
   .dropdown-item {
-    font-size: 5vw;
+    font-size: 4vh;
   }
 
   .navbar-github-logo {
-    width: 30px;
+    width: 10vh;
     margin-left: -8px;
   }
 
   /* Footer */
+  .footer-links {
+    margin-left: 40%;
+  }
+
   .footer-icons {
-    width: 20vw;
+    width: 15vh;
   }
 
   .footer-site-info {
     text-align: center;
-    font-size: 7.5vw;
+    font-size: 5vh;
   }
 
   .footer-site-info-icons {
-    width: 10vw;
+    width: 7.25vh;
   }
 
   .footer-site-info .copyright {
-    font-size: 6vw;
+    font-size: 4vh;
   }
 
 }
