@@ -135,7 +135,6 @@ li {
   .footer-site-info .copyright {
     font-size: 1.5vw;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -200,5 +199,4 @@ li {
   .footer-site-info .copyright {
     font-size: 6vw;
   }
-
 }
