@@ -109,22 +109,20 @@ li {
 
 /* Footer */
 #footer {
-  padding-top: -0.5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .footer-links {
-  margin-bottom: -10%;
   text-align: left;
 }
 
 .footer-icons {
   width: 3.125vw;
-  margin-bottom: -2%;
   margin-right: 20%;
 }
 
 .footer-site-info {
-  margin-top: -2%;
   text-align: center;
   font-size: 1.5vw;
 }
@@ -152,31 +150,31 @@ li {
 
   /* Eagan Farlin Container */
   #im-eagan-farlin {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 
   .im {
-    font-size: 5vw;
+    font-size: 7vw;
     margin-bottom: -2.5%;
     margin-top: 0.5%;
   }
 
   .eagan-farlin {
-    font-size: 9.5vw;
+    font-size: 13vw;
     margin-bottom: 2.5%;
   }
 
   .quick-description-of-me {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   /* Arrow Down */
   .arrow-down {
     opacity: 100%;
     margin-bottom: 3%;
-    height: 10vw;
-    width: 10vw;
+    height: 13vw;
+    width: 13vw;
   }
 
   /* Navigation Bar */
@@ -244,6 +242,7 @@ li {
   .footer-site-info .copyright {
     font-size: 1.5vw;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -267,17 +266,17 @@ li {
 
   /* Eagan Farlin Container */
   .im {
-    font-size: 20vw;
+    font-size: 15vw;
     margin-top: 1%;
   }
 
   .eagan-farlin {
-    font-size: 25vw;
+    font-size: 20vw;
     margin-bottom: 5%;
   }
 
   .quick-description-of-me {
-    font-size: 10vw;
+    font-size: 7.5vw;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -285,8 +284,8 @@ li {
   /* Arrow Down */
   .arrow-down {
     margin-bottom: 10%;
-    height: 40vw;
-    width: 40vw;
+    height: 30vw;
+    width: 30vw;
   }
 
   .arrow-down-container {
@@ -295,7 +294,7 @@ li {
 
   /* Navigation Bar */
   .info-logo-navbar {
-    width: 25vw;
+    width: 20vw;
   }
 
   .navbar-brand-home {
@@ -303,28 +302,29 @@ li {
   }
 
   .nav-item {
-    font-size: 7vw;
+    font-size: 5vw;
   }
 
   .dropdown-item {
-    font-size: 6vw;
+    font-size: 5vw;
   }
 
   .navbar-github-logo {
-    width: 15vw;
+    width: 10vw;
     margin-left: -8px;
   }
 
   /* About Me */
   #about-me {
-    padding: 5% 10%;
+    padding: 10% 20%;
     padding-top: 15%;
     margin-top: -5%;
   }
 
   .about-me {
-    margin-bottom: 10%;
-    font-size: 8vw;
+    margin-bottom: 30%;
+    font-size: 6vw;
+    line-height: 10vw;
   }
 
   /* Footer */
@@ -338,7 +338,8 @@ li {
 
   .footer-site-info {
     text-align: center;
-    font-size: 7vw;
+    font-size: 6vw;
+    line-height: 10vw;
   }
 
   .footer-site-info-icons {
@@ -348,4 +349,5 @@ li {
   .footer-site-info .copyright {
     font-size: 6vw;
   }
+
 }
