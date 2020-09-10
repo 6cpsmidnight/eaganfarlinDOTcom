@@ -148,6 +148,10 @@ li {
     padding-top: 7%;
   }
 
+  .loading-screen {
+    width: 80vw ;
+  }
+
   /* Eagan Farlin Container */
   #im-eagan-farlin {
     padding-top: 5%;
