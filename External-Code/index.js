@@ -1,5 +1,5 @@
 // Notes
-alert("This site is under heavy development and is not ready for mobile.");
+// alert("This site is under heavy development and is not ready for mobile.");
 
 // Arrow Flashes
 // When The Page Starts, Arrow Flashes For 5 Times
@@ -62,7 +62,7 @@ $(window).scroll(function () {
 
   } else if (widthOfScreen < 768) {
 
-    if (yLevel > 580) {
+    if (yLevel > 560) {
 
       $(".navbar").css("position", "fixed").css("top", "0.5rem");
 

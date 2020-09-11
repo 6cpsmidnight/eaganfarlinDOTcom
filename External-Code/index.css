@@ -24,7 +24,6 @@
   font-size: 7vw;
   font-family: "Pangolin", cursive;
   margin-bottom: -2.5%;
-  margin-top: 1.5%;
 }
 
 .eagan-farlin {
@@ -276,7 +275,7 @@ li {
 
   /* Arrow Down */
   .arrow-down {
-    margin-bottom: 10%;
+    margin-bottom: 40%;
     height: 27.25vw;
     width: 27.25vw;
   }
@@ -316,7 +315,7 @@ li {
   }
 
   .about-me {
-    margin-bottom: 40%;
+    margin-bottom: 65%;
     font-size: 5vw;
     line-height: 10vw;
   }
