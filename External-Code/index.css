@@ -6,11 +6,11 @@
 /* Loading Screen */
 #loading-screen {
   position: fixed;
-  height: 100%;
+  height: 100vh;
   background-color: #ffffff;
   z-index: 2;
   text-align: center;
-  padding-top: 15%;
+  padding-top: 10%;
 }
 
 /* Eagan Farlin Container */
@@ -138,18 +138,9 @@ li {
 /* Media Queries */
 @media (max-width: 992px) {
 
-  /* Body */
-  body {
-    text-align: center;
-  }
-
   /* Loading Screen */
-  #loading-screen {
-    padding-top: 7%;
-  }
-
   .loading-screen {
-    width: 80vw ;
+    width: 60vw;
   }
 
   /* Eagan Farlin Container */
@@ -159,14 +150,14 @@ li {
   }
 
   .im {
-    font-size: 7vw;
-    margin-bottom: -2.5%;
+    font-size: 10vw;
+    margin-bottom: -2%;
     margin-top: 0.5%;
   }
 
   .eagan-farlin {
     font-size: 13vw;
-    margin-bottom: 2.5%;
+    margin-bottom: 3%;
   }
 
   .quick-description-of-me {
@@ -177,8 +168,8 @@ li {
   .arrow-down {
     opacity: 100%;
     margin-bottom: 3%;
-    height: 13vw;
-    width: 13vw;
+    height: 15vw;
+    width: 15vw;
   }
 
   /* Navigation Bar */
@@ -191,22 +182,26 @@ li {
   }
 
   .nav-item {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .dropdown-item {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .navbar-github-logo {
-    width: 3.125vw;
-    margin-left: 8px;
+    width: 5vw;
+    margin-left: 0.1vw;
   }
 
   /* About Me */
+  #about-me {
+    padding: 15% 22%;
+  }
+
   .about-me {
-    margin-bottom: 10%;
-    font-size: 2vw;
+    margin-bottom: 15%;
+    font-size: 3vw;
   }
 
   .about-me-left {
@@ -219,13 +214,13 @@ li {
 
   /* Footer */
   #footer {
-    padding-top: -0.5%;
+    padding-top: -5%;
     text-align: center;
   }
 
   .footer-links {
     margin-left: 45%;
-    margin-bottom: 15%;
+    margin-bottom: 7%;
     margin-top: 7%;
     padding-right: -100%;
   }
@@ -236,7 +231,7 @@ li {
 
   .footer-site-info {
     text-align: center;
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .footer-site-info-icons {
@@ -244,43 +239,37 @@ li {
   }
 
   .footer-site-info .copyright {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
   }
 
 }
 
 @media (max-width: 768px) {
 
-  /* Body */
-  body {
-    text-align: center;
-  }
-
   /* Loading Screen */
   #loading-screen {
     position: fixed;
-    height: 100%;
     background-color: #ffffff;
-    padding-top: 40%;
+    padding-top: 35%;
   }
 
   .loading-screen {
-    width: 80vw;
+    width: 85vw;
   }
 
   /* Eagan Farlin Container */
   .im {
-    font-size: 15vw;
+    font-size: 12.5vw;
     margin-top: 1%;
   }
 
   .eagan-farlin {
-    font-size: 20vw;
+    font-size: 15vw;
     margin-bottom: 5%;
   }
 
   .quick-description-of-me {
-    font-size: 7.5vw;
+    font-size: 6vw;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -288,21 +277,22 @@ li {
   /* Arrow Down */
   .arrow-down {
     margin-bottom: 10%;
-    height: 30vw;
-    width: 30vw;
-  }
-
-  .arrow-down-container {
-    margin-bottom: -15%;
+    height: 27.25vw;
+    width: 27.25vw;
   }
 
   /* Navigation Bar */
+  .navbar-brand {
+    margin-top: -2.5%;
+    margin-bottom: -2.5%;
+  }
+
   .info-logo-navbar {
-    width: 20vw;
+    width: 17vw;
   }
 
   .navbar-brand-home {
-    font-size: 15vw;
+    font-size: 12.5vw;
   }
 
   .nav-item {
@@ -326,23 +316,23 @@ li {
   }
 
   .about-me {
-    margin-bottom: 30%;
-    font-size: 6vw;
+    margin-bottom: 40%;
+    font-size: 5vw;
     line-height: 10vw;
   }
 
   /* Footer */
   .footer-links {
-    margin-left: 37.5%;
+    margin-left: 39%;
   }
 
   .footer-icons {
-    width: 25vw;
+    width: 20vw;
   }
 
   .footer-site-info {
     text-align: center;
-    font-size: 6vw;
+    font-size: 5vw;
     line-height: 10vw;
   }
 
@@ -351,7 +341,7 @@ li {
   }
 
   .footer-site-info .copyright {
-    font-size: 6vw;
+    font-size: 4.5vw;
   }
 
 }

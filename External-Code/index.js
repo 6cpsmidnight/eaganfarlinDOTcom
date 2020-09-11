@@ -1,43 +1,40 @@
 // Notes
 alert("This site is under heavy development and is not ready for mobile.");
 
-var yLevel = window.scrollY;
+// Arrow Flashes
+// When The Page Starts, Arrow Flashes For 5 Times
+let arrowCounter = 0;
 
-console.log("For testing purposes: your Y Level is " + yLevel + ".");
-
-var i = 0;
-
-while (i < 5) {
+while (arrowCounter < 5) {
 
   $(".arrow-down").fadeToggle(1000).fadeToggle(1000);
 
-  i++;
+  arrowCounter++;
 
 }
 
-$("body").hover(function() {
+// When The Page Is Hovered On, Arrow Flashes For 5 Times
+$("body").hover(function () {
 
-  var i = 0;
+  arrowCounter = 0;
 
-  while (i < 5) {
+  while (arrowCounter < 5) {
 
     $(".arrow-down").fadeToggle(1000).fadeToggle(1000);
 
-    i++;
+    arrowCounter++;
 
   }
 
 });
 
-$(window).scroll(function() {
+// Responsive Navigation Bar Attacher
+$(window).scroll(function () {
 
-  yLevel = window.scrollY;
+  // Checking What Y Level The Page Is On
+  let yLevel = window.scrollY;
 
-  var widthOfScreen = $(window).width();
-
-  console.log("For testing purposes: your y Level is " + yLevel + ".");
-
-  console.log("For testing purposes: your width of screen is " + widthOfScreen + ".");
+  let widthOfScreen = $(window).width();
 
   if (widthOfScreen > 992) {
 
@@ -51,9 +48,21 @@ $(window).scroll(function() {
 
     }
 
-  } else if (widthOfScreen < 992) {
+  } else if (widthOfScreen < 992 && widthOfScreen > 767) {
 
     if (yLevel > 810) {
+
+      $(".navbar").css("position", "fixed").css("top", "0rem");
+
+    } else {
+
+      $(".navbar").css("position", "static");
+
+    }
+
+  } else if (widthOfScreen < 768) {
+
+    if (yLevel > 580) {
 
       $(".navbar").css("position", "fixed").css("top", "0.5rem");
 
@@ -67,7 +76,8 @@ $(window).scroll(function() {
 
 });
 
-$(".footer-icon-copy-url").click(function() {
+// Copy URL's URL Copier
+$(".footer-icon-copy-url").click(function () {
 
   prompt("Copy Me", "https://www.eaganfarlin.com");
 
