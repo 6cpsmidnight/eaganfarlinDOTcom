@@ -53,7 +53,7 @@ $(window).scroll(function () {
 
     if (yLevel > 810) {
 
-      $(".navbar").css("position", "fixed").css("top", "0rem");
+      $(".navbar").css("position", "fixed").css("top", "0.5rem");
 
     } else {
 
