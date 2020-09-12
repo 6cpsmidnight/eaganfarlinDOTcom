@@ -32,6 +32,10 @@
   font-size: 1.25vw;
 }
 
+.dropdown-item {
+  font-size: 1.25vw;
+}
+
 li {
   list-style-type: none;
 }
