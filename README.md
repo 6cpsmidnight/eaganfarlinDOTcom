@@ -1,3 +1,5 @@
+![Site-Logo](Images/Site-Logo.png)
+
 # Welcome to Eagan's main website!
 
 # Hosted on https://eaganfarlin.com.
