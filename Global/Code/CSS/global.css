@@ -1,0 +1,205 @@
+/* Everything */
+* {
+  box-sizing: border-box;
+}
+
+/* Loading Screen */
+#loading-screen {
+  position: fixed;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 2;
+  text-align: center;
+  padding-top: 10%;
+}
+
+/* Navigation Bar */
+#navbar {
+  width: 100%;
+  z-index: 1;
+}
+
+.info-logo-navbar {
+  width: 5rem;
+  margin-top: -10%;
+}
+
+.navbar-brand-home {
+  font-size: 3rem;
+}
+
+.nav-item {
+  font-size: 1.25rem;
+}
+
+.dropdown-item {
+  font-size: 1.25rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.navbar-github-logo {
+  width: 30px;
+  margin-left: -8px;
+}
+
+/* Footer */
+#footer {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.footer-links {
+  text-align: left;
+}
+
+.footer-icons {
+  width: 3.125rem;
+  margin-right: 20%;
+}
+
+.footer-site-info {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.footer-site-info-icons {
+  width: 30px;
+}
+
+.footer-site-info .copyright {
+  font-size: 1.25rem;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+
+  /* Loading Screen */
+  #loading-screen {
+    padding-top: 15%;
+  }
+
+  .loading-screen {
+    width: 25rem;
+  }
+
+  /* Navigation Bar */
+  .navbar-brand {
+    margin-top: -1.5%;
+    margin-bottom: -1.5%;
+  }
+
+  .info-logo-navbar {
+    width: 5rem;
+  }
+
+  .navbar-brand-home {
+    font-size: 4rem;
+  }
+
+  .nav-item {
+    font-size: 1.8rem;
+  }
+
+  .dropdown-item {
+    font-size: 1.8rem;
+  }
+
+  .navbar-github-logo {
+    width: 4rem;
+    margin-left: 0.1rem;
+  }
+
+  /* Footer */
+  #footer {
+    padding-top: -5%;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-left: 45%;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    padding-right: -100%;
+  }
+
+  .footer-icons {
+    width: 5.5rem;
+  }
+
+  .footer-site-info {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  .footer-site-info-icons {
+    width: 3.5rem;
+  }
+
+  .footer-site-info .copyright {
+    font-size: 1.25rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* Loading Screen */
+  #loading-screen {
+    position: fixed;
+    background-color: #ffffff;
+    padding-top: 20%;
+  }
+
+  .loading-screen {
+    width: 20rem;
+  }
+
+  /* Navigation Bar */
+  .info-logo-navbar {
+    width: 6rem;
+  }
+
+  .navbar-brand-home {
+    font-size: 4rem;
+  }
+
+  .nav-item {
+    font-size: 2rem;
+  }
+
+  .dropdown-item {
+    font-size: 2rem;
+  }
+
+  .navbar-github-logo {
+    width: 3.6rem;
+    margin-left: -8px;
+  }
+
+  /* Footer */
+  .footer-links {
+    margin-left: 42.5%;
+  }
+
+  .footer-icons {
+    width: 6.5rem;
+  }
+
+  .footer-site-info {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  .footer-site-info-icons {
+    width: 3.5rem;
+  }
+
+  .footer-site-info .copyright {
+    font-size: 1.25rem;
+  }
+
+}

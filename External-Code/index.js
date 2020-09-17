@@ -1,5 +1,5 @@
 // Notes
-alert("This site is under heavy development and is not ready for mobile.");
+alert("Only the home page is responsive and ready, the rest has not been properly styled.");
 
 // Arrow Flashes
 

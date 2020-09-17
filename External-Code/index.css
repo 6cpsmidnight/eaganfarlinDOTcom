@@ -6,19 +6,19 @@
 }
 
 .im {
-  font-size: 7vw;
+  font-size: 7rem;
   font-family: "Pangolin", cursive;
   margin-bottom: -2.5%;
 }
 
 .eagan-farlin {
-  font-size: 10vw;
+  font-size: 8.5rem;
   margin-bottom: 2.5%;
   font-family: "Permanent Marker", cursive;
 }
 
 .quick-description-of-me {
-  font-size: 2vw;
+  font-size: 2rem;
   margin-top: 2%;
   margin-right: 30%;
   margin-bottom: 2%;
@@ -27,8 +27,8 @@
 
 /* Arrow Down */
 .arrow-down {
-  width: 8vw;
-  height: 7.25vw;
+  width: 8.5rem;
+  height: 7.25rem;
   opacity: 60%;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .about-me {
-  font-size: 1.25vw;
+  font-size: 1.25rem;
   margin-bottom: 5%;
 }
 
@@ -68,31 +68,31 @@
 
   /* Eagan Farlin Container */
   #im-eagan-farlin {
-    padding-top: 5%;
+    padding-top: 0.5%;
     padding-bottom: 5%;
   }
 
   .im {
-    font-size: 10vw;
+    font-size: 4.5rem;
     margin-bottom: -2%;
     margin-top: 0.5%;
   }
 
   .eagan-farlin {
-    font-size: 13vw;
-    margin-bottom: 3%;
+    font-size: 6rem;
+    margin-bottom: 0.5%;
   }
 
   .quick-description-of-me {
-    font-size: 3.5vw;
+    font-size: 1.75rem;
   }
 
   /* Arrow Down */
   .arrow-down {
     opacity: 100%;
     margin-bottom: 3%;
-    height: 15vw;
-    width: 15vw;
+    height: 8.5rem;
+    width: 8.5rem;
   }
 
   /* About Me */
@@ -102,7 +102,7 @@
 
   .about-me {
     margin-bottom: 15%;
-    font-size: 3vw;
+    font-size: 1.25rem;
   }
 
   .about-me-left {
@@ -119,17 +119,17 @@
 
   /* Eagan Farlin Container */
   .im {
-    font-size: 12.5vw;
+    font-size: 5rem;
     margin-top: 1.5%;
   }
 
   .eagan-farlin {
-    font-size: 15vw;
+    font-size: 6rem;
     margin-bottom: 5%;
   }
 
   .quick-description-of-me {
-    font-size: 6vw;
+    font-size: 2.25rem;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -137,8 +137,8 @@
   /* Arrow Down */
   .arrow-down {
     margin-bottom: 40%;
-    height: 27.25vw;
-    width: 27.25vw;
+    height: 8.5rem;
+    width: 8.5rem;
   }
 
   /* About Me */
@@ -150,8 +150,8 @@
 
   .about-me {
     margin-bottom: 65%;
-    font-size: 5vw;
-    line-height: 10vw;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
 }
