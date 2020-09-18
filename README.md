@@ -1,4 +1,4 @@
-![Site-Logo](/Universal/Images/Site-Logo.png)
+![Site-Logo](Global/Images/Site-Logo.png)
 
 # Welcome to Eagan's main website!
 
