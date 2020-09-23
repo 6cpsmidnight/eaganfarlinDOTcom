@@ -13,7 +13,7 @@ Stay as long as you want!
 
 # Made using:
 
-Bootstrap (https://www.getbootstrap.com)
-Bootswatch (https://www.bootswatch.com)
-jQuery (https://www.jquery.com)
-Google Fonts (https://fonts.google.com)
+Bootstrap(https://www.getbootstrap.com)
+Bootswatch(https://www.bootswatch.com)
+jQuery(https://www.jquery.com)
+Google Fonts(https://fonts.google.com)
