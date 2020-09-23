@@ -8,12 +8,17 @@ Stay as long as you want!
 # To do list:
 
 -make the whole website resposive
+
 -add CSS to: professional/ personal contacts page
+
 -start using sweet alert
 
 # Made using:
 
-Bootstrap(https://www.getbootstrap.com)
-Bootswatch(https://www.bootswatch.com)
-jQuery(https://www.jquery.com)
-GoogleFonts(https://fonts.google.com)
+Bootstrap (https://www.getbootstrap.com)
+
+Bootswatch (https://www.bootswatch.com)
+
+jQuery (https://www.jquery.com)
+
+Google Fonts (https://fonts.google.com)
