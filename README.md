@@ -14,8 +14,8 @@ Stay as long as you want!
 # Made using:
 
 <---CSS--->
-Bootstrap (https://www.getbootstrap.com)
-Bootswatch (https://www.bootswatch.com)
+ Bootstrap (https://www.getbootstrap.com)
+ Bootswatch (https://www.bootswatch.com)
 
 <---JavaScript--->
-jQuery (https://www.jquery.com)
+ jQuery (https://www.jquery.com)
