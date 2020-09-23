@@ -16,3 +16,4 @@ Stay as long as you want!
 Bootstrap (https://www.getbootstrap.com)
 Bootswatch (https://www.bootswatch.com)
 jQuery (https://www.jquery.com)
+Google Fonts (https://fonts.google.com)

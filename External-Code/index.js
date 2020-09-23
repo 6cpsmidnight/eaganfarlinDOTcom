@@ -1,8 +1,4 @@
-// Notes
-alert("Only the home page is responsive and ready, the rest has not been properly styled.");
-
 // Arrow Flashes
-
 function arrowFlash() {
 
   arrowCounter = 0;
@@ -74,12 +70,5 @@ $(window).scroll(function () {
     }
 
   }
-
-});
-
-// Copy URL's URL Copier
-$(".footer-icon-copy-url").click(function () {
-
-  prompt("Copy Me", "https://www.eaganfarlin.com");
 
 });
