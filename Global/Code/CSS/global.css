@@ -149,8 +149,7 @@ li {
   /* Loading Screen */
   #loading-screen {
     position: fixed;
-    background-color: #ffffff;
-    padding-top: 20%;
+    padding-top: 25%;
   }
 
   .loading-screen {
@@ -158,12 +157,17 @@ li {
   }
 
   /* Navigation Bar */
+  .navbar-brand {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+
   .info-logo-navbar {
-    width: 6rem;
+    width: 4rem;
   }
 
   .navbar-brand-home {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   .nav-item {
