@@ -171,31 +171,31 @@ li {
   }
 
   .nav-item {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .dropdown-item {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .navbar-github-logo {
-    width: 3.6rem;
+    width: 2.7rem;
     margin-left: -8px;
   }
 
   /* Footer */
   .footer-links {
-    margin-left: 42.5%;
+    margin-left: 40.75%;
   }
 
   .footer-icons {
-    width: 6.5rem;
+    width: 4.5rem;
   }
 
   .footer-site-info {
     text-align: center;
-    font-size: 1.5rem;
-    line-height: 3rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
   }
 
   .footer-site-info-icons {
@@ -203,7 +203,7 @@ li {
   }
 
   .footer-site-info .copyright {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 
 }
