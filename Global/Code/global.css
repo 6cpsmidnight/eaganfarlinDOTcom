@@ -172,10 +172,13 @@ li {
 
   .nav-item {
     font-size: 1.3rem;
+    line-height: 0.8;
   }
 
   .dropdown-item {
     font-size: 1.3rem;
+    line-height: 1rem;
+    line-height: 0.8;
   }
 
   .navbar-github-logo {
@@ -195,7 +198,7 @@ li {
   .footer-site-info {
     text-align: center;
     font-size: 1.3rem;
-    line-height: 2rem;
+    line-height: 1.6;
   }
 
   .footer-site-info-icons {
