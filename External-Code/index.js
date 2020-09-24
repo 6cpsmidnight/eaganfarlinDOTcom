@@ -59,7 +59,7 @@ $(window).scroll(function () {
 
   } else if (widthOfScreen < 768) {
 
-    if (yLevel > 560) {
+    if (yLevel > 420) {
 
       $(".navbar").css("position", "fixed").css("top", "0.5rem");
 
