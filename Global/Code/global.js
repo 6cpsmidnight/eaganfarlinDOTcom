@@ -1,5 +1,5 @@
 // Notes
-alert("Only the home page is CSS/mobile ready, the rest of the pages has not been properly styled.");
+alert("Only the home page is properly styled, the rest is in heavy development.");
 
 // Copy URL's URL Copier
 $(".footer-icon-copy-url").click(function () {
