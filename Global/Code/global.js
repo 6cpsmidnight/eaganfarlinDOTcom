@@ -7,7 +7,7 @@ $("#loading-screen").fadeOut(1000);
 // Footer - Copy URL's URL Copier
 $(".footer-icon-copy-url").click(function () {
 
-  prompt("Copy Me", "https://www.eaganfarlin.com");
+  prompt("Copy Me", "https://www.eaganfarlin.com/");
 
 });
 

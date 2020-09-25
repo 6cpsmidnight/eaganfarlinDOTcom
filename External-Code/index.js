@@ -1,4 +1,16 @@
 // Arrow Flashes
+// When The Page Starts, The Arrow Flashes For 5 Times
+arrowFlash();
+
+// When The Page Is Hovered On, The Arrow Flashes For 5 Times
+$(window).hover(arrowFlash);
+
+// When The Page Is Touched On, The Arrow Flashes For 5 Times
+$(window).click(arrowFlash);
+
+// When The Page Is Scrolled On, The Arrow Flashes For 5 Times
+$(window).scroll(arrowFlash);
+
 function arrowFlash() {
 
   arrowCounter = 0;
@@ -13,24 +25,17 @@ function arrowFlash() {
 
 }
 
-// When The Page Starts, The Arrow Flashes For 5 Times
-arrowFlash();
-
-// When The Page Is Hovered On, The Arrow Flashes For 5 Times
-$(window).hover(arrowFlash);
-
-// When The Page Is Touched On, The Arrow Flashes For 5 Times
-$(window).click(arrowFlash);
-
-// When The Page Is Scrolled On, The Arrow Flashes For 5 Times
-$(window).scroll(arrowFlash);
-
 // Responsive Navigation Bar Attacher
-$(window).scroll(function () {
+navbarAttacher();
+
+$(window).scroll(navbarAttacher);
+
+function navbarAttacher() {
 
   // Checking What Y Level The Page Is On
   let yLevel = window.scrollY;
 
+  // Checking What You Screen Width Is
   let widthOfScreen = $(window).width();
 
   if (widthOfScreen > 992) {
@@ -47,7 +52,7 @@ $(window).scroll(function () {
 
   } else if (widthOfScreen < 992 && widthOfScreen > 767) {
 
-    if (yLevel > 810) {
+    if (yLevel > 500) {
 
       $(".navbar").css("position", "fixed").css("top", "0.5rem");
 
@@ -71,4 +76,4 @@ $(window).scroll(function () {
 
   }
 
-});
+}
