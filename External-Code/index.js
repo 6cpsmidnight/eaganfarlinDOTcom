@@ -40,7 +40,7 @@ function navbarAttacher() {
 
   if (widthOfScreen > 992) {
 
-    if (yLevel > 629) {
+    if (yLevel > 429) {
 
       $(".navbar").css("position", "fixed").css("top", "0.5rem");
 
@@ -52,7 +52,7 @@ function navbarAttacher() {
 
   } else if (widthOfScreen < 992 && widthOfScreen > 767) {
 
-    if (yLevel > 500) {
+    if (yLevel > 499) {
 
       $(".navbar").css("position", "fixed").css("top", "0.5rem");
 
@@ -64,7 +64,7 @@ function navbarAttacher() {
 
   } else if (widthOfScreen < 768) {
 
-    if (yLevel > 420) {
+    if (yLevel > 429) {
 
       $(".navbar").css("position", "fixed").css("top", "0.5rem");
 
