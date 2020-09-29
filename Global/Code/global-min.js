@@ -1,1 +1,0 @@
-alert("Only the home page is properly styled, the rest is in heavy development."),$("#loading-screen").fadeOut(1e3),$(".footer-icon-copy-url").click((function(){prompt("Copy Me","https://www.eaganfarlin.com/")}));
