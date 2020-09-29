@@ -5,10 +5,10 @@ Hosted on https://eaganfarlin.com/.
 Stay as long as you want!
 
 ## To do list:
-- make the whole website resposive
-- add CSS to: professional/ personal contacts page
-- start using sweet alert
-- make chalk board mode (a.k.a. dark mode)
+- [] make the whole website resposive
+- [] add CSS to: professional/ personal contacts page
+- [] start using sweet alert
+- [] make chalk board mode (a.k.a. dark mode)
 
 ## Made using:
 - Bootstrap (https://www.getbootstrap.com/)
