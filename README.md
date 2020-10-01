@@ -13,6 +13,6 @@ Stay as long as you want!
 ## Made using:
 - Bootstrap (https://www.getbootstrap.com/)
 - Bootswatch (https://www.bootswatch.com/)
-- jQuery (https://www.jquery.com/)
 - Google Fonts (https://fonts.google.com/)
+- jQuery (https://www.jquery.com/)
 - SweetAlert2 (https://sweetalert2.github.io/)

@@ -2,3 +2,20 @@
 #navbar {
     position: fixed;
 }
+
+/* Play Hypixel With Me Form */
+.play-hypixel-with-me-form {
+    margin-top: 8.75rem;
+    width: 100%;
+    height: 125vh;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+    .play-hypixel-with-me-form {
+        margin-top: 5rem;
+        height: 140vh;
+    }
+
+}
