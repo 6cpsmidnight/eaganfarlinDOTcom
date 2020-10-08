@@ -9,6 +9,7 @@ Stay as long as you want!
 - [ ] add CSS to: professional/ personal contacts page
 - [X] start using SweetAlert
 - [ ] make chalk board mode (a.k.a. dark mode)
+- [ ] convert all (possible) images from .png to .svg
 
 ## Made using:
 - Bootstrap (https://www.getbootstrap.com/)

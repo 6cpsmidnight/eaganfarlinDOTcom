@@ -60,6 +60,11 @@ li {
   margin-right: 20%;
 }
 
+.footer-icon-link-copy-me {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
 .footer-site-info {
   text-align: center;
   font-size: 1.5rem;
