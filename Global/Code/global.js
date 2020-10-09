@@ -1,13 +1,27 @@
 // Loaded Popups
 if (localStorage.getItem("acceptedCookies") === "yes") {
 
-  Swal.fire({
+  if (sessionStorage.getItem("infoPopup") === "ok") {
 
-    title: "<strong>In Beta!</strong>",
-    icon: "info",
-    html: "Only the home page is properly styled, the rest is in heavy development.",
+  } else {
 
-  })
+    Swal.fire({
+
+      title: "<strong>In Beta!</strong>",
+      icon: "info",
+      html: "Only the home page is properly styled, the rest is in heavy development.",
+
+    }).then((result) => {
+
+      if (result.isConfirmed) {
+
+        sessionStorage.setItem("infoPopup", "ok");
+
+      }
+
+    })
+
+  }
 
 } else {
 
@@ -15,7 +29,6 @@ if (localStorage.getItem("acceptedCookies") === "yes") {
 
     html: "This site uses cookies and Google Analytics to improve your experience, if you continue you are agreeing to these terms.",
     showDenyButton: true,
-    showCloseButton: true,
     confirmButtonText: "I Agree",
     denyButtonText: "Decline",
     confirmButtonColor: "#5cb85c",
