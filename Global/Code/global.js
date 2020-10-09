@@ -1,38 +1,54 @@
-// Notes
-Swal.fire({
+// Loaded Popups
+if (localStorage.getItem("acceptedCookies") === "yes") {
 
-  html:"This site uses cookies and Google Analytics to improve your experience, if you continue you are agreeing to these terms.",
-  showDenyButton: true,
-  showCloseButton: true,
-  confirmButtonText: "I Agree",
-  denyButtonText: "Decline",
-  confirmButtonColor: "#5cb85c",
-  denyButtonColor:"#d9534f "
+  Swal.fire({
 
-}).then((result) => {
+    title: "<strong>In Beta!</strong>",
+    icon: "info",
+    html: "Only the home page is properly styled, the rest is in heavy development.",
 
-  if (result.isConfirmed) {
+  })
 
-    Swal.fire({
+} else {
 
-      title: "<strong>In Beta!</strong>",
-      icon: "info",
-      html: "Only the home page is properly styled, the rest is in heavy development.",
+  Swal.fire({
 
-    })
+    html: "This site uses cookies and Google Analytics to improve your experience, if you continue you are agreeing to these terms.",
+    showDenyButton: true,
+    showCloseButton: true,
+    confirmButtonText: "I Agree",
+    denyButtonText: "Decline",
+    confirmButtonColor: "#5cb85c",
+    denyButtonColor: "#d9534f"
 
-  } else if (result.isDenied) {
+  }).then((result) => {
 
-    location.replace("About:blank");
+    if (result.isConfirmed) {
 
-  }
+      Swal.fire({
 
-})
+        title: "<strong>In Beta!</strong>",
+        icon: "info",
+        html: "Only the home page is properly styled, the rest is in heavy development.",
+
+      })
+
+      localStorage.setItem("acceptedCookies", "yes");
+
+    } else if (result.isDenied) {
+
+      location.replace("about:blank");
+
+    }
+
+  })
+
+}
 
 // Loading Screen - Fades Out
 $("#loading-screen").fadeOut(1000);
 
-// Footer - Copy URL"s URL Copier
+// Footer - Copy URL's URL Copier Popout
 $(".footer-icon-copy-url").click(function () {
 
   Swal.fire({

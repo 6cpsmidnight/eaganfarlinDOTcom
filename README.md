@@ -10,6 +10,7 @@ Stay as long as you want!
 - [X] start using SweetAlert
 - [ ] make chalk board mode (a.k.a. dark mode)
 - [ ] convert all (possible) images from .png to .svg
+- [ ] make terms popup for when the page is first ever loaded
 
 ## Made using:
 - Bootstrap (https://www.getbootstrap.com/)
