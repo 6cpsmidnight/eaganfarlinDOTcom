@@ -44,6 +44,14 @@ if (localStorage.getItem("acceptedCookies") === "yes") {
         icon: "info",
         html: "Only the home page is properly styled, the rest is in heavy development.",
 
+      }).then((result) => {
+
+        if (result.isConfirmed) {
+
+          sessionStorage.setItem("infoPopup", "ok");
+
+        }
+
       })
 
       localStorage.setItem("acceptedCookies", "yes");

@@ -1,6 +1,8 @@
 /* Everything */
 * {
   box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
 }
 
 /* Loading Screen */
@@ -125,9 +127,9 @@ li {
 
   .footer-links {
     margin-left: 45%;
-    margin-bottom: 7%;
-    margin-top: 7%;
-    padding-right: -100%;
+    margin-bottom: 0.7rem;
+    margin-top: 0.7rem;
+    padding-right: 25%;
   }
 
   .footer-icons {
@@ -193,21 +195,23 @@ li {
 
   /* Footer */
   .footer-links {
-    margin-left: 40.75%;
+    padding-right: 32%;
+    margin-top: -0.12rem;
+    margin-left: 41.45%;
   }
 
   .footer-icons {
-    width: 4.5rem;
+    width: 3.5rem;
   }
 
   .footer-site-info {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.6;
   }
 
   .footer-site-info-icons {
-    width: 3rem;
+    width: 2rem;
   }
 
   .footer-site-info .copyright {
