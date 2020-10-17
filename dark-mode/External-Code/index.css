@@ -1,7 +1,7 @@
 /* Links */
 a {
-    text-decoration: none;
     color: #5bc0de;
+    text-decoration: none;
 }
 
 a:hover {
@@ -37,6 +37,7 @@ a:hover {
     width: 8.5rem;
     height: 7.25rem;
     opacity: 60%;
+    transform: rotate(180deg);
 }
 
 .arrow-down:hover {
@@ -166,79 +167,38 @@ a:hover {
 
 /* Dark Mode */
 /* Dark Mode - Item Colors */
-h1 {
-    color: #ffffff;
-}
-
-h2 {
-    color: #ffffff;
-}
-
-h3 {
-    color: #ffffff;
-}
-
-h4 {
-    color: #ffffff;
-}
-
-h5 {
-    color: #ffffff;
-}
-
-h6 {
-    color: #ffffff;
-}
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
     color: #ffffff;
 }
 
-a {
-    color: #f0ad4e;
-}
 
+a,
 a:hover {
     color: #f0ad4e;
 }
 
-#navbar {
-    border-color: #ffffff;
-}
-
-.navbar-brand-home {
-    color: #ffffff;
-}
-
-.nav-text {
-    color: #ffffff;
-}
-
-.dropdown-toggle {
-    color: #ffffff;
-}
-
-.dropdown-toggle:hover {
-    color: #ffffff;
-}
-
+#navbar,
 .dropdown-divider {
     border-color: #ffffff;
 }
 
+.navbar-brand-home,
+.nav-text,
+.dropdown-toggle,
+.dropdown-toggle:hover {
+    color: #ffffff;
+}
+
 /* Dark Mode - Background Colors */
-body {
-    background-color: #073642;
-}
-
-#navbar {
-    background-color: #073642;
-}
-
-.navbar-collapse {
-    background-color: #073642;
-}
-
+body,
+#navbar,
+.navbar-collapse,
 .dropdown-menu {
     background-color: #073642;
 }
