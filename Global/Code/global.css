@@ -9,7 +9,8 @@
 :root {
   --background-color: #fff;
   --text-color: #000;
-  --link-color: #5bc0de;
+  --link-color: #17a2b8;
+  --button-color: #fff;
   --border-color: #000;
   --mode-switcher-text-color: #f0ad4e;
 }
@@ -18,13 +19,9 @@
   --background-color: #073642;
   --text-color: #fff;
   --link-color: #f0ad4e;
+  --button-color: #000;
   --border-color: #fff;
-  --mode-switcher-text-color: #5bc0de;
-}
-
-/* Body */
-body {
-  background-color: var(--background-color);
+  --mode-switcher-text-color: #17a2b8;
 }
 
 /* Text */
@@ -35,6 +32,8 @@ h4,
 h5,
 h6,
 p,
+.swal2-title,
+.swal2-content,
 .navbar-brand-home,
 .nav-text,
 .dropdown-toggle,
@@ -52,18 +51,37 @@ a:hover {
   text-decoration: none;
 }
 
+/* Background Colors */
+body,
+.swal2-popup,
+#loading-screen,
+#navbar,
+.navbar-collapse {
+  background-color: var(--background-color);
+}
+
+.swal2-actions .swal2-styled {
+  background-color: var(--button-color);
+}
+
 /* Border Colors */
+.swal2-actions .swal2-styled,
 #navbar,
 .dropdown-menu,
 .dropdown-divider {
   border-color: var(--border-color);
 }
 
+/* Popup */
+.swal2-actions .swal2-styled {
+  color: var(--link-color);
+  font-weight: bold;
+}
+
 /* Loading Screen */
-.loading-screen {
+#loading-screen {
   position: fixed;
   height: 100vh;
-  background-color: var(--background-color);
   z-index: 2;
   text-align: center;
   padding-top: 10%;
@@ -73,7 +91,6 @@ a:hover {
 #navbar {
   width: 100%;
   z-index: 1;
-  background-color: var(--background-color);
 }
 
 .navbar-toggler-icon {
@@ -85,10 +102,6 @@ a:hover {
 .info-logo-navbar {
   width: 5rem;
   margin-top: -10%;
-}
-
-.navbar-collapse {
-  background-color: var(--background-color);
 }
 
 .navbar-brand-home {
@@ -111,11 +124,6 @@ a:hover {
 
 .dropdown-item:hover .nav-text {
   color: var(--background-color);
-}
-
-.dropdown-toggle,
-.dropdown-toggle:hover {
-  border-color: var(--border-color);
 }
 
 .dropdown-menu {
@@ -172,7 +180,7 @@ a:hover {
 @media (max-width: 992px) {
 
   /* Loading Screen */
-  .loading-screen {
+  #loading-screen {
     padding-top: 15%;
   }
 
@@ -242,7 +250,7 @@ a:hover {
 @media (max-width: 768px) {
 
   /* Loading Screen */
-  .loading-screen {
+  #loading-screen {
     position: fixed;
     padding-top: 25%;
   }
