@@ -5,21 +5,65 @@
   margin: 0%;
 }
 
+/* HTML */
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  --link-color: #5bc0de;
+  --border-color: #000;
+  --mode-switcher-text-color: #f0ad4e;
+}
+
+:root[user-color-mode="dark"] {
+  --background-color: #073642;
+  --text-color: #fff;
+  --link-color: #f0ad4e;
+  --border-color: #fff;
+  --mode-switcher-text-color: #5bc0de;
+}
+
+/* Body */
+body {
+  background-color: var(--background-color);
+}
+
+/* Text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.navbar-brand-home,
+.nav-text,
+.dropdown-toggle,
+.dropdown-toggle:hover {
+  color: var(--text-color);
+}
+
 /* Links */
-a {
-  color: #5bc0de;
-  text-decoration: none;
+a,
+a:hover {
+  color: var(--link-color);
 }
 
 a:hover {
-  color: #5bc0de;
+  text-decoration: none;
+}
+
+/* Border Colors */
+#navbar,
+.dropdown-menu,
+.dropdown-divider {
+  border-color: var(--border-color);
 }
 
 /* Loading Screen */
 #loading-screen {
   position: fixed;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: var(--background-color);
   z-index: 2;
   text-align: center;
   padding-top: 10%;
@@ -29,7 +73,13 @@ a:hover {
 #navbar {
   width: 100%;
   z-index: 1;
-  background-color: #ffffff;
+  background-color: var(--background-color);
+}
+
+.navbar-toggler-icon {
+  background-image: url("../images/hamburger-transparent-icon.svg");
+  width: 3.125rem;
+  height: 3.125rem;
 }
 
 .info-logo-navbar {
@@ -37,14 +87,18 @@ a:hover {
   margin-top: -10%;
 }
 
+.navbar-collapse {
+  background-color: var(--background-color);
+}
+
 .navbar-brand-home {
   font-size: 3rem;
-  color: #000000;
+  color: var(--text-color);
 }
 
 .nav-text {
   font-size: 1.25rem;
-  color: #000000;
+  color: var(--text-color);
 }
 
 .dropdown-item {
@@ -52,24 +106,33 @@ a:hover {
 }
 
 .dropdown-item:hover {
-  background-color: #000000;
+  color: var(--text-color);
 }
 
 .dropdown-item:hover .nav-text {
-  color: #ffffff;
+  color: var(--background-color);
 }
 
-.dropdown-toggle {
-  color: #000000;
-}
-
+.dropdown-toggle,
 .dropdown-toggle:hover {
-  color: #000000;
+  border-color: var(--border-color);
 }
 
-.navbar-github-logo {
-  width: 30px;
-  margin-left: -8px;
+.dropdown-menu {
+  background-color: var(--background-color);
+}
+
+.dropdown-item:hover {
+  background-color: var(--text-color);
+}
+
+.theme-switch {
+  background-color: var(--background-color);
+  border-width: 0px;
+}
+
+.theme-switcher-text {
+  color: var(--mode-switcher-text-color);
 }
 
 /* Footer */

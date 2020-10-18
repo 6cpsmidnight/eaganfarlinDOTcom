@@ -8,10 +8,10 @@ Stay as long as you want!
 - [ ] make the whole website resposive
 - [ ] add styles to every page
 - [X] start using SweetAlert
-- [ ] make chalk board mode (a.k.a. dark mode)
+- [X] make chalk board mode (a.k.a. dark mode)
 - [X] convert all (possible) images from .png to .svg
 - [X] make terms popup for when the page is first ever loaded
-- [X] change file/folder capitalizations
+- [X] change file and folder capitalization formats
 
 ## Made using:
 - Bootstrap (https://getbootstrap.com/)

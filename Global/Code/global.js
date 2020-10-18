@@ -92,3 +92,20 @@ $(".footer-icon-copy-url").click(function () {
   })
 
 });
+
+// Dark Mode
+let mode = localStorage.getItem("mode") || "light";
+
+let applyMode = (mode) => {
+  document.documentElement.setAttribute("user-color-mode", mode);
+  let themeSwitcherText = mode === "dark" ? "Let There Be Light!" : "Let Darkness Rain Supreme!";
+  $(".theme-switcher-text").text(themeSwitcherText);
+}
+
+applyMode(mode);
+
+$(".theme-switch").click(function () {
+  mode = mode === "light" ? "dark" : "light";
+  localStorage.setItem("mode", mode);
+  applyMode(mode);
+});
