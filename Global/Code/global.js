@@ -77,7 +77,7 @@ gtag('js', new Date());
 gtag('config', 'UA-176695618-1');
 
 // Loading Screen - Fades Out
-$("#loading-screen").fadeOut(1000);
+$(".loading-screen").fadeOut(1000);
 
 // Footer - Copy URL's URL Copier Popout
 $(".footer-icon-copy-url").click(function () {
@@ -93,7 +93,7 @@ $(".footer-icon-copy-url").click(function () {
 
 });
 
-// Dark Mode
+// Dark Mode - Toggle
 let mode = localStorage.getItem("mode") || "light";
 
 let applyMode = (mode) => {
