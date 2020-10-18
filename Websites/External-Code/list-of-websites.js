@@ -1,6 +1,2 @@
-// Copy URL's URL Copier
-$(".footer-icon-copy-url").click(function () {
-
-  prompt("Copy Me", "https://www.eaganfarlin.com");
-
-});
+// Title - Loading Done
+$("title").text("Eagan Farlin's List Of Public Websites");

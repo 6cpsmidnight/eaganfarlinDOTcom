@@ -1,3 +1,7 @@
+// Title - Loading Done
+$("title").text("Eagan Farlin's Personal Contacts Page");
+
+// Light Mode - Blocker
 if (localStorage.getItem("mode") === "dark") {
 
     Swal.fire({
