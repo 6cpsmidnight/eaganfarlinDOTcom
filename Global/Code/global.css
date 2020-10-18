@@ -60,7 +60,7 @@ a:hover {
 }
 
 /* Loading Screen */
-#loading-screen {
+.loading-screen {
   position: fixed;
   height: 100vh;
   background-color: var(--background-color);
@@ -172,7 +172,7 @@ a:hover {
 @media (max-width: 992px) {
 
   /* Loading Screen */
-  #loading-screen {
+  .loading-screen {
     padding-top: 15%;
   }
 
@@ -242,7 +242,7 @@ a:hover {
 @media (max-width: 768px) {
 
   /* Loading Screen */
-  #loading-screen {
+  .loading-screen {
     position: fixed;
     padding-top: 25%;
   }
