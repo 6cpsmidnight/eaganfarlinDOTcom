@@ -66,6 +66,16 @@ if (localStorage.getItem("acceptedCookies") === "yes") {
 
 }
 
+// Google Analytics - Global site tag (gtag.js)
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'UA-176695618-1');
+
 // Loading Screen - Fades Out
 $("#loading-screen").fadeOut(1000);
 

@@ -6,15 +6,16 @@ Stay as long as you want!
 
 ## To do list:
 - [ ] make the whole website resposive
-- [ ] add styling to every page
+- [ ] add styles to every page
 - [X] start using SweetAlert
 - [ ] make chalk board mode (a.k.a. dark mode)
-- [ ] convert all (possible) images from .png to .svg
+- [X] convert all (possible) images from .png to .svg
 - [X] make terms popup for when the page is first ever loaded
+- [X] change file/folder capitalizations
 
 ## Made using:
-- Bootstrap (https://www.getbootstrap.com/)
-- Bootswatch (https://www.bootswatch.com/)
+- Bootstrap (https://getbootstrap.com/)
+- Bootswatch (https://bootswatch.com/)
 - Google Fonts (https://fonts.google.com/)
-- jQuery (https://www.jquery.com/)
+- jQuery (https://jquery.com/)
 - SweetAlert2 (https://sweetalert2.github.io/)

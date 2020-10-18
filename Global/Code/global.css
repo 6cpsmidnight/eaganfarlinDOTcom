@@ -5,6 +5,16 @@
   margin: 0%;
 }
 
+/* Links */
+a {
+  color: #5bc0de;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5bc0de;
+}
+
 /* Loading Screen */
 #loading-screen {
   position: fixed;
@@ -19,6 +29,7 @@
 #navbar {
   width: 100%;
   z-index: 1;
+  background-color: #ffffff;
 }
 
 .info-logo-navbar {
@@ -28,18 +39,32 @@
 
 .navbar-brand-home {
   font-size: 3rem;
+  color: #000000;
 }
 
-.nav-item {
+.nav-text {
   font-size: 1.25rem;
+  color: #000000;
 }
 
 .dropdown-item {
   font-size: 1.25rem;
 }
 
-li {
-  list-style-type: none;
+.dropdown-item:hover {
+  background-color: #000000;
+}
+
+.dropdown-item:hover .nav-text {
+  color: #ffffff;
+}
+
+.dropdown-toggle {
+  color: #000000;
+}
+
+.dropdown-toggle:hover {
+  color: #000000;
 }
 
 .navbar-github-logo {

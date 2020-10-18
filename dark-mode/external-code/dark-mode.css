@@ -1,0 +1,43 @@
+/* Dark Mode */
+/* Dark Mode - Item Colors */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.navbar-brand-home,
+.nav-text,
+.dropdown-toggle,
+.dropdown-toggle:hover {
+    color: #ffffff;
+}
+
+
+a,
+a:hover {
+    color: #f0ad4e;
+}
+
+#navbar,
+.dropdown-menu,
+.dropdown-divider {
+    border-color: #ffffff;
+}
+
+.dropdown-item:hover .nav-text {
+    color: #000000;
+}
+
+/* Dark Mode - Background Colors */
+body,
+#navbar,
+.navbar-collapse,
+.dropdown-menu {
+    background-color: #073642;
+}
+
+.dropdown-item:hover {
+    background-color: #ffffff;
+}
