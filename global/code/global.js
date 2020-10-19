@@ -7,7 +7,7 @@ if (localStorage.getItem("acceptedCookies") === "yes") {
 
     Swal.fire({
 
-      title: "<strong>In Beta!</strong>",
+      title: "<span class=\"bold\">In Beta!</span>",
       icon: "info",
       html: "Only the home page is properly styled, the rest is in heavy development.",
 
@@ -29,10 +29,10 @@ if (localStorage.getItem("acceptedCookies") === "yes") {
 
     html: "This site uses cookies and Google Analytics to improve your experience, if you continue you are agreeing to these terms.",
     showDenyButton: true,
-    confirmButtonText: "I Agree",
-    denyButtonText: "Decline",
-    confirmButtonColor: "#5cb85c",
-    denyButtonColor: "#d9534f"
+    confirmButtonText: "<span class=\"swal2-beta-popup-agree-button-text\">I Agree</span>",
+    denyButtonText: "<span class=\"swal2-beta-popup-decline-button-text\">Decline</span>",
+    confirmButtonColor: "#82c21f",
+    denyButtonColor: "#e83e8c"
 
   }).then((result) => {
 
@@ -40,7 +40,7 @@ if (localStorage.getItem("acceptedCookies") === "yes") {
 
       Swal.fire({
 
-        title: "<strong>In Beta!</strong>",
+        title: "<span class=\"bold\">In Beta!</span>",
         icon: "info",
         html: "Only the home page is properly styled, the rest is in heavy development.",
 

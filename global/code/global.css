@@ -41,6 +41,14 @@ p,
   color: var(--text-color);
 }
 
+.light {
+  font-weight: lighter;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 /* Links */
 a,
 a:hover {
@@ -73,6 +81,14 @@ body,
 }
 
 /* Popup */
+.swal2-beta-popup-agree-button-text {
+  color: #365030;
+}
+
+.swal2-beta-popup-decline-button-text {
+  color: #50304d;
+}
+
 .swal2-actions .swal2-styled {
   color: var(--link-color);
   font-weight: bold;
