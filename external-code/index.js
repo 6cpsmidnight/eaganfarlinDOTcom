@@ -1,6 +1,3 @@
-// Title - Loading Done
-$("title").text("Eagan Farlin, The Web Developer");
-
 // Arrow Flashes
 // When The Page Starts, The Arrow Flashes For 5 Times
 arrowFlash();
@@ -80,3 +77,6 @@ function navbarAttacher() {
   }
 
 }
+
+// Title - Loading Done
+$("title").text("Eagan Farlin, The Web Developer");

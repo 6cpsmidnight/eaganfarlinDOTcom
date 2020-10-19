@@ -27,7 +27,7 @@ if (localStorage.getItem("acceptedCookies") === "yes") {
 
   Swal.fire({
 
-    html: "This site uses cookies and Google Analytics to improve your experience, if you continue you are agreeing to these terms.",
+    html: "This site uses Google Analytics (which uses cookies) to improve your experience, if you continue you are agreeing to these terms.",
     showDenyButton: true,
     confirmButtonText: "<span class=\"swal2-beta-popup-agree-button-text\">I Agree</span>",
     denyButtonText: "<span class=\"swal2-beta-popup-decline-button-text\">Decline</span>",
