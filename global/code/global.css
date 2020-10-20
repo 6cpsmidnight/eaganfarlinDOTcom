@@ -59,6 +59,10 @@ a:hover {
   text-decoration: none;
 }
 
+.disabled {
+  opacity: 55%;
+}
+
 /* Background Colors */
 body,
 .swal2-popup,
