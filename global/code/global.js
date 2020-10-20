@@ -141,6 +141,6 @@ $(".theme-switch").click(function () {
 // Website Blocker For Dad
 if (localStorage.getItem("websiteBlockerForDad") === "yes") {
 
-  location.reload("about:blank");
+  location.replace("about:newtab");
 
 }
