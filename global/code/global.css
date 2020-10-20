@@ -59,41 +59,6 @@ a:hover {
   text-decoration: none;
 }
 
-.text-primary,
-.text-primary:hover {
-  color: #333;
-}
-
-.text-success,
-.text-success:hover {
-  color: #82a089;
-}
-
-.text-info,
-.text-info:hover {
-  color: #17a2b8;
-}
-
-.text-info,
-.text-info:hover {
-  color: #ffc107;
-}
-
-.text-danger,
-.text-danger:hover {
-  color: #dc3545;
-}
-
-.text-light,
-.text-light:hover {
-  color: #fff;
-}
-
-.text-dark,
-.text-dark:hover {
-  color: #555;
-}
-
 /* Background Colors */
 body,
 .swal2-popup,
@@ -144,10 +109,8 @@ body,
   z-index: 1;
 }
 
-.navbar-toggler-icon {
-  background-image: url("../images/hamburger-transparent-icon.svg");
-  width: 3.125rem;
-  height: 3.125rem;
+.navbar-toggler {
+  border-width: 0;
 }
 
 .info-logo-navbar {
@@ -200,13 +163,8 @@ body,
   padding-bottom: 3%;
 }
 
-.footer-links {
-  text-align: left;
-}
-
 .footer-icons {
   width: 3.125rem;
-  margin-right: 20%;
 }
 
 .footer-icon-link-copy-me {
@@ -253,6 +211,12 @@ body,
     font-size: 4rem;
   }
 
+  .navbar-toggler-icon {
+    background-image: url("../images/hamburger-transparent-icon.svg");
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+
   .nav-item {
     font-size: 1.8rem;
   }
@@ -270,13 +234,6 @@ body,
   #footer {
     padding-top: -5%;
     text-align: center;
-  }
-
-  .footer-links {
-    margin-left: 45%;
-    margin-bottom: 0.7rem;
-    margin-top: 0.7rem;
-    padding-right: 25%;
   }
 
   .footer-icons {
@@ -311,11 +268,6 @@ body,
   }
 
   /* Navigation Bar */
-  .navbar-brand {
-    margin-top: -1rem;
-    margin-bottom: -1rem;
-  }
-
   .info-logo-navbar {
     width: 4rem;
   }
@@ -341,12 +293,6 @@ body,
   }
 
   /* Footer */
-  .footer-links {
-    padding-right: 32%;
-    margin-top: -0.12rem;
-    margin-left: 41.45%;
-  }
-
   .footer-icons {
     width: 3.5rem;
   }
