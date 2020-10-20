@@ -97,15 +97,43 @@ $(".footer-icon-copy-url").click(function () {
 let mode = localStorage.getItem("mode") || "light";
 
 let applyMode = (mode) => {
+
   document.documentElement.setAttribute("user-color-mode", mode);
+
   let themeSwitcherText = mode === "dark" ? "Let There Be Light!" : "Let Darkness Rain Supreme!";
+
   $(".theme-switcher-text").text(themeSwitcherText);
+
+  navbarTogglerIconTheme();
+
+}
+
+function navbarTogglerIconTheme() {
+
+  if (localStorage.getItem("mode") === "light") {
+
+    $(".navbar-toggler-icon").removeClass("navbar-toggler-icon-dark");
+
+    $(".navbar-toggler-icon").addClass("navbar-toggler-icon-light");
+
+  } else if (localStorage.getItem("mode") === "dark") {
+
+    $(".navbar-toggler-icon").removeClass("navbar-toggler-icon-light");
+
+    $(".navbar-toggler-icon").addClass("navbar-toggler-icon-dark");
+
+  }
+
 }
 
 applyMode(mode);
 
 $(".theme-switch").click(function () {
+
   mode = mode === "light" ? "dark" : "light";
+
   localStorage.setItem("mode", mode);
+
   applyMode(mode);
+
 });

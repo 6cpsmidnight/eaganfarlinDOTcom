@@ -66,7 +66,7 @@ function navbarAttacher() {
 
     if (yLevel > 429) {
 
-      $(".navbar").css("position", "fixed").css("top", "0.5rem");
+      $(".navbar").css("position", "fixed").css("top", "0.2rem");
 
     } else {
 
