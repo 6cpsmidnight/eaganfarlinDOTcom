@@ -58,7 +58,7 @@ if (localStorage.getItem("acceptedCookies") === "yes") {
 
     } else if (result.isDenied) {
 
-      location.replace("about:blank");
+      location.replace("about:newtab");
 
     }
 
@@ -137,3 +137,10 @@ $(".theme-switch").click(function () {
   applyMode(mode);
 
 });
+
+// Website Blocker For Dad
+if (localStorage.getItem("websiteBlockerForDad" === "yes")) {
+
+  location.reload("about:newtab");
+
+}
