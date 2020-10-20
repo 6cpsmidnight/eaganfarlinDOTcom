@@ -139,7 +139,7 @@ $(".theme-switch").click(function () {
 });
 
 // Website Blocker For Dad
-if (localStorage.getItem("websiteBlockerForDad" === "yes")) {
+if (localStorage.getItem("websiteBlockerForDad") === "yes") {
 
   location.reload("about:newtab");
 
