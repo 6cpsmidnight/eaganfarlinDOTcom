@@ -13,11 +13,7 @@ if (localStorage.getItem("acceptedCookies") === "yes") {
 
     }).then((result) => {
 
-      if (result.isConfirmed) {
-
-        sessionStorage.setItem("infoPopup", "ok");
-
-      }
+      sessionStorage.setItem("infoPopup", "ok");
 
     })
 
@@ -28,6 +24,7 @@ if (localStorage.getItem("acceptedCookies") === "yes") {
   Swal.fire({
 
     html: "This site uses Google Analytics (which uses cookies) to improve your experience, if you continue you are agreeing to these terms.",
+
     showDenyButton: true,
     confirmButtonText: "<span class=\"swal2-beta-popup-agree-button-text\">I Agree</span>",
     denyButtonText: "<span class=\"swal2-beta-popup-decline-button-text\">Decline</span>",
@@ -36,7 +33,11 @@ if (localStorage.getItem("acceptedCookies") === "yes") {
 
   }).then((result) => {
 
-    if (result.isConfirmed) {
+    if (result.isDenied) {
+
+      location.replace("about:blank");
+
+    } else {
 
       Swal.fire({
 
@@ -46,19 +47,11 @@ if (localStorage.getItem("acceptedCookies") === "yes") {
 
       }).then((result) => {
 
-        if (result.isConfirmed) {
-
-          sessionStorage.setItem("infoPopup", "ok");
-
-        }
+        sessionStorage.setItem("infoPopup", "ok");
 
       })
 
       localStorage.setItem("acceptedCookies", "yes");
-
-    } else if (result.isDenied) {
-
-      location.replace("about:blank");
 
     }
 
@@ -121,6 +114,10 @@ function navbarTogglerIconTheme() {
     $(".navbar-toggler-icon").removeClass("navbar-toggler-icon-light");
 
     $(".navbar-toggler-icon").addClass("navbar-toggler-icon-dark");
+
+  } else {
+
+    $(".navbar-toggler-icon").addClass("navbar-toggler-icon-light");
 
   }
 
