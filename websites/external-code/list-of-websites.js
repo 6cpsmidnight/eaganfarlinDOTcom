@@ -1,2 +1,2 @@
-// Title - Loading Done
-$("title").text("Eagan Farlin's List Of Public Websites");
+// Title - Loading
+document.title = "Eagan Farlin's List Of Public Websites";

@@ -9,5 +9,5 @@ if (localStorage.getItem("mode") === "dark") {
 
 }
 
-// Title - Loading Done
-$("title").text("Eagan Farlin's Personal Contacts Page");
+// Title - Loading
+document.title = "Eagan Farlin's Personal Contacts Page";

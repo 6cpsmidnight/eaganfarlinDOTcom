@@ -91,3 +91,6 @@ function navbarAttacher() {
   }
 
 }
+
+// Title Loading
+document.title = "Eagan Farlin, The Web Developer";
