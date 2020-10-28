@@ -23,10 +23,15 @@
 }
 
 /* Arrow Down */
+.arrow-down-button {
+  background-color: var(--background-color);
+  border-width: 0;
+}
+
 .arrow-down {
   width: 6.5rem;
   height: 6.2rem;
-  opacity: 60%;
+  opacity: 80%;
   transform: rotate(180deg);
 }
 
@@ -34,7 +39,7 @@
   opacity: 100%;
 }
 
-.arrow-down-container {
+.arrow-down-2-container {
   text-align: center;
   margin-top: 5%;
   margin-bottom: 0%;

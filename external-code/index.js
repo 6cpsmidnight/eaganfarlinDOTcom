@@ -1,31 +1,45 @@
-// Arrow Flashes
-// When The Page Starts, The Arrow Flashes For 5 Times
-arrowFlash();
+// Down Arrow - Link
+$(".arrow-down-1-button").click(function () {
 
-// When The Page Is Hovered On, The Arrow Flashes For 5 Times
-$(window).hover(arrowFlash);
+  let widthOfScreen = $(window).width();
 
-// When The Page Is Touched On, The Arrow Flashes For 5 Times
-$(window).click(arrowFlash);
+  if (widthOfScreen > 992) {
 
-// When The Page Is Scrolled On, The Arrow Flashes For 5 Times
-$(window).scroll(arrowFlash);
+    window.scrollTo(0, "450")
 
-function arrowFlash() {
+  } else if (widthOfScreen < 992 && widthOfScreen > 767) {
 
-  arrowCounter = 0;
+    window.scrollTo(0, "450")
 
-  while (arrowCounter < 5) {
+  } else if (widthOfScreen < 768) {
 
-    $(".arrow-down").fadeToggle(1000).fadeToggle(1000);
-
-    arrowCounter++;
+    window.scrollTo(0, "430")
 
   }
 
-}
+});
 
-// Responsive Navigation Bar Attacher
+$(".arrow-down-2-button").click(function () {
+
+  let widthOfScreen = $(window).width();
+
+  if (widthOfScreen > 992) {
+
+    window.scrollTo(0, "650")
+
+  } else if (widthOfScreen < 992 && widthOfScreen > 767) {
+
+    window.scrollTo(0, "650")
+
+  } else if (widthOfScreen < 768) {
+
+    window.scrollTo(0, "575")
+
+  }
+
+});
+
+// NavBar - Attacher
 navbarAttacher();
 
 $(window).scroll(navbarAttacher);
@@ -66,7 +80,7 @@ function navbarAttacher() {
 
     if (yLevel > 429) {
 
-      $(".navbar").css("position", "fixed").css("top", "0.2rem");
+      $(".navbar").css("position", "fixed").css("top", "0.1rem");
 
     } else {
 
@@ -77,6 +91,3 @@ function navbarAttacher() {
   }
 
 }
-
-// Title - Loading Done
-$("title").text("Eagan Farlin, The Web Developer");
