@@ -11658,48 +11658,107 @@ button.bg-dark:focus {
   font-style: italic !important;
 }
 
-.text-white {
+.text-white,
+.text-white:hover {
   color: #fff !important;
+}
+
+.text-white::selection,
+.text-white::-moz-selection {
+  color: #000 !important;
+  background-color: #fff !important;
 }
 
 .text-primary,
-a .text-primary:hover {
+.text-primary:hover {
   color: #333 !important;
 }
 
+.text-white::selection,
+.text-white::-moz-selection {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
 .text-secondary,
-a.text-secondary:hover {
+.text-secondary:hover {
   color: #555 !important;
+}
+
+.text-secondary::selection,
+.text-secondary::-moz-selection {
+  color: #aaaaaa !important;
+  background-color: #555 !important;
 }
 
 .text-success,
-a .text-success:hover {
+.text-success:hover {
   color: #28a745 !important;
 }
 
+.text-success::selection,
+.text-success::-moz-selection {
+  color: #d758ba !important;
+  background-color: #28a745 !important;
+}
+
 .text-info,
-a .text-info:hover {
+.text-info:hover {
   color: #17a2b8 !important;
 }
 
+.text-info::selection,
+.text-info::-moz-selection {
+  color: #ffc107 !important;
+  background-color: #17a2b8 !important;
+}
+
 .text-warning,
-a .text-warning:hover {
+.text-warning:hover {
   color: #ffc107 !important;
 }
 
+.text-warning::selection,
+.text-warning::-moz-selection {
+  color: #17a2b8 !important;
+  background-color: #ffc107 !important;
+}
+
 .text-danger,
-a .text-danger:hover {
+.text-danger:hover {
   color: #dc3545 !important;
 }
 
+.text-danger::selection,
+.text-danger::-moz-selection {
+  color: #23caba !important;
+  background-color: #dc3545 !important;
+}
+
 .text-light,
-a .text-light:hover {
+.text-light:hover {
   color: #fff !important;
 }
 
+a .text-light {
+  text-decoration-color: var(#fff);
+}
+
+.text-light::selection,
+.text-light::-moz-selection {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
 .text-dark,
-a .text-dark:hover {
+.text-dark:hover {
   color: #555 !important;
+}
+
+.text-dark::selection,
+.text-dark::-moz-selection {
+  color: #aaaaaa !important;
+  background-color: #555 !important;
 }
 
 .text-body {

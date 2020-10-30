@@ -5,25 +5,6 @@
   margin: 0%;
 }
 
-/* HTML */
-:root {
-  --background-color: #fff;
-  --text-color: #000;
-  --link-color: #17a2b8;
-  --button-background-color: #cfcfd5;
-  --border-color: #000;
-  --mode-switcher-text-color: #f0ad4e;
-}
-
-:root[user-color-mode="dark"] {
-  --background-color: #073642;
-  --text-color: #fff;
-  --link-color: #f0ad4e;
-  --button-background-color: #000;
-  --border-color: #fff;
-  --mode-switcher-text-color: #17a2b8;
-}
-
 /* Text */
 h1,
 h2,
@@ -32,8 +13,8 @@ h4,
 h5,
 h6,
 p,
-.swal2-title,
-.swal2-content,
+h2 .swal2-title,
+h2 .swal2-content,
 .navbar-brand-home,
 .nav-text,
 .dropdown-toggle,
@@ -41,8 +22,42 @@ p,
   color: var(--text-color);
 }
 
+h1::selection,
+h1::-moz-selection,
+h2::selection,
+h2::-moz-selection,
+h3::selection,
+h3::-moz-selection,
+h4::selection,
+h4::-moz-selection,
+h5::selection,
+h5::-moz-selection,
+h6::selection,
+h6::-moz-selection,
+p::selection,
+p::-moz-selection,
+.navbar-brand::selection,
+.navbar-brand::-moz-selection,
+.navbar-brand-home::selection,
+.navbar-brand-home::-moz-selection,
+.nav-text::selection,
+.nav-text::-moz-selection,
+.dropdown-toggle::selection,
+.dropdown-toggle::-moz-selection {
+  color: var(--background-color);
+  background-color: var(--text-color);
+}
+
+.swal2-title::selection,
+.swal2-title::-moz-selection,
+.swal2-content::selection,
+.swal2-content::-moz-selection {
+  color: var(--background-color) !important;
+  background-color: var(--text-color) !important;
+}
+
 .light {
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .bold {
@@ -55,11 +70,17 @@ a:hover {
   color: var(--link-color);
 }
 
+a::selection,
+a::-moz-selection {
+  color: var(--inverse-link-color);
+  background-color: var(--link-color);
+}
+
 a:hover {
   text-decoration: none;
 }
 
-.disabled {
+a .disabled {
   opacity: 55% !important;
 }
 
@@ -142,6 +163,12 @@ body,
 
 .dropdown-item:hover .nav-text {
   color: var(--background-color);
+}
+
+.dropdown-item:hover .nav-text::selection,
+.dropdown-item:hover .nav-text::-moz-selection {
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .dropdown-menu {
