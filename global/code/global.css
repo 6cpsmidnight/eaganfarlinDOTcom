@@ -23,40 +23,119 @@ h2 .swal2-content,
 }
 
 h1::selection,
-h1::-moz-selection,
 h2::selection,
-h2::-moz-selection,
 h3::selection,
-h3::-moz-selection,
 h4::selection,
-h4::-moz-selection,
 h5::selection,
-h5::-moz-selection,
 h6::selection,
-h6::-moz-selection,
 p::selection,
-p::-moz-selection,
 .navbar-brand::selection,
-.navbar-brand::-moz-selection,
 .navbar-brand-home::selection,
-.navbar-brand-home::-moz-selection,
 .nav-text::selection,
+.dropdown-toggle::selection {
+  color: var(--background-color);
+  background-color: var(--text-color);
+}
+
+h1::-webkit-selection,
+h2::-webkit-selection,
+h3::-webkit-selection,
+h4::-webkit-selection,
+h5::-webkit-selection,
+h6::-webkit-selection,
+p::-webkit-selection,
+.navbar-brand::-webkit-selection,
+.navbar-brand-home::-webkit-selection,
+.nav-text::-webkit-selection,
+.dropdown-toggle::-webkit-selection {
+  color: var(--background-color);
+  background-color: var(--text-color);
+}
+
+h1::-webkit-selection,
+h2::-webkit-selection,
+h3::-webkit-selection,
+h4::-webkit-selection,
+h5::-webkit-selection,
+h6::-webkit-selection,
+p::-webkit-selection,
+.navbar-brand::-webkit-selection,
+.navbar-brand-home::-webkit-selection,
+.nav-text::-webkit-selection,
+.dropdown-toggle::-webkit-selection {
+  color: var(--background-color);
+  background-color: var(--text-color);
+}
+
+h1::-ms-selection,
+h2::-ms-selection,
+h3::-ms-selection,
+h4::-ms-selection,
+h5::-ms-selection,
+h6::-ms-selection,
+p::-ms-selection,
+a::-ms-selecton,
+.navbar-brand::-ms-selection,
+.navbar-brand-home::-ms-selection,
+.nav-text::-ms-selection,
+.dropdown-toggle::-ms-selection {
+  color: var(--background-color);
+  background-color: var(--text-color);
+}
+
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection,
+h4::-moz-selection,
+h5::-moz-selection,
+h6::-moz-selection,
+p::-moz-selection,
+a::-moz-selection,
+.navbar-brand::-moz-selection,
+.navbar-brand-home::-moz-selection,
 .nav-text::-moz-selection,
-.dropdown-toggle::selection,
 .dropdown-toggle::-moz-selection {
   color: var(--background-color);
   background-color: var(--text-color);
 }
 
+h1::-o-selection,
+h2::-o-selection,
+h3::-o-selection,
+h4::-o-selection,
+h5::-o-selection,
+h6::-o-selection,
+p::-o-selection,
+a::-o-selection,
+.navbar-brand::-o-selection,
+.navbar-brand-home::-o-selection,
+.nav-text::-o-selection,
+.dropdown-toggle::-o-selection {
+  color: var(--background-color);
+  background-color: var(--text-color);
+}
+
 .swal2-title::selection,
+.swal2-content::selection {
+  color: var(--background-color) !important;
+  background-color: var(--text-color) !important;
+}
+
+.swal2-title::-webkit-selection,
+.swal2-content::-webkit-selection .swal2-title::-ms-selection,
+.swal2-content::-ms-selection {
+  color: var(--background-color) !important;
+  background-color: var(--text-color) !important;
+}
+
 .swal2-title::-moz-selection,
-.swal2-content::selection,
 .swal2-content::-moz-selection {
   color: var(--background-color) !important;
   background-color: var(--text-color) !important;
 }
 
-.light {
+.swal2-title::-o-selection,
+.swal2-content::-o-selection .light {
   font-weight: 300;
 }
 
@@ -68,12 +147,6 @@ p::-moz-selection,
 a,
 a:hover {
   color: var(--link-color);
-}
-
-a::selection,
-a::-moz-selection {
-  color: var(--inverse-link-color);
-  background-color: var(--link-color);
 }
 
 a:hover {
