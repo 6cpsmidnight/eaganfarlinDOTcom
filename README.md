@@ -2,8 +2,7 @@
 
 # Welcome to Eagan's main website!
 
-Hosted on https://eaganfarlin.com/.
-Stay as long as you want!
+Hosted on [eaganfarlin.com](https://eaganfarlin.com/). Stay as long as you want!
 
 ## To do list:
 
@@ -17,8 +16,11 @@ Stay as long as you want!
 
 ## Made using:
 
-- Bootstrap (https://getbootstrap.com/)
-- Bootswatch (https://bootswatch.com/)
-- Google Fonts (https://fonts.google.com/)
-- jQuery (https://jquery.com/)
-- SweetAlert2 (https://sweetalert2.github.io/)
+* CSS
+  * [Bootstrap](https://getbootstrap.com/ "Bootstrap")
+  * [Bootswatch](https://bootswatch.com/ "Bootswatch")
+  * [Google Fonts](https://fonts.google.com/ "Google Fonts")
+
+* JavaScript
+  * [jQuery](https://jquery.com/ "jQuery")
+  * [SweetAlert2](https://sweetalert2.github.io/ "SweetAlert2")
