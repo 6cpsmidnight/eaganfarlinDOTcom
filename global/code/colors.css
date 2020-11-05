@@ -1,20 +1,17 @@
 /* Colors */
 :root {
-    --background-color: #fff;
-    --text-color: #000;
+    --primary-color: #000;
+    --secondary-color: #fff;
     --link-color: #17a2b8;
     --inverse-link-color: #f0ad4e;
     --button-background-color: #cfcfd5;
     --border-color: #000;
-    --mode-switcher-text-color: #f0ad4e;
 }
 
 :root[user-color-mode="dark"] {
-    --background-color: #073642;
-    --text-color: #fff;
+    --primary-color: #fff;
+    --secondary-color: #073642;
     --link-color: #f0ad4e;
     --inverse-link-color: #17a2b8;
-    --button-background-color: #000;
     --border-color: #fff;
-    --mode-switcher-text-color: #17a2b8;
 }

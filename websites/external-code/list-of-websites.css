@@ -1,4 +1,5 @@
 /* Navigation Bar */
 #navbar {
   position: fixed;
+  top: 0;
 }

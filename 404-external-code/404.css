@@ -1,0 +1,147 @@
+/* Navigation Bar */
+#navbar {
+    position: fixed;
+    top: 0;
+}
+
+/* 404 */
+#four-zero-four {
+    text-align: center;
+    padding-top: 7.85rem;
+    padding-left: 37.5%;
+    padding-right: 37.5%;
+    padding-bottom: 1.85rem;
+}
+
+.four-zero-four {
+    font-size: 5rem;
+    margin-bottom: -0.5rem;
+}
+
+.four-1 {
+    color: #0275d8;
+}
+
+.zero {
+    color: #d9534f;
+}
+
+.four-2 {
+    color: #5bc0de;
+}
+
+.four-zero-four-explaination {
+    font-size: 1.3rem;
+    border-color: #fff;
+    border-width: 0.1rem;
+    border-style: solid;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+
+    /* 404 */
+    #four-zero-four {
+        padding-top: 4.575rem;
+        padding-left: 17.5%;
+        padding-right: 17.5%;
+        padding-bottom: 0.5rem;
+    }
+
+    .four-zero-four {
+        font-size: 3rem;
+    }
+
+    .four-zero-four-explaination {
+        font-size: 1.1rem;
+    }
+
+}
+
+/* Keyframes */
+@-webkit-keyframes pulse {
+
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+        -webkit-transform: scale(1);
+    }
+
+    12.5%,
+    37.5%,
+    62.5%,
+    87.5% {
+        -webkit-transform: scale(1.1)
+    }
+
+}
+
+@-moz-keyframes pulse {
+
+    0%,
+    33%,
+    66%,
+    100% {
+        -moz-transform: scale(1);
+    }
+
+    16.5%,
+    49.5%,
+    83.5% {
+        -moz-transform: scale(1.1);
+    }
+
+}
+
+@-o-keyframes pulse {
+
+    0%,
+    33%,
+    66%,
+    100% {
+        -o-transform: scale(1);
+    }
+
+    16.5%,
+    49.5%,
+    83.5% {
+        -o-transform: scale(1.1);
+    }
+
+}
+
+@keyframes pulse {
+
+    0%,
+    33%,
+    66%,
+    100% {
+        transform: scale(1);
+    }
+
+    16.5%,
+    49.5%,
+    83.5% {
+        transform: scale(1.1);
+    }
+
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    -webkit-animation-duration: 1.7s;
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-name: pulse;
+    -moz-animation-duration: 1.7s;
+    -moz-animation-delay: 0.7s;
+    -o-animation-name: pulse;
+    -o-animation-duration: 0.7s;
+    -o-animation-delay: 0.5s;
+    animation-name: pulse;
+    animation-duration: 1.7s;
+    animation-delay: 0.7s;
+}

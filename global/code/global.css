@@ -19,7 +19,7 @@ h2 .swal2-content,
 .nav-text,
 .dropdown-toggle,
 .dropdown-toggle:hover {
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 h1::selection,
@@ -33,8 +33,8 @@ p::selection,
 .navbar-brand-home::selection,
 .nav-text::selection,
 .dropdown-toggle::selection {
-  color: var(--background-color);
-  background-color: var(--text-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 h1::-webkit-selection,
@@ -48,8 +48,8 @@ p::-webkit-selection,
 .navbar-brand-home::-webkit-selection,
 .nav-text::-webkit-selection,
 .dropdown-toggle::-webkit-selection {
-  color: var(--background-color);
-  background-color: var(--text-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 h1::-webkit-selection,
@@ -63,8 +63,8 @@ p::-webkit-selection,
 .navbar-brand-home::-webkit-selection,
 .nav-text::-webkit-selection,
 .dropdown-toggle::-webkit-selection {
-  color: var(--background-color);
-  background-color: var(--text-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 h1::-ms-selection,
@@ -79,8 +79,8 @@ a::-ms-selecton,
 .navbar-brand-home::-ms-selection,
 .nav-text::-ms-selection,
 .dropdown-toggle::-ms-selection {
-  color: var(--background-color);
-  background-color: var(--text-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 h1::-moz-selection,
@@ -95,8 +95,8 @@ a::-moz-selection,
 .navbar-brand-home::-moz-selection,
 .nav-text::-moz-selection,
 .dropdown-toggle::-moz-selection {
-  color: var(--background-color);
-  background-color: var(--text-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 h1::-o-selection,
@@ -111,27 +111,27 @@ a::-o-selection,
 .navbar-brand-home::-o-selection,
 .nav-text::-o-selection,
 .dropdown-toggle::-o-selection {
-  color: var(--background-color);
-  background-color: var(--text-color);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .swal2-title::selection,
 .swal2-content::selection {
-  color: var(--background-color) !important;
-  background-color: var(--text-color) !important;
+  color: var(--secondary-color) !important;
+  background-color: var(--primary-color) !important;
 }
 
 .swal2-title::-webkit-selection,
 .swal2-content::-webkit-selection .swal2-title::-ms-selection,
 .swal2-content::-ms-selection {
-  color: var(--background-color) !important;
-  background-color: var(--text-color) !important;
+  color: var(--secondary-color) !important;
+  background-color: var(--primary-color) !important;
 }
 
 .swal2-title::-moz-selection,
 .swal2-content::-moz-selection {
-  color: var(--background-color) !important;
-  background-color: var(--text-color) !important;
+  color: var(--secondary-color) !important;
+  background-color: var(--primary-color) !important;
 }
 
 .swal2-title::-o-selection,
@@ -157,13 +157,34 @@ a .disabled {
   opacity: 55% !important;
 }
 
+/* Containers */
+div {
+  width: 100%;
+}
+
+section {
+  height: 100%;
+}
+
+iframe {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+}
+
 /* Background Colors */
 body,
 .swal2-popup,
 #loading-screen,
 #navbar,
 .navbar-collapse {
-  background-color: var(--background-color);
+  background-color: var(--secondary-color);
 }
 
 .swal2-actions .swal2-styled {
@@ -218,12 +239,12 @@ body,
 
 .navbar-brand-home {
   font-size: 3rem;
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 .nav-text {
   font-size: 1.25rem;
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 .dropdown-item {
@@ -231,34 +252,34 @@ body,
 }
 
 .dropdown-item:hover {
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 .dropdown-item:hover .nav-text {
-  color: var(--background-color);
+  color: var(--secondary-color);
 }
 
 .dropdown-item:hover .nav-text::selection,
 .dropdown-item:hover .nav-text::-moz-selection {
-  color: var(--text-color);
-  background-color: var(--background-color);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 .dropdown-menu {
-  background-color: var(--background-color);
+  background-color: var(--secondary-color);
 }
 
 .dropdown-item:hover {
-  background-color: var(--text-color);
+  background-color: var(--primary-color);
 }
 
 .theme-switch {
-  background-color: var(--background-color);
+  background-color: var(--secondary-color);
   border-width: 0px;
 }
 
 .theme-switcher-text {
-  color: var(--mode-switcher-text-color);
+  color: var(--inverse-link-color);
 }
 
 /* Footer */
@@ -339,7 +360,6 @@ body,
   /* Footer */
   #footer {
     padding-top: -5%;
-    text-align: center;
   }
 
   .footer-icons {
@@ -347,7 +367,6 @@ body,
   }
 
   .footer-site-info {
-    text-align: center;
     font-size: 1.25rem;
   }
 
