@@ -15,6 +15,7 @@
 }
 
 .four-zero-four {
+    transform: scale(0);
     font-size: 5rem;
     margin-bottom: -0.5rem;
 }
@@ -64,12 +65,12 @@
 /* Keyframes */
 @-webkit-keyframes pulse {
 
-    0%,
-    100% {
-        -webkit-transform: scale(1);
+    0% {
+        -webkit-transform: scale(0);
     }
 
-    12%, 17% {
+    12%,
+    17% {
         -webkit-transform: scale(1.1);
     }
 
@@ -85,20 +86,59 @@
         -webkit-transform: scale(0.8);
     }
 
-    88.5%, 93.5% {
+    88.5%,
+    93.5% {
         -webkit-transform: scale(1.3);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+    }
+
+}
+
+@-ms-keyframes pulse {
+
+    0% {
+        -ms-transform: scale(0);
+    }
+
+    12%,
+    17% {
+        -ms-transform: scale(1.1);
+    }
+
+    28% {
+        -ms-transform: scale(0.9);
+    }
+
+    50% {
+        -ms-transform: scale(1.2);
+    }
+
+    62% {
+        -ms-transform: scale(0.8);
+    }
+
+    88.5%,
+    93.5% {
+        -ms-transform: scale(1.3);
+    }
+
+    100% {
+        -ms-transform: scale(1);
     }
 
 }
 
 @-moz-keyframes pulse {
 
-    0%,
-    100% {
-        -moz-transform: scale(1);
+    0% {
+        -moz-transform: scale(0);
     }
 
-    12%, 17% {
+    12%,
+    17% {
         -moz-transform: scale(1.1);
     }
 
@@ -114,20 +154,25 @@
         -moz-transform: scale(0.8);
     }
 
-    88.5%, 93.5% {
+    88.5%,
+    93.5% {
         -moz-transform: scale(1.3);
     }
-    
+
+    100% {
+        -moz-transform: scale(1);
+    }
+
 }
 
 @-o-keyframes pulse {
 
-    0%,
-    100% {
-        -o-transform: scale(1);
+    0% {
+        -o-transform: scale(0);
     }
 
-    12%, 17% {
+    12%,
+    17% {
         -o-transform: scale(1.1);
     }
 
@@ -143,20 +188,25 @@
         -o-transform: scale(0.8);
     }
 
-    88.5%, 93.5% {
+    88.5%,
+    93.5% {
         -o-transform: scale(1.3);
+    }
+
+    100% {
+        -o-transform: scale(1);
     }
 
 }
 
 @keyframes pulse {
 
-    0%,
-    100% {
-        transform: scale(1);
+    0% {
+        transform: scale(0);
     }
 
-    12%, 17% {
+    12%,
+    17% {
         transform: scale(1.1);
     }
 
@@ -172,8 +222,13 @@
         transform: scale(0.8);
     }
 
-    88.5%, 93.5% {
+    88.5%,
+    93.5% {
         transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
     }
 
 }
@@ -182,6 +237,9 @@
     -webkit-animation-name: pulse;
     -webkit-animation-duration: 5s;
     -webkit-animation-delay: 0.7s;
+    -ms-animation-name: pulse;
+    -ms-animation-duration: 5s;
+    -ms-animation-delay: 0.7s;
     -moz-animation-name: pulse;
     -moz-animation-duration: 5s;
     -moz-animation-delay: 0.7s;
