@@ -1,5 +1,6 @@
 /* Eagan Farlin Container */
 #im-eagan-farlin {
+  width: 100%;
   text-align: center;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -40,6 +41,7 @@
 }
 
 .arrow-down-2-container {
+  width: 100%;
   text-align: center;
   margin-top: 5%;
   margin-bottom: 0%;
@@ -47,6 +49,7 @@
 
 /* About Me */
 #about-me {
+  width: 100%;
   padding: 5% 25%;
   padding-top: 15%;
   margin-top: -5%;
