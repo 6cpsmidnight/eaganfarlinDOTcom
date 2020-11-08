@@ -1,8 +1,8 @@
 /* Everything */
 * {
   box-sizing: border-box;
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
 }
 
 /* Text */
@@ -146,7 +146,8 @@ a::-o-selection,
 /* Links */
 a,
 a:hover {
-  color: var(--link-color);
+  color: var(--text-color);
+  text-decoration-color: var(--link-color);
 }
 
 a:hover {
@@ -175,7 +176,7 @@ body,
 #navbar,
 .dropdown-menu,
 .dropdown-divider {
-  border-color: var(--border-color);
+  border-color: var(--primary-color);
 }
 
 /* Popup */
@@ -202,6 +203,10 @@ body,
   padding-top: 10%;
 }
 
+.loading-screen {
+  width: 30rem;
+}
+
 /* Navigation Bar */
 #navbar {
   width: 100%;
@@ -209,7 +214,7 @@ body,
 }
 
 .navbar-toggler {
-  border-color: var(--border-color);
+  border-color: var(--primary-color);
 }
 
 .info-logo-navbar {
@@ -309,16 +314,20 @@ body,
 
   /* Navigation Bar */
   .navbar-brand {
-    margin-top: -1.5%;
-    margin-bottom: -1.5%;
+    margin-top: -1.5rem;
+    margin-bottom: -1.5rem;
   }
 
   .info-logo-navbar {
-    width: 5rem;
+    width: 4rem;
   }
 
   .navbar-brand-home {
-    font-size: 4rem;
+    font-size: 2.75rem;
+  }
+
+  .navbar-toggler {
+    font-size: 1.35rem;
   }
 
   .navbar-toggler-icon-light {
@@ -329,17 +338,11 @@ body,
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
 
-  .nav-item {
-    font-size: 1.8rem;
-  }
-
-  .dropdown-item {
-    font-size: 1.8rem;
-  }
-
-  .navbar-github-logo {
-    width: 4rem;
-    margin-left: 0.1rem;
+  .nav-item .nav-text,
+  .dropdown-toggle,
+  .dropdown-item .nav-text {
+    font-size: 1.55rem;
+    line-height: 0.9;
   }
 
   /* Footer */
@@ -348,15 +351,18 @@ body,
   }
 
   .footer-icons {
-    width: 5.5rem;
+    width: 4rem;
   }
 
   .footer-site-info {
     font-size: 1.25rem;
+    text-align: center;
+    font-size: 1.35rem;
+    margin-top: 0.9rem;
   }
 
   .footer-site-info-icons {
-    width: 3.5rem;
+    width: 2rem;
   }
 
   .footer-site-info .copyright {
@@ -383,28 +389,15 @@ body,
     margin-bottom: -1rem;
   }
 
-  .info-logo-navbar {
-    width: 4rem;
+  .navbar-toggler {
+    font-size: 1.15rem;
   }
 
-  .navbar-brand-home {
-    font-size: 2.5rem;
-  }
-
-  .nav-item {
+  .nav-item .nav-text,
+  .dropdown-toggle,
+  .dropdown-item .nav-text {
     font-size: 1.3rem;
     line-height: 1.2;
-  }
-
-  .dropdown-item {
-    font-size: 1.3rem;
-    line-height: 1rem;
-    line-height: 1.2;
-  }
-
-  .navbar-github-logo {
-    width: 2.7rem;
-    margin-left: -8px;
   }
 
   /* Footer */

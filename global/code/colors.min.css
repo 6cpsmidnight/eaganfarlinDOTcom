@@ -1,1 +1,1 @@
-:root{--primary-color:#000;--secondary-color:#fff;--link-color:#17a2b8;--inverse-link-color:#f0ad4e;--button-background-color:#cfcfd5;--border-color:#000}:root[user-color-mode=dark]{--primary-color:#fff;--secondary-color:#073642;--link-color:#f0ad4e;--inverse-link-color:#17a2b8;--border-color:#fff}
+:root{--primary-color:#000;--secondary-color:#fff;--link-color:#17a2b8;--inverse-link-color:#f0ad4e;--button-background-color:#cfcfd5}:root[user-color-mode=dark]{--primary-color:#fff;--secondary-color:#073642;--link-color:#f0ad4e;--inverse-link-color:#17a2b8}

@@ -1,19 +1,19 @@
-// Down Arrow - Link
+// Down Arrow - Scroll
 $(".arrow-down-1-button").click(function () {
 
   let widthOfScreen = $(window).width();
 
   if (widthOfScreen > 992) {
 
-    window.scrollTo(0, "450")
+    window.scrollTo(0, 450)
 
   } else if (widthOfScreen < 992 && widthOfScreen > 767) {
 
-    window.scrollTo(0, "450")
+    window.scrollTo(0, 360)
 
   } else if (widthOfScreen < 768) {
 
-    window.scrollTo(0, "430")
+    window.scrollTo(0, 430)
 
   }
 
@@ -25,15 +25,17 @@ $(".arrow-down-2-button").click(function () {
 
   if (widthOfScreen > 992) {
 
-    window.scrollTo(0, "650")
+    window.scrollTo(0, 650)
 
   } else if (widthOfScreen < 992 && widthOfScreen > 767) {
 
-    window.scrollTo(0, "650")
+    window.scrollTo(0, 485)
+
+    alert("t");
 
   } else if (widthOfScreen < 768) {
 
-    window.scrollTo(0, "575")
+    window.scrollTo(0, 575)
 
   }
 
@@ -66,7 +68,7 @@ function navbarAttacher() {
 
   } else if (widthOfScreen < 992 && widthOfScreen > 767) {
 
-    if (yLevel > 499) {
+    if (yLevel > 349) {
 
       $(".navbar").css("position", "fixed").css("top", "0.5rem");
 
@@ -92,5 +94,5 @@ function navbarAttacher() {
 
 }
 
-// Title Loading
+// Title - Loading
 document.title = "Eagan Farlin, The Web Developer";

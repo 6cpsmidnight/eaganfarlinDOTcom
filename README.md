@@ -6,8 +6,8 @@ Hosted on [eaganfarlin.com](https://eaganfarlin.com/). Stay as long as you want!
 
 ## To do list:
 
-- [ ] make the whole website resposive
-- [ ] add styles to every page
+- [X] make the whole website resposive
+- [X] add styles to every page
 - [x] start using SweetAlert
 - [x] make chalk board mode (a.k.a. dark mode)
 - [x] convert all (possible) images from .png to .svg

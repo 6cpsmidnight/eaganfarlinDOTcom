@@ -1,36 +1,17 @@
-// Google Analytics - Global site tag (gtag.js)
-window.dataLayer = window.dataLayer || [];
-
-function gtag() {
-  dataLayer.push(arguments);
-}
-gtag('js', new Date());
-
-gtag('config', 'UA-176695618-1');
-
-// Loading Screen - Fades Out
-$("#loading-screen").fadeOut(1000);
-
 // Loaded Popups
 if (localStorage.getItem("acceptedCookies") === "yes") {
 
-  if (sessionStorage.getItem("infoPopup") === "ok") {
+  // Google Analytics - Global site tag (gtag.js)
+  window.dataLayer = window.dataLayer || [];
 
-  } else {
-
-    Swal.fire({
-
-      title: "<span class=\"bold\">In Beta!</span>",
-      icon: "info",
-      html: "Only the home page is properly styled, the rest is in heavy development.",
-
-    }).then((result) => {
-
-      sessionStorage.setItem("infoPopup", "ok");
-
-    })
-
+  function gtag() {
+    dataLayer.push(arguments);
   }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176695618-1');
+
+  localStorage.setItem("acceptedCookies", "yes");
 
 } else {
 
@@ -52,17 +33,15 @@ if (localStorage.getItem("acceptedCookies") === "yes") {
 
     } else {
 
-      Swal.fire({
+      // Google Analytics - Global site tag (gtag.js)
+      window.dataLayer = window.dataLayer || [];
 
-        title: "<span class=\"bold\">In Beta!</span>",
-        icon: "info",
-        html: "Only the home page is properly styled, the rest is in heavy development.",
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-      }).then((result) => {
-
-        sessionStorage.setItem("infoPopup", "ok");
-
-      })
+      gtag('config', 'UA-176695618-1');
 
       localStorage.setItem("acceptedCookies", "yes");
 
@@ -77,7 +56,7 @@ $(".footer-icon-copy-url").click(function () {
 
   Swal.fire({
 
-    title: "<img src=\"/Global/Images/Link-Transparent.png\" class=\"footer-icon-link-copy-me\"> Copy Me",
+    title: "<img src=\"/global/images/link-transparent-icon.svg\" class=\"footer-icon-link-copy-me\"> Copy Me",
     html: "https://eaganfarlin.com",
     showConfirmButton: true,
     confirmButtonText: "Done"
@@ -86,14 +65,17 @@ $(".footer-icon-copy-url").click(function () {
 
 });
 
+// Loading Screen - Fades Out
+$("#loading-screen").fadeOut(1000);
+
 // NavBar - Dark Mode Toggle
-let mode = localStorage.getItem("mode") || "light";
+let theme = localStorage.getItem("theme") || "light";
 
-let applyMode = (mode) => {
+let applyTheme = (theme) => {
 
-  document.documentElement.setAttribute("user-color-mode", mode);
+  document.documentElement.setAttribute("user-color-mode", theme);
 
-  let themeSwitcherText = mode === "dark" ? "Let There Be Light!" : "Let Darkness Rain Supreme!";
+  let themeSwitcherText = theme === "dark" ? "Let There Be Light!" : "Let Darkness Rain Supreme!";
 
   $(".theme-switcher-text").text(themeSwitcherText);
 
@@ -103,13 +85,13 @@ let applyMode = (mode) => {
 
 function navbarTogglerIconTheme() {
 
-  if (localStorage.getItem("mode") === "light") {
+  if (localStorage.getItem("theme") === "light") {
 
     $(".navbar-toggler-icon").removeClass("navbar-toggler-icon-dark");
 
     $(".navbar-toggler-icon").addClass("navbar-toggler-icon-light");
 
-  } else if (localStorage.getItem("mode") === "dark") {
+  } else if (localStorage.getItem("theme") === "dark") {
 
     $(".navbar-toggler-icon").removeClass("navbar-toggler-icon-light");
 
@@ -123,21 +105,14 @@ function navbarTogglerIconTheme() {
 
 }
 
-applyMode(mode);
+applyTheme(theme);
 
 $(".theme-switch").click(function () {
 
-  mode = mode === "light" ? "dark" : "light";
+  theme = theme === "light" ? "dark" : "light";
 
-  localStorage.setItem("mode", mode);
+  localStorage.setItem("theme", theme);
 
-  applyMode(mode);
+  applyTheme(theme);
 
 });
-
-// Website Blocker For Dad
-if (localStorage.getItem("websiteBlockerForDad") === "yes") {
-
-  location.replace("about:blank");
-
-}
