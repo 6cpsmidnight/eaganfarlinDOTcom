@@ -105,7 +105,7 @@ if (localStorage.getItem("acceptedCookies") === "yes") {
       importGoogleAnalytics();
 
       // Accept Cookies - Accepted
-      // localStorage.setItem("acceptedCookies", "yes");
+      localStorage.setItem("acceptedCookies", "yes");
 
     }
 
