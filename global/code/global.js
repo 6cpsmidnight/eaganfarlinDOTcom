@@ -1,60 +1,37 @@
+// Google Analytics - Global Site Tag (gtag.js)
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+  dataLayer.push(arguments);
+}
+
+gtag("js", new Date());
+
+gtag("config", "UA-176695618-1");
+
 // Loaded Popups
-if (localStorage.getItem("acceptedCookies") === "yes") {
-
-  // Google Analytics - Global site tag (gtag.js)
-  (function (i, s, o, g, r, a, m) {
-
-    i["GoogleAnalyticsObject"] = r;
-
-    i[r] = i[r] || function () {
-
-      (i[r].q = i[r].q || []).push(arguments)
-
-    }, i[r].l = 1 * new Date();
-
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-
-    a.async = 1;
-
-    a.src = g;
-
-    m.parentNode.insertBefore(a, m);
-
-  })(window, document, "script", "https://www.googletagmanager.com/gtag/js?id=UA-176695618-1", "ga");
-
-  ga("create", "UA-XXXXX-Y", "auto");
-
-  ga("send", "pageview");
-
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-
-    dataLayer.push(arguments);
-
-  }
-
-  gtag("js", new Date());
-
-  gtag("config", "UA-176695618-1");
-
-} else {
+if (localStorage.getItem("acceptedCookies") !== "yes") {
 
   Swal.fire({
 
-    html: "This site uses cookies for analytic purposes, if you accept or close this you are agreeing to these terms.",
+    html: "This site uses cookies for analytic purposes, by continuing or closing this you are agreeing to these terms.",
     toast: true,
     position: "bottom",
     width: "100vw",
     padding: "1.25rem 10% 1.25rem",
     showDenyButton: true,
+    showCancelButton: true,
     confirmButtonText: "<span class=\"swal2-accept-cookies-agree-button-text\">I Agree</span>",
     denyButtonText: "<a href=\"about:blank\" class=\"swal2-accept-cookies-decline-button-text\">Decline</span>",
+    cancelButtonText: "<span class=\"swal2-accept-cookies-x-button-text\">X</span>",
     confirmButtonColor: "#d9fdde",
     denyButtonColor: "#ffe3e3",
+    cancelButtonColor: "var(--secondary-color)",
     customClass: {
-      container: "swal-2-accept-cookies-background-opacity"
+      container: "swal2-accept-cookies-background-opacity",
+      actions: "vertical-buttons",
+      cancelButton: "vertical-buttons-top-margin",
+      denyButton: "vertical-buttons-top-margin"
     }
 
   }).then((result) => {
@@ -62,44 +39,6 @@ if (localStorage.getItem("acceptedCookies") === "yes") {
     if (result.isDenied) {
 
     } else {
-
-      // Google Analytics - Global site tag (gtag.js)
-      (function (i, s, o, g, r, a, m) {
-
-        i["GoogleAnalyticsObject"] = r;
-
-        i[r] = i[r] || function () {
-
-          (i[r].q = i[r].q || []).push(arguments)
-
-        }, i[r].l = 1 * new Date();
-
-        a = s.createElement(o),
-          m = s.getElementsByTagName(o)[0];
-
-        a.async = 1;
-
-        a.src = g;
-
-        m.parentNode.insertBefore(a, m);
-
-      })(window, document, "script", "https://www.googletagmanager.com/gtag/js?id=UA-176695618-1", "ga");
-
-      ga("create", "UA-XXXXX-Y", "auto");
-
-      ga("send", "pageview");
-
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag() {
-
-        dataLayer.push(arguments);
-
-      }
-
-      gtag("js", new Date());
-
-      gtag("config", "UA-176695618-1");
 
       // Accept Cookies - Accepted
       localStorage.setItem("acceptedCookies", "yes");

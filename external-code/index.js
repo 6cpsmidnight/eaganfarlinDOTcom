@@ -54,21 +54,9 @@ function navbarAttacher() {
   // Checking What You Screen Width Is
   let widthOfScreen = $(window).width();
 
-  if (widthOfScreen > 992) {
+  if (widthOfScreen >= 992) {
 
-    if (yLevel > 429) {
-
-      $(".navbar").css("position", "fixed").css("top", "0.5rem");
-
-    } else {
-
-      $(".navbar").css("position", "static");
-
-    }
-
-  } else if (widthOfScreen < 992 && widthOfScreen > 767) {
-
-    if (yLevel > 349) {
+    if (yLevel >= 430) {
 
       $(".navbar").css("position", "fixed").css("top", "0.5rem");
 
@@ -78,9 +66,21 @@ function navbarAttacher() {
 
     }
 
-  } else if (widthOfScreen < 768) {
+  } else if (widthOfScreen <= 992 && widthOfScreen >= 768) {
 
-    if (yLevel > 429) {
+    if (yLevel >= 350) {
+
+      $(".navbar").css("position", "fixed").css("top", "0.5rem");
+
+    } else {
+
+      $(".navbar").css("position", "static");
+
+    }
+
+  } else if (widthOfScreen <= 768) {
+
+    if (yLevel >= 430) {
 
       $(".navbar").css("position", "fixed").css("top", "0.1rem");
 

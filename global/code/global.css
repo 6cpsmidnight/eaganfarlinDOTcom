@@ -184,7 +184,7 @@ a,
 a:hover {
   color: var(--text-color);
   text-decoration-color: var(--link-color);
-  text-decoration-thickness: 0.125rem;
+  text-decoration-thickness: .125rem;
 }
 
 a:hover {
@@ -255,7 +255,7 @@ body,
   font-weight: bold;
 }
 
-.swal-2-accept-cookies-opacity {
+.swal2-accept-cookies-background-opacity {
   opacity: 80%;
 }
 
@@ -270,6 +270,10 @@ body,
 
 .swal2-accept-cookies-decline-button-text:hover {
   color: #800080;
+}
+
+.swal2-accept-cookies-x-button-text {
+  color: var(--primary-color);
 }
 
 /* Loading Screen */
@@ -350,12 +354,13 @@ body,
 #footer {
   width: 100%;
   text-align: center;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
 }
 
 #footer .row {
   width: 100%;
+  padding-left: 5%;
 }
 
 .footer-icons {
@@ -380,6 +385,19 @@ body,
 }
 
 /* Media Queries */
+@media (max-width: 1010px) {
+
+  .vertical-buttons {
+    margin: 0 !important;
+    flex-direction: column;
+  }
+
+  .vertical-buttons-margin-top {
+    margin-top: 5rem;
+  }
+
+}
+
 @media (max-width: 992px) {
 
   /* Loading Screen */
@@ -398,11 +416,11 @@ body,
   }
 
   .info-logo-navbar {
-    width: 4rem;
+    width: 4.55rem;
   }
 
   .navbar-brand-home {
-    font-size: 2.75rem;
+    font-size: 3.15rem;
   }
 
   .navbar-toggler {
@@ -421,7 +439,7 @@ body,
   .dropdown-toggle,
   .dropdown-item .nav-text {
     font-size: 1.55rem;
-    line-height: 0.9;
+    line-height: .9;
   }
 
   /* Footer */
@@ -430,14 +448,14 @@ body,
   }
 
   .footer-icons {
-    width: 4rem;
+    width: 3.5rem;
   }
 
   .footer-site-info {
     font-size: 1.25rem;
     text-align: center;
     font-size: 1.35rem;
-    margin-top: 0.9rem;
+    margin-top: .9rem;
   }
 
   .footer-site-info-icons {
@@ -468,6 +486,14 @@ body,
     margin-bottom: -1rem;
   }
 
+  .info-logo-navbar {
+    width: 4rem;
+  }
+
+  .navbar-brand-home {
+    font-size: 3rem;
+  }
+
   .navbar-toggler {
     font-size: 1.15rem;
   }
@@ -481,7 +507,7 @@ body,
 
   /* Footer */
   .footer-icons {
-    width: 3.5rem;
+    width: 3.15rem;
   }
 
   .footer-site-info {

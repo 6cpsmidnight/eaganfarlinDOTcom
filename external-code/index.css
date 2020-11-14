@@ -57,7 +57,7 @@
 
 .about-me {
   font-size: 1.25rem;
-  margin-bottom: 0.5%;
+  margin-bottom: .5%;
 }
 
 .about-me-left {
@@ -73,19 +73,19 @@
 
   /* Eagan Farlin Container */
   #im-eagan-farlin {
-    padding-top: 0.05rem;
-    padding-bottom: 0.5rem;
+    padding-top: .05rem;
+    padding-bottom: .5rem;
   }
 
   .im {
     font-size: 4.25rem;
     margin-bottom: -2.5rem;
-    margin-top: 0.1rem;
+    margin-top: .1rem;
   }
 
   .eagan-farlin {
     font-size: 5.5rem;
-    margin-bottom: 0.05rem;
+    margin-bottom: .05rem;
   }
 
   .quick-description-of-me {
@@ -95,7 +95,7 @@
   /* Arrow Down */
   .arrow-down {
     opacity: 100%;
-    margin-bottom: 0.3rem;
+    margin-bottom: .3rem;
     height: 5.5rem;
     width: 5.5rem;
   }
@@ -131,7 +131,8 @@
 
   .eagan-farlin {
     font-size: 4rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
+    line-height: 1.1;
   }
 
   .quick-description-of-me {
