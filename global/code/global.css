@@ -21,19 +21,17 @@
   --inverse-link-color: #17a2b8;
 }
 
-/* Text */
+/* Default - Text */
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-.navbar-brand-home {
+h6 {
   font-family: "Permanent Marker", cursive;
 }
 
-p,
-.quick-description-of-me {
+p {
   font-family: "Neucha", cursive;
 }
 
@@ -60,10 +58,7 @@ h4::selection,
 h5::selection,
 h6::selection,
 p::selection,
-.navbar-brand::selection,
-.navbar-brand-home::selection,
-.nav-text::selection,
-.dropdown-toggle::selection {
+a::selection {
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
@@ -75,25 +70,7 @@ h4::-webkit-selection,
 h5::-webkit-selection,
 h6::-webkit-selection,
 p::-webkit-selection,
-.navbar-brand::-webkit-selection,
-.navbar-brand-home::-webkit-selection,
-.nav-text::-webkit-selection,
-.dropdown-toggle::-webkit-selection {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-}
-
-h1::-webkit-selection,
-h2::-webkit-selection,
-h3::-webkit-selection,
-h4::-webkit-selection,
-h5::-webkit-selection,
-h6::-webkit-selection,
-p::-webkit-selection,
-.navbar-brand::-webkit-selection,
-.navbar-brand-home::-webkit-selection,
-.nav-text::-webkit-selection,
-.dropdown-toggle::-webkit-selection {
+a::-webkit-selection {
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
@@ -105,11 +82,7 @@ h4::-ms-selection,
 h5::-ms-selection,
 h6::-ms-selection,
 p::-ms-selection,
-a::-ms-selecton,
-.navbar-brand::-ms-selection,
-.navbar-brand-home::-ms-selection,
-.nav-text::-ms-selection,
-.dropdown-toggle::-ms-selection {
+a::-ms-selection {
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
@@ -121,11 +94,7 @@ h4::-moz-selection,
 h5::-moz-selection,
 h6::-moz-selection,
 p::-moz-selection,
-a::-moz-selection,
-.navbar-brand::-moz-selection,
-.navbar-brand-home::-moz-selection,
-.nav-text::-moz-selection,
-.dropdown-toggle::-moz-selection {
+a::-moz-selection {
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
@@ -137,42 +106,9 @@ h4::-o-selection,
 h5::-o-selection,
 h6::-o-selection,
 p::-o-selection,
-a::-o-selection,
-.navbar-brand::-o-selection,
-.navbar-brand-home::-o-selection,
-.nav-text::-o-selection,
-.dropdown-toggle::-o-selection {
+p::-o-selection {
   color: var(--secondary-color);
   background-color: var(--primary-color);
-}
-
-.swal2-popup::selection,
-.swal2-content::selection {
-  color: var(--secondary-color) !important;
-  background-color: var(--primary-color) !important;
-}
-
-.swal2-title::-webkit-selection,
-.swal2-content::-webkit-selection {
-  color: var(--secondary-color) !important;
-  background-color: var(--primary-color) !important;
-}
-
-.swal2-title::-ms-selection,
-.swal2-content::-ms-selection {
-  color: var(--secondary-color) !important;
-  background-color: var(--primary-color) !important;
-}
-
-.swal2-title::-moz-selection,
-.swal2-content::-moz-selection {
-  color: var(--secondary-color) !important;
-  background-color: var(--primary-color) !important;
-}
-
-.swal2-title::-o-selection,
-.swal2-content::-o-selection .light {
-  font-weight: 300;
 }
 
 .bold {
@@ -212,7 +148,6 @@ body,
 }
 
 /* Border Colors */
-.swal2-actions .swal2-styled,
 #navbar,
 .dropdown-menu,
 .dropdown-divider {
@@ -249,27 +184,45 @@ body,
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Accept CookiesPopup */
+/* Accept Cookies Popup */
 .swal2-actions .swal2-styled {
   color: var(--link-color);
   font-weight: bold;
 }
 
-.swal2-accept-cookies-background-opacity {
-  opacity: 80%;
+.swal2-accept-cookies-text::selection {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.swal2-accept-cookies-text::-webkit-selection {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.swal2-accept-cookies-text::-ms-selection {
+  color: var(--secondary-color) !important;
+  background-color: var(--primary-color) !important;
+}
+
+.swal2-accept-cookies-text::-moz-selection {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.swal2-accept-cookies-text::-o-selection {
+  color: var(--secondary-color) !important;
+  background-color: var(--primary-color) !important;
 }
 
 .swal2-accept-cookies-agree-button-text {
   color: #250b76;
 }
 
-.swal2-accept-cookies-decline-button-text {
-  color: #800080;
-  text-decoration: none;
-}
-
+.swal2-accept-cookies-decline-button-text,
 .swal2-accept-cookies-decline-button-text:hover {
   color: #800080;
+  text-decoration: none;
 }
 
 .swal2-accept-cookies-x-button-text {
@@ -296,6 +249,41 @@ body,
   z-index: 1;
 }
 
+.navbar-brand::selection,
+.navbar-brand-home::selection,
+.nav-text::selection {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.navbar-brand::-webkit-selection,
+.navbar-brand-home::-webkit-selection,
+.nav-text::-webkit-selection {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.navbar-brand::-ms-selection,
+.navbar-brand-home::-ms-selection,
+.nav-text::-ms-selection {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.navbar-brand::-moz-selection,
+.navbar-brand-home::-moz-selection,
+.nav-text::-moz-election {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.navbar-brand::-o-selection,
+.navbar-brand-home::-o-selection,
+.nav-text::-o-selection {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
 .navbar-toggler {
   border-color: var(--primary-color);
 }
@@ -313,6 +301,31 @@ body,
 .nav-text {
   font-size: 1.25rem;
   color: var(--primary-color);
+}
+
+.dropdown-toggle::selection {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.dropdown-toggle::-webkit-selection {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.dropdown-toggle::-ms-selection {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.dropdown-toggle::-moz-selection {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.dropdown-toggle::-o-selection {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .dropdown-item {
@@ -411,8 +424,8 @@ body,
 
   /* Navigation Bar */
   .navbar-brand {
-    margin-top: -1.5rem;
-    margin-bottom: -1.5rem;
+    margin-top: -1.265rem;
+    margin-bottom: -1rem;
   }
 
   .info-logo-navbar {
@@ -482,8 +495,8 @@ body,
 
   /* Navigation Bar */
   .navbar-brand {
-    margin-top: -1rem;
-    margin-bottom: -1rem;
+    margin-top: -1.25rem;
+    margin-bottom: -0.75rem;
   }
 
   .info-logo-navbar {
