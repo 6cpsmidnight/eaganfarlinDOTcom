@@ -1,5 +1,4 @@
-// Light Mode - Blocker
-// Too Lazy, I'll Deal With It Later
+// I'll fix at a later date
 // if (localStorage.getItem("acceptedCookies") !== "yes" && localStorage.getItem("mode") === "dark") {
 
 //     Swal.fire({

@@ -46,7 +46,7 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
       $(document).scroll(function () {
 
         $(".sweet-alert-accept-cookies-bottom-page-padding").css("height", "0");
-    
+
       });
 
       // Accept Cookies - Accepted
@@ -119,14 +119,25 @@ $(".theme-switch").click(function () {
 
 });
 
-// Footer - Copy URL's URL Copier Popout
-$(".footer-icon-copy-url").click(function () {
+// Footer - Discord Tag Popup
+$(".contact-link-icon-discord").click(function () {
 
   Swal.fire({
 
-    title: "<img src=\"/global/images/link-transparent-icon.svg\" class=\"footer-icon-link-copy-me\"> Copy Me",
+    title: "<img src=\"/global/images/discord-transparent-icon.svg\" class=\"contact-link-icons\">",
+    html: "Midnight#1695"
+
+  })
+
+});
+
+// Footer - Copy URL's URL Copier Popup
+$(".contact-link-icon-copy-url").click(function () {
+
+  Swal.fire({
+
+    title: "<img src=\"/global/images/link-transparent-icon.svg\" class=\"contact-link-icon-copy-url\">",
     html: "https://eaganfarlin.com",
-    showConfirmButton: true,
     confirmButtonText: "Done"
 
   })

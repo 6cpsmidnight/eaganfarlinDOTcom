@@ -33,7 +33,7 @@
   width: 6.5rem;
   height: 6.2rem;
   opacity: 80%;
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
 
 .arrow-down:hover {

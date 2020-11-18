@@ -11,7 +11,6 @@
   --secondary-color: #fff;
   --link-color: #17a2b8;
   --inverse-link-color: #f0ad4e;
-  ;
 }
 
 :root[user-color-mode="dark"] {
@@ -150,7 +149,8 @@ body,
 /* Border Colors */
 #navbar,
 .dropdown-menu,
-.dropdown-divider {
+.dropdown-divider,
+.divider {
   border-color: var(--primary-color);
 }
 
@@ -186,7 +186,7 @@ body,
 
 /* Accept Cookies Popup */
 .swal2-actions .swal2-styled {
-  color: var(--link-color);
+  color: var(--secondary-color);
   font-weight: bold;
 }
 
@@ -290,7 +290,7 @@ body,
 
 .info-logo-navbar {
   width: 5rem;
-  margin-top: -10%;
+  margin-top: -1rem;
 }
 
 .navbar-brand-home {
@@ -376,13 +376,13 @@ body,
   padding-left: 5%;
 }
 
-.footer-icons {
+.contact-link-icons {
   width: 3.125rem;
 }
 
-.footer-icon-link-copy-me {
-  width: 2.25rem;
-  height: 2.25rem;
+.contact-link-icon-copy-url {
+  width: 2.65rem;
+  height: 2.65rem;
 }
 
 .footer-site-info {
@@ -425,10 +425,11 @@ body,
   /* Navigation Bar */
   .navbar-brand {
     margin-top: -1.265rem;
-    margin-bottom: -1rem;
+    margin-bottom: -1.265rem;
   }
 
   .info-logo-navbar {
+    margin-top: -1.25rem;
     width: 4.55rem;
   }
 
@@ -460,8 +461,13 @@ body,
     padding-top: -5%;
   }
 
-  .footer-icons {
+  .contact-link-icons {
     width: 3.5rem;
+  }
+
+  .contact-link-icon-copy-url {
+    width: 2.9rem;
+    height: 2.9rem;
   }
 
   .footer-site-info {
@@ -496,7 +502,7 @@ body,
   /* Navigation Bar */
   .navbar-brand {
     margin-top: -1.25rem;
-    margin-bottom: -0.75rem;
+    margin-bottom: -1.25rem;
   }
 
   .info-logo-navbar {
@@ -505,6 +511,7 @@ body,
 
   .navbar-brand-home {
     font-size: 3rem;
+    margin-top: 3rem;
   }
 
   .navbar-toggler {
@@ -519,8 +526,13 @@ body,
   }
 
   /* Footer */
-  .footer-icons {
+  .contact-link-icons {
     width: 3.15rem;
+  }
+
+  .contact-link-icon-copy-url {
+    width: 2.8rem;
+    height: 2.8rem;
   }
 
   .footer-site-info {
