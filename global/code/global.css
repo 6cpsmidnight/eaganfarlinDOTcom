@@ -114,7 +114,7 @@ p::-o-selection {
   font-weight: bold;
 }
 
-/* Links */
+/* Default - Links */
 a,
 a:hover {
   color: var(--text-color);
@@ -231,16 +231,20 @@ body,
 
 /* Loading Screen */
 #loading-screen {
-  position: fixed;
+  height: 100%;
   width: 100%;
-  height: 100vh;
+  background-color: var(--secondary-color);
   z-index: 2;
-  text-align: center;
-  padding-top: 10%;
 }
 
-.loading-screen {
-  width: 30rem;
+/* Links - Loading Bar */
+#loading-bar {
+  width: 70%;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  height: 0.2rem;
+  background-color: var(--link-color);
 }
 
 /* Navigation Bar */
@@ -332,11 +336,13 @@ body,
   font-size: 1.25rem;
 }
 
-.dropdown-item:hover {
-  color: var(--primary-color);
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--primary-color);
 }
 
-.dropdown-item:hover .nav-text {
+.dropdown-item:hover .nav-text,
+.dropdown-item:focus .nav-text {
   color: var(--secondary-color);
 }
 
@@ -348,10 +354,6 @@ body,
 
 .dropdown-menu {
   background-color: var(--secondary-color);
-}
-
-.dropdown-item:hover {
-  background-color: var(--primary-color);
 }
 
 .theme-switch {

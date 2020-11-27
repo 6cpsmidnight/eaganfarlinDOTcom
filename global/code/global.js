@@ -70,6 +70,13 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
 // Loading Screen - Fades Out
 $("#loading-screen").fadeOut(1000);
 
+// Loading Bar - Disappears
+$(document).ready(function () {
+
+  $("#loading-bar").css("background-color", "var(--secondary-color)");
+
+});
+
 // NavBar - Dark Mode Toggle
 let theme = localStorage.getItem("theme") || "light";
 
@@ -143,3 +150,14 @@ $(".contact-link-icon-copy-url").click(function () {
   })
 
 });
+
+// Links - Loading Bar
+$("a").click(function () {
+
+  if ($(this).attr("href").slice(0, 1) !== "#") {
+
+    $("#loading-bar").css("background-color", "var(--link-color)");
+
+  }
+
+})
