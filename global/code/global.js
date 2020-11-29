@@ -14,7 +14,7 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
 
   Swal.fire({
 
-    html: "<span class=\"swal2-accept-cookies-text\">This site uses cookies to see how many lovely tourists there are! By continuing with your life or closing this you are agreeing to these terms.</span>",
+    html: "<span class=\"swal2-accept-cookies-text\">This site uses cookies to see how many ♥ly tourists there are! By continuing with your life or closing this you are agreeing to these terms.</span>",
     toast: true,
     position: "bottom",
     width: "100vw",
@@ -68,14 +68,29 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
 }
 
 // Loading Screen - Fades Out
-$("#loading-screen").fadeOut(1000);
+$(document).ready(function () {
+
+  $("#loading-screen").remove();
+
+});
 
 // Loading Bar - Disappears
 $(document).ready(function () {
 
-  $("#loading-bar").css("background-color", "var(--secondary-color)");
+  $("#loading-bar").css("opacity", "0");
 
 });
+
+// Loading Bar - Appears
+$("a").click(function () {
+
+  if ($(this).attr("href").slice(0, 1) !== "#") {
+
+    $("#loading-bar").css("opacity", "1");
+
+  }
+
+})
 
 // NavBar - Dark Mode Toggle
 let theme = localStorage.getItem("theme") || "light";
@@ -150,14 +165,3 @@ $(".contact-link-icon-copy-url").click(function () {
   })
 
 });
-
-// Links - Loading Bar
-$("a").click(function () {
-
-  if ($(this).attr("href").slice(0, 1) !== "#") {
-
-    $("#loading-bar").css("background-color", "var(--link-color)");
-
-  }
-
-})
