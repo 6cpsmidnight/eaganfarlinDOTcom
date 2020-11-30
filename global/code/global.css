@@ -239,6 +239,7 @@ body,
 
 /* Links - Loading Bar */
 #loading-bar {
+  opacity: 0;
   width: 70%;
   z-index: 2;
   position: fixed;

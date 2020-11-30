@@ -90,7 +90,7 @@ $("a").click(function () {
 
   }
 
-})
+});
 
 // NavBar - Dark Mode Toggle
 let theme = localStorage.getItem("theme") || "light";
