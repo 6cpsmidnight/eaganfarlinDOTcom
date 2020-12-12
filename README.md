@@ -13,6 +13,7 @@ Hosted on [eaganfarlin.com](https://eaganfarlin.com/). Stay as long as you want!
 - [x] convert all (possible) images from .png to .svg
 - [x] make terms popup for when the page is first ever loaded
 - [x] change file and folder capitalization formats
+- [ ] remove Bootstrap entirely
 
 ## Made using:
 
