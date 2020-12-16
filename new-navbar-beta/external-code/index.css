@@ -83,11 +83,15 @@ nav img {
 nav details>div {
     border-style: solid;
     border-radius: 25px 10px;
-    padding: 0.7rem;
+    padding: 0.65rem;
 }
 
 nav details>div ul li {
     list-style-type: none;
+}
+
+nav details div a::before {
+    content: "\2022";
 }
 
 nav a:hover::-webkit-selection {
@@ -120,22 +124,22 @@ nav a:hover::selection {
 
     /* NavBar */
     nav {
-        font-size: 1.7rem;
-        padding: 1rem;
+        font-size: 1.9rem;
+        padding: 1.25rem;
     }
 
     nav button {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 
     nav .info-logo {
-        width: 45px;
-        margin-bottom: -12px;
+        width: 50px;
+        margin-bottom: -13px;
     }
 
     nav img {
-        width: 31px;
-        margin-bottom: -7.5px;
+        width: 35px;
+        margin-bottom: -9px;
     }
 
     nav details>div {
@@ -148,26 +152,26 @@ nav a:hover::selection {
 
     /* NavBar */
     nav {
-        font-size: 1.4rem;
-        padding: 0.75rem;
+        font-size: 1.6rem;
+        padding: 0.9rem;
     }
 
     nav button {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
 
     nav .info-logo {
-        width: 42px;
-        margin-bottom: -12px;
+        width: 45px;
+        margin-bottom: -13px;
     }
 
     nav img {
-        width: 28px;
-        margin-bottom: -7px;
+        width: 31px;
+        margin-bottom: -8px;
     }
 
     nav details>div {
-        padding: 0.5rem;
+        padding: 0.7rem;
     }
 
 }
