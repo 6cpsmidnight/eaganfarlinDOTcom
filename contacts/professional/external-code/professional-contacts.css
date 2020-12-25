@@ -1,13 +1,7 @@
-/* Navigation Bar */
-#navbar {
-    position: fixed;
-    top: 0;
-}
-
 /* Personal Contacts */
 #professional-contacts {
     width: 100%;
-    padding-top: 8.2rem;
+    padding-top: .675rem;
     padding-bottom: -.5rem;
 }
 
@@ -20,8 +14,8 @@
 
     #professional-contacts {
         width: 100%;
-        padding-top: 5.4rem;
-        padding-bottom: -.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
     }
 
 }
@@ -29,11 +23,7 @@
 @media (max-width: 768px) {
 
     #professional-contacts {
-        padding-top: 5rem;
-    }
-
-    #professional-contacts .contact-links {
-        margin-bottom: -.5rem;
+        padding-top: 1.5rem;
     }
 
 }

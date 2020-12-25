@@ -13,29 +13,7 @@ $(".arrow-down-1-button").click(function () {
 
   } else if (widthOfScreen < 768) {
 
-    window.scrollTo(0, 430)
-
-  }
-
-});
-
-$(".arrow-down-2-button").click(function () {
-
-  let widthOfScreen = $(window).width();
-
-  if (widthOfScreen > 992) {
-
-    window.scrollTo(0, 650)
-
-  } else if (widthOfScreen < 992 && widthOfScreen > 767) {
-
-    window.scrollTo(0, 485)
-
-    alert("t");
-
-  } else if (widthOfScreen < 768) {
-
-    window.scrollTo(0, 575)
+    window.scrollTo(0, 400)
 
   }
 

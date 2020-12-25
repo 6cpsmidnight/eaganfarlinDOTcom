@@ -47,85 +47,55 @@
     <!-- Loading Bar  -->
     <div id="loading-bar"></div>
 
-    <!-- Navigation Bar -->
-    <nav id="navbar" class="navbar navbar-expand-lg">
+    <!-- NavBar -->
+    <nav id="nav">
 
-        <h6>
+        <a href="/" class="nav-home"><img src="/global/images/site-transparent-icon.png" class="info-logo"
+                alt="info logo">Eagan</a>
 
-            <a class="navbar-brand" href="/">
+        <details class="nav-dropdown-menu">
 
-                <img src="/global/images/site-transparent-icon.png" class="info-logo-navbar" alt="info logo">
+            <summary>
 
-                <span class="navbar-brand-home">Eagan</span>
+                Contacts<img src="/global/images/nav-arrow-transparent-icon.svg" alt="nav arrow icon">
 
-            </a>
+            </summary>
 
-        </h6>
+            <div>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <ul>
 
-            <span class="navbar-toggler-icon"></span>
+                    <li><a href="/contacts/personal/index.html">Personal</a></li>
 
-        </button>
+                    <li><a href="/contacts/professional/index.html">Professional</a></li>
 
-        <div class="collapse navbar-collapse dropdown" id="navbarSupportedContent">
+                </ul>
 
-            <ul class="navbar-nav mr-auto">
+            </div>
 
-                <li class="nav-item dropdown">
+        </details>
 
-                    <a class="nav-link dropdown-toggle" href="#" class="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
-                            class="nav-text">Websites</span> <span class="sr-only">(current)</span>
-                    </a>
+        <details class="nav-dropdown-menu">
 
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <summary>
 
-                        <a class="dropdown-item" href="https://cyber1012.github.io/dice"><span
-                                class="nav-text">Dice</span></a>
+                Websites<img src="/global/images/nav-arrow-transparent-icon.svg" alt="nav arrow icon">
 
-                        <a class="dropdown-item" href="https://cyber1012.github.io/drum-kit"><span class="nav-text">Drum
-                                Kit</span></a>
+            </summary>
 
-                        <a class="dropdown-item" href="https://cyber1012.github.io/first-css-webpage"><span
-                                class="nav-text">My First Ever CSS Website</span></a>
+            <div>
 
-                        <a class="dropdown-item" href="/"><span class="nav-text">My Main Website</span></a>
+                <ul>
 
-                        <a class="dropdown-item" href="https://beta.eaganfarlin.com"><span class="nav-text">My Main
-                                Website <span class="text-danger">(Beta)</span></span></a>
+                    <li><a href="javascript:void(0);" class="disabled">Coming Soon</a></li>
 
-                    </div>
+                </ul>
 
-                </li>
+            </div>
 
-                <li class="nav-item dropdown">
+        </details>
 
-                    <a class="nav-link dropdown-toggle" href="#" class="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="nav-text">Contacts</span>
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/contacts/personal"><span class="nav-text">Personal
-                                Contacts</span></a>
-
-                        <a class="dropdown-item" href="/contacts/professional"><span class="nav-text">Professional
-                                Contacts</span></a>
-
-                </li>
-
-                <li class="nav-item">
-
-                    <button class="theme-switch nav-link"><span class="nav-text theme-switcher-text">Let
-                            Darkness Rain Supreme!</span></button>
-
-                </li>
-
-            </ul>
-
-        </div>
+        <button class="theme-switch"><span class="theme-switcher-text">Let Darkness Rain Supreme!</span></button>
 
     </nav>
 
@@ -199,6 +169,12 @@
         </div>
 
     </footer>
+
+    <!-- NavBar - Bottom Page Padding -->
+    <div class="navbar-bottom-page-padding"></div>
+
+    <!-- Sweet Alert Accepted Cookies - Bottom Page Padding -->
+    <div class="sweet-alert-accept-cookies-bottom-page-padding"></div>
 
 </body>
 

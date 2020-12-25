@@ -1,16 +1,7 @@
-/* Navigation Bar */
-#navbar {
-    position: fixed;
-    top: 0;
-}
-
 /* 404 */
 #four-zero-four {
     text-align: center;
-    padding-top: 7.85rem;
-    padding-left: 37.5%;
-    padding-right: 37.5%;
-    padding-bottom: 1.85rem;
+    padding: 1.85rem 37.5%;
     width: 100%;
 }
 
@@ -42,10 +33,7 @@
 @media (max-width: 992px) {
 
     #four-zero-four {
-        padding-top: 4.25rem;
-        padding-left: 30%;
-        padding-right: 30%;
-        padding-bottom: .7rem;
+        padding: .7rem 30%;
     }
 
     .four-zero-four {
@@ -58,10 +46,7 @@
 
     /* 404 */
     #four-zero-four {
-        padding-top: 4.575rem;
-        padding-left: 17.5%;
-        padding-right: 17.5%;
-        padding-bottom: .5rem;
+        padding: .5rem 17.5%;
     }
 
     .four-zero-four {

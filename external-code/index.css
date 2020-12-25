@@ -124,6 +124,10 @@
 @media (max-width: 768px) {
 
   /* Eagan Farlin Container */
+  #im-eagan-farlin {
+    margin-bottom: 3.5rem;
+  }
+
   .im {
     font-size: 3.3rem;
     margin-top: 1.5rem;
@@ -144,16 +148,13 @@
 
   /* Arrow Down */
   .arrow-down {
-    margin-bottom: 3.5rem;
     height: 5rem;
     width: 5rem;
   }
 
   /* About Me */
   #about-me {
-    padding: 10% 20%;
-    padding-top: 15%;
-    margin-top: -5%;
+    padding: 5% 20%;
   }
 
   .about-me {

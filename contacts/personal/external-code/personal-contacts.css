@@ -1,13 +1,7 @@
-/* Navigation Bar */
-#navbar {
-    position: fixed;
-    top: 0;
-}
-
 /* Personal Contacts */
 #personal-contacts {
     width: 100%;
-    padding-top: 8rem;
+    padding-top: 1.15rem;
 }
 
 #personal-contacts .contact-links {
@@ -24,7 +18,7 @@
 @media (max-width: 992px) {
 
     #personal-contacts {
-        padding-top: 5.25rem;
+        padding-top: 1rem;
     }
 
     #personal-contacts .contact-links {
@@ -35,10 +29,6 @@
 }
 
 @media (max-width: 768px) {
-
-    #personal-contacts {
-        padding-top: 5.1rem;
-    }
 
     #personal-contacts .contact-links {
         text-align: center;
