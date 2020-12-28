@@ -4,7 +4,7 @@
     padding-top: 1.15rem;
 }
 
-#personal-contacts .contact-links {
+.contact-links {
     text-align: center;
     padding-bottom: .9rem;
 }
@@ -21,7 +21,7 @@
         padding-top: 1rem;
     }
 
-    #personal-contacts .contact-links {
+    .contact-links {
         text-align: center;
         padding-bottom: .475rem;
     }
@@ -30,7 +30,7 @@
 
 @media (max-width: 768px) {
 
-    #personal-contacts .contact-links {
+    .contact-links {
         text-align: center;
         padding-bottom: .3rem;
     }

@@ -8,12 +8,12 @@ Hosted on [eaganfarlin.com](https://eaganfarlin.com/). Stay as long as you want!
 
 - [X] make the whole website resposive
 - [X] add styles to every page
-- [x] start using SweetAlert
-- [x] make chalk board mode (a.k.a. dark mode)
-- [x] convert all (possible) images from .png to .svg
-- [x] make terms popup for when the page is first ever loaded
-- [x] change file and folder capitalization formats
-- [ ] remove Bootstrap entirely
+- [X] start using SweetAlert
+- [X] make chalk board mode (a.k.a. dark mode)
+- [X] convert all (possible) images from .png to .svg
+- [X] make terms popup for when the page is first ever loaded
+- [X] change file and folder capitalization formats
+- [X] remove Bootstrap entirely
 
 ## Made using:
 

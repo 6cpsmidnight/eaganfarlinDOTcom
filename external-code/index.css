@@ -4,6 +4,7 @@
   text-align: center;
   padding-top: 2%;
   padding-bottom: 2%;
+  margin-bottom: 2.5rem;
 }
 
 .im {
@@ -40,20 +41,11 @@
   opacity: 100%;
 }
 
-.arrow-down-2-container {
-  width: 100%;
-  text-align: center;
-  margin-top: 5%;
-  margin-bottom: 0%;
-}
-
 /* About Me */
 #about-me {
   width: 100%;
   padding: 5% 25%;
-  padding-top: 15%;
   margin-top: -5%;
-  text-align: center;
 }
 
 .about-me {
@@ -61,12 +53,20 @@
   margin-bottom: .5%;
 }
 
+.about-me-center {
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
 .about-me-left {
   text-align: left;
+  margin-right: 50%;
 }
 
 .about-me-right {
   text-align: right;
+  margin-left: 50%;
 }
 
 /* Media Queries */
@@ -75,7 +75,8 @@
   /* Eagan Farlin Container */
   #im-eagan-farlin {
     padding-top: .05rem;
-    padding-bottom: .5rem;
+    padding-bottom: .05rem;
+    margin-bottom: 0;
   }
 
   .im {
@@ -96,27 +97,20 @@
   /* Arrow Down */
   .arrow-down {
     opacity: 100%;
-    margin-bottom: .3rem;
     height: 5.5rem;
     width: 5.5rem;
   }
 
   /* About Me */
   #about-me {
-    padding: 15% 22%;
+    padding: 12% 22%;
   }
 
   .about-me {
-    margin-bottom: 2rem;
-    font-size: 1.3rem;
-  }
-
-  .about-me-left {
-    text-align: center;
-  }
-
-  .about-me-right {
-    text-align: center;
+    margin: 0 !important;
+    text-align: center !important;
+    margin-bottom: 2rem !important;
+    font-size: 1.3rem !important;
   }
 
 }
@@ -158,9 +152,9 @@
   }
 
   .about-me {
-    margin-bottom: 6.5rem;
-    font-size: 1.2rem;
-    line-height: 1.6;
+    margin-bottom: 6.5rem !important;
+    font-size: 1.2rem !important;
+    line-height: 1.6 !important;
   }
 
 }
