@@ -417,10 +417,10 @@ color: #17a2b8;
     padding-top: -5%;
   }
 
-  .contact-links {
+  .footer-contact-links {
     width: 100%;
     float: none;
-    margin: 0;
+    margin-left: 0;
     margin-bottom: .9rem;
   }
 
