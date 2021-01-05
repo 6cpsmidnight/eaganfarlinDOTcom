@@ -40,6 +40,12 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
 
     } else {
 
+      // NavBar - Remove Bottom Fixed Page Padding
+      $("nav").css("bottom", "0");
+
+      // Accept Cookies Popup - Remove Bottom Page Padding
+      $(".sweet-alert-accept-cookies-page-padding").css("height", "0");
+
       // Accept Cookies - Accepted
       localStorage.setItem("acceptedCookies", "yes");
 
@@ -48,6 +54,7 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
   });
 
   // NavBar - Bottom Padding
+
   $("nav").css("bottom", parseInt($(".swal2-accept-cookies").height(), 10) + 10);
 
   // Accept Cookies Popup - Bottom Page Padding
@@ -57,9 +64,9 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
 
     setTimeout(() => {
 
-      $(".sweet-alert-accept-cookies-page-padding").css("height", $(".swal2-accept-cookies").height());
-
       $("nav").css("bottom", parseInt($(".swal2-accept-cookies").height(), 10) + 10);
+
+      $(".sweet-alert-accept-cookies-page-padding").css("height", $(".swal2-accept-cookies").height());
 
     }, 200);
 
