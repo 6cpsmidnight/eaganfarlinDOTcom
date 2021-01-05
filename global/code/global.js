@@ -9,7 +9,7 @@ gtag("js", new Date());
 
 gtag("config", "UA-176695618-1");
 
-// Loaded Popups
+// Accept Cookies Popup
 if (localStorage.getItem("acceptedCookies") !== "yes") {
 
   Swal.fire({
@@ -40,13 +40,6 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
 
     } else {
 
-      // NavBar - Remove Bottom Fixed Page Padding
-      $("nav").css("bottom", "0");
-
-
-      // Sweet Alert Accepted Cookies - Remove Bottom Page Padding
-      $(".sweet-alert-accept-cookies-bottom-page-padding").css("height", "0");
-
       // Accept Cookies - Accepted
       localStorage.setItem("acceptedCookies", "yes");
 
@@ -54,27 +47,19 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
 
   });
 
-  // NavBar - Bottom Fixed Page Padding
+  // NavBar - Bottom Padding
   $("nav").css("bottom", parseInt($(".swal2-accept-cookies").height(), 10) + 10);
 
+  // Accept Cookies Popup - Bottom Page Padding
+  $(".sweet-alert-accept-cookies-page-padding").css("height", $(".swal2-accept-cookies").height());
+
   window.addEventListener("resize", function () {
 
-    setTimeout(function () {
+    setTimeout(() => {
+
+      $(".sweet-alert-accept-cookies-page-padding").css("height", $(".swal2-accept-cookies").height());
 
       $("nav").css("bottom", parseInt($(".swal2-accept-cookies").height(), 10) + 10);
-
-    }, 200);
-
-  });
-
-  // Sweet Alert Accepted Cookies - Bottom Page Padding
-  $(".sweet-alert-accept-cookies-bottom-page-padding").css("height", $(".swal2-accept-cookies").height());
-
-  window.addEventListener("resize", function () {
-
-    setTimeout(function () {
-
-      $(".sweet-alert-accept-cookies-bottom-page-padding").css("height", $(".swal2-accept-cookies").height());
 
     }, 200);
 
@@ -86,6 +71,63 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
 $(document).ready(function () {
 
   $("#loading-screen").remove();
+
+});
+
+// NavBar - Width
+let themeSwitchButtonWidth = $(".theme-switch").width();
+
+function navBarWidthChanger() {
+
+  if ($(window).width() <= 768) {
+
+    if (themeSwitchButtonWidth < $(window).width() / 2) {
+
+      $("nav").css("width", themeSwitchButtonWidth);
+
+    } else {
+
+      $("nav").css("width", $(window).width() / 2);
+
+    }
+
+  } else if ($(window).width() <= 993) {
+
+    if (themeSwitchButtonWidth < $(window).width() * 0.7) {
+
+      $("nav").css("width", themeSwitchButtonWidth);
+
+    } else {
+
+      $("nav").css("width", $(window).width() * 0.7);
+
+    }
+
+  } else {
+
+    if (themeSwitchButtonWidth < $(window).width() * 0.3) {
+
+      $("nav").css("width", themeSwitchButtonWidth);
+
+    } else {
+
+      $("nav").css("width", $(window).width() * 0.3);
+
+    }
+
+  }
+
+}
+
+navBarWidthChanger();
+
+window.addEventListener("resize", function () {
+
+  setTimeout(() => {
+
+    navBarWidthChanger();
+
+  }, 200);
 
 });
 
@@ -145,19 +187,6 @@ $(".theme-switch").click(function () {
   localStorage.setItem("theme", theme);
 
   applyTheme(theme);
-
-});
-
-// NavBar- Bottom Page Padding
-$(".navbar-bottom-page-padding").css("height", $(nav).height() + 50);
-
-window.addEventListener("resize", function () {
-
-  setTimeout(function () {
-
-    $(".navbar-bottom-page-padding").css("height", $(nav).height() + 40);
-
-  }, 200);
 
 });
 

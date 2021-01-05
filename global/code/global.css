@@ -143,11 +143,18 @@ body {
 .swal2-content {
   color: var(--primary-color);
   background-color: var(--secondary-color);
+  font-weight: 700 !important;
+  font-family: "Neucha", cursive;
+  line-height: 1.5;
+  margin: 1rem;
 }
 
 .swal2-actions .swal2-styled {
   color: var(--secondary-color);
-  font-weight: bold;
+  font-weight: 700;
+  font-family: "Neucha", cursive;
+  line-height: 1.5;
+  margin: 1rem;
 }
 
 .swal2-accept-cookies-agree-button-text {
@@ -185,11 +192,9 @@ body {
 
 /* NavBar */
 nav {
-  max-width: 30%;
   z-index: 1;
-  position: fixed;
+  position: sticky;
   bottom: 0;
-  right: 0;
   background-color: var(--secondary-color);
   text-align: right;
   font-family: "Neucha", cursive;
@@ -249,6 +254,7 @@ nav button {
   font-size: 1.5rem;
   color: var(--inverse-link-color);
   background-color: var(--secondary-color);
+  text-align: right;
   border-width: 0px;
   cursor: pointer;
 }
@@ -311,7 +317,6 @@ nav a:hover::selection {
 /* Footer */
 footer {
   width: 100%;
-  padding-top: .3rem;
   padding-bottom: .3rem;
 }
 
@@ -334,6 +339,7 @@ footer {
 
 .footer-site-info {
   width: 50%;
+  margin-top: 2rem;
   margin-left: 25%;
   margin-right: 25%;
   text-align: center;
@@ -341,18 +347,20 @@ footer {
 }
 
 .footer-text-eagan-farlin {
-color: #17a2b8;
+  color: #17a2b8;
 }
 
 .footer-text-elaine-farlin {
   color: #dc3545;
 }
 
-.footer-text-pixel-perfect {
+.footer-text-pixel-perfect,
+.footer-text-pixel-perfect:hover {
   color: #28a745;
 }
 
-.footer-text-flaticon {
+.footer-text-flaticon,
+.footer-text-flaticon:hover {
   color: #555;
 }
 
@@ -391,7 +399,6 @@ color: #17a2b8;
 
   /* NavBar */
   nav {
-    max-width: 70%;
     font-size: 1.55rem;
     padding: 1.25rem;
   }
@@ -413,13 +420,10 @@ color: #17a2b8;
   }
 
   /* Footer */
-  #footer {
-    padding-top: -5%;
-  }
-
   .footer-contact-links {
     width: 100%;
     float: none;
+    margin-top: 1rem;
     margin-left: 0;
     margin-bottom: .9rem;
   }
@@ -464,7 +468,6 @@ color: #17a2b8;
 
   /* NavBar */
   nav {
-    max-width: 50%;
     font-size: 1.4rem;
     padding: 0.9rem;
     line-height: 1.35;

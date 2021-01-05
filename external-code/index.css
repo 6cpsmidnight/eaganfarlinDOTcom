@@ -35,6 +35,7 @@
   height: 6.2rem;
   opacity: 80%;
   transform: rotate(90deg);
+  cursor: pointer;
 }
 
 .arrow-down:hover {
