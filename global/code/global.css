@@ -195,6 +195,7 @@ nav {
   z-index: 1;
   position: sticky;
   bottom: 0;
+  left: 100vw;
   background-color: var(--secondary-color);
   text-align: right;
   font-family: "Neucha", cursive;
