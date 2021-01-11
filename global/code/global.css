@@ -402,6 +402,7 @@ footer {
   nav {
     font-size: 1.55rem;
     padding: 1.25rem;
+    line-height: 1.5;
   }
 
   nav button {
@@ -471,7 +472,7 @@ footer {
   nav {
     font-size: 1.4rem;
     padding: 0.9rem;
-    line-height: 1.35;
+    line-height: 1.6;
   }
 
   nav button {

@@ -3,17 +3,32 @@ $(".arrow-down-1-button").click(function () {
 
   let widthOfScreen = $(window).width();
 
-  if (widthOfScreen > 992) {
+  if (widthOfScreen < 768) {
 
-    window.scrollTo(0, 450)
+    window.scrollTo({
 
-  } else if (widthOfScreen < 992 && widthOfScreen > 767) {
+      top: 400,
+      behavior: "smooth"
 
-    window.scrollTo(0, 360)
+    });
 
-  } else if (widthOfScreen < 768) {
+  } else if (widthOfScreen < 992) {
 
-    window.scrollTo(0, 400)
+    window.scrollTo({
+
+      top: 360,
+      behavior: "smooth"
+
+    });
+
+  } else {
+
+    window.scrollTo({
+
+      top: 450,
+      behavior: "smooth"
+
+    });
 
   }
 

@@ -82,43 +82,49 @@ $(document).ready(function () {
 });
 
 // NavBar - Width
-let themeSwitchButtonWidth = $(".theme-switch").width();
+let themeSwitchButtonTextWidth;
+
+let windowWidth;
 
 function navBarWidthChanger() {
 
-  if ($(window).width() <= 768) {
+  themeSwitchButtonTextWidth = $(".theme-switch").text().length;
 
-    if (themeSwitchButtonWidth < $(window).width() / 2) {
+  windowWidth = $(window).width();
 
-      $("nav").css("width", themeSwitchButtonWidth);
+  if (windowWidth <= 768) {
+
+    if (themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() < windowWidth / 2) {
+
+      $("nav").css("width", themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width());
 
     } else {
 
-      $("nav").css("width", $(window).width() / 2);
+      $("nav").css("width", windowWidth / 2);
 
     }
 
-  } else if ($(window).width() <= 993) {
+  } else if (windowWidth <= 993) {
 
-    if (themeSwitchButtonWidth < $(window).width() * 0.7) {
+    if (themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() < windowWidth * 0.7) {
 
-      $("nav").css("width", themeSwitchButtonWidth);
+      $("nav").css("width", themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width());
 
     } else {
 
-      $("nav").css("width", $(window).width() * 0.7);
+      $("nav").css("width", windowWidth * 0.7);
 
     }
 
   } else {
 
-    if (themeSwitchButtonWidth < $(window).width() * 0.3) {
+    if (themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() < windowWidth * 0.3) {
 
-      $("nav").css("width", themeSwitchButtonWidth);
+      $("nav").css("width", themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width());
 
     } else {
 
-      $("nav").css("width", $(window).width() * 0.3);
+      $("nav").css("width", windowWidth * 0.3);
 
     }
 
@@ -179,9 +185,11 @@ let applyTheme = (theme) => {
 
   document.documentElement.setAttribute("user-color-mode", theme);
 
-  let themeSwitcherText = theme === "dark" ? "Let There Be Light!" : "Let Darkness Rain Supreme!";
+  let themeSwitcherText = theme === "dark" ? "Let There Be Light!" : "The Light, It Burns!";
 
   $(".theme-switcher-text").text(themeSwitcherText);
+
+  navBarWidthChanger();
 
 }
 
