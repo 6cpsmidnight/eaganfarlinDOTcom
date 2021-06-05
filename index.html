@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
 
-    <!-- Title - Loading -->
+    <!-- Title Loading -->
     <script>
         document.title = "Loading...";
     </script>
@@ -59,81 +59,93 @@
     <!-- About Me -->
     <div id="about-me">
 
-        <div class="row">
+        <p class="about-me about-me-left">Hello welcome to my website, I am a web developer who has a passion to
+            code. I started coding, (although it was block coding,) 2 years ago.</p>
 
-            <p class="about-me about-me-left">Hello welcome to my website, I am a web developer who has a passion to
-                code. I started coding, (although it was block coding,) over 2 years ago.</p>
+        <p class="about-me about-me-right">How did I start? Now if you think you have the worst beggining ever, read
+            mine. "Dad I wanna learn to code, will you teach me?" "Just learn from the internet." So what did I do
+            next? Did I search "how to code" on <a href="https://youtube.com">YouTube</a>? No! I searched up on
+            Google these exact words, "code"... Found <a href="https://code.org">code.org</a> and uh...yea...</p>
 
-            <p class="about-me about-me-right">How did I start? Now if you think you have the worst beggining ever, read
-                mine. "Dad I wanna learn to code, will you teach me?" "Just learn from the internet." So what did I do
-                next? Did I search "how to code" on <a href="https://youtube.com">YouTube</a>? No! I searched up on
-                Google these exact words, "code"... Found <a href="https://code.org">code.org</a> and uh...yea...</p>
+        <p class="about-me about-me-center">Though I was not really serious about coding until 1 year ago. My dad
+            had bought me <a href="https://www.udemy.com/course/the-complete-web-development-camp">a course on
+                web development</a>, and I've made some good stuff, if I would say so myself. Just look at this
+            website, pretty good website in my opinion.</p>
 
-            <p class="about-me about-me-center">Though I was not really serious about coding until 1 year ago. My dad
-                had bought me <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp">a course on
-                    web development</a>, and I've made some good stuff, if I would say so myself. Just look at this
-                website, pretty good website in my opinion.</p>
-
-            <p class="about-me about-me-right">Though I have other hobbies, I play <a
-                    href="https://www.minecraft.net">Minecraft</a>, it is my favorite game in the whole entire world!
-                And let me tell you, this is a pretty big world, around 4 million miles. I've been playing it for almost
-                3 years now, and I still love it. I also spend my free time pretty much just watching <a
-                    href="https://www.youtube.com">YouTube</a> videos and browsing the internet.</p>
-
-        </div>
+        <p class="about-me about-me-right">Though I have other hobbies, I play <a
+                href="https://www.minecraft.net">Minecraft</a>, it is my favorite game in the whole entire world! And
+            let me tell you, this is a pretty big world, around 4 million miles. I've been playing it for 3 years now,
+            and I still love it. I also bike and go to the gym, and I also love watching <a
+                href="https://www.youtube.com">YouTube</a> videos and browsing the internet.</p>
 
     </div>
 
     <!-- NavBar -->
     <nav>
 
-        <a href="/" class="nav-home"><img src="/global/images/site-transparent-icon.png" class="info-logo"
-                alt="info logo">Eagan</a>
+        <details>
 
-        <details class="nav-dropdown-menu">
+            <summary class="navbar-toggle">
 
-            <summary>
-
-                Contacts<img src="/global/images/nav-arrow-transparent-icon.svg" alt="nav arrow icon">
+                <img src="/global/images/orbit-transparent-icon.svg" class="navbar-toggle-img"
+                    alt="oirbit transparent icon">
 
             </summary>
 
             <div>
 
-                <ul>
+                <a href="/" class="nav-home"><img src="/global/images/site-transparent-icon.png" class="info-logo"
+                        alt="info logo">Eagan</a>
 
-                    <li><a href="/contacts/personal/index.html">Personal</a></li>
+                <details class="nav-dropdown-menu">
 
-                    <li><a href="/contacts/professional/index.html">Professional</a></li>
+                    <summary>
 
-                </ul>
+                        Contacts<img src="/global/images/nav-arrow-transparent-icon.svg" alt="nav arrow icon">
+
+                    </summary>
+
+                    <div>
+
+                        <ul>
+
+                            <li><a href="/contacts/personal/index.html">Personal</a></li>
+
+                            <li><a href="/contacts/professional/index.html">Professional</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </details>
+
+                <details class="nav-dropdown-menu">
+
+                    <summary>
+
+                        Websites<img src="/global/images/nav-arrow-transparent-icon.svg" alt="nav arrow icon">
+
+                    </summary>
+
+                    <div>
+
+                        <ul>
+
+                            <li><a href="javascript:void(0);" class="disabled">Coming Soon</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </details>
+
+                <button class="theme-switch"><span class="theme-switcher-text">The Light, It Burns!</span><img
+                        src="/global/images/theme-transparent-icon.svg" class="theme-switcher-img"
+                        alt="theme icon"></button>
 
             </div>
 
         </details>
-
-        <details class="nav-dropdown-menu">
-
-            <summary>
-
-                Websites<img src="/global/images/nav-arrow-transparent-icon.svg" alt="nav arrow icon">
-
-            </summary>
-
-            <div>
-
-                <ul>
-
-                    <li><a href="javascript:void(0);" class="disabled">Coming Soon</a></li>
-
-                </ul>
-
-            </div>
-
-        </details>
-
-        <button class="theme-switch"><span class="theme-switcher-text">The Light, It Burns!</span><img
-                src="/global/images/theme-transparent-icon.svg" class="theme-switcher-img" alt="theme icon"></button>
 
     </nav>
 
@@ -183,15 +195,18 @@
 
     </footer>
 
-    <!-- Sweet Alert Accepted Cookies - Page Padding -->
-    <div class="sweet-alert-accept-cookies-page-padding"></div>
+    <!-- NavBar -->
+    <div class="navbar-bottom-page-padding"></div>
+
+    <!-- Sweet Alert Accepted Cookies -->
+    <div class="sweet-alert-accept-cookies-bottom-page-padding"></div>
 
 </body>
 
 <!-- jQuery 3.5.1 -->
 <script src="/global/code/jquery.min.js"></script>
 
-<!-- Google Analytics - Import -->
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176695618-1"></script>
 
 <!-- Global JavaScript -->

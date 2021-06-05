@@ -1,4 +1,4 @@
-// Google Analytics - Global Site Tag (gtag.js)
+// Google Analytics
 window.dataLayer = window.dataLayer || [];
 
 function gtag() {
@@ -40,24 +40,23 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
 
     } else {
 
-      // NavBar - Remove Bottom Fixed Page Padding
+      // NavBar
       $("nav").css("bottom", "0");
 
-      // Accept Cookies Popup - Remove Bottom Page Padding
+      // Accept Cookies Popup
       $(".sweet-alert-accept-cookies-page-padding").css("height", "0");
 
-      // Accept Cookies - Accepted
+      // Accept Cookies
       localStorage.setItem("acceptedCookies", "yes");
 
     }
 
   });
 
-  // NavBar - Bottom Padding
-
+  // NavBar
   $("nav").css("bottom", parseInt($(".swal2-accept-cookies").height(), 10) + 10);
 
-  // Accept Cookies Popup - Bottom Page Padding
+  // Accept Cookies Popup
   $(".sweet-alert-accept-cookies-page-padding").css("height", $(".swal2-accept-cookies").height());
 
   window.addEventListener("resize", function () {
@@ -74,17 +73,23 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
 
 }
 
-// Loading Screen - Fades Out
+// Loading Screen
 $(document).ready(function () {
 
   $("#loading-screen").remove();
 
 });
 
-// NavBar - Width
+// NavBar
 let themeSwitchButtonTextWidth;
 
 let windowWidth;
+
+let navbarToggle = document.getElementsByClassName("navbar-toggle")[0];
+
+let navbarToggleNum = 0;
+
+let navbarToggleImg = document.getElementsByClassName("navbar-toggle-img")[0];
 
 function navBarWidthChanger() {
 
@@ -92,43 +97,47 @@ function navBarWidthChanger() {
 
   windowWidth = $(window).width();
 
-  if (windowWidth <= 768) {
+    if (navbarToggleNum === 0 && windowWidth <= 768) {
 
-    if (themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() < windowWidth / 2) {
+      $("nav").css("width", navbarToggleImg.offsetWidth * 1.8);
+
+    } else if (navbarToggleNum !== 0 && windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() < windowWidth / 2) {
 
       $("nav").css("width", themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width());
 
-    } else {
+    } else if (navbarToggleNum === 0 && windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() > windowWidth / 2) {
+
+      $("nav").css("width", navbarToggleImg.offsetWidth * 1.5);
+
+    } else if (navbarToggleNum !== 0 && windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() > windowWidth / 2) {
 
       $("nav").css("width", windowWidth / 2);
 
-    }
+    } else if (navbarToggleNum === 0 && windowWidth <= 992) {
 
-  } else if (windowWidth <= 993) {
+      $("nav").css("width", navbarToggleImg.offsetWidth * 1.75);
 
-    if (themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() < windowWidth * 0.7) {
+    } else if (navbarToggleNum !== 0 && windowWidth <= 992 && themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() < windowWidth * 0.7) {
 
       $("nav").css("width", themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width());
 
-    } else {
+    } else if (navbarToggleNum !== 0 && windowWidth <= 992 && themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() > windowWidth * 0.7) {
 
       $("nav").css("width", windowWidth * 0.7);
 
-    }
+    } else if (navbarToggleNum === 0 && windowWidth > 992) {
 
-  } else {
+      $("nav").css("width", navbarToggleImg.offsetWidth * 1.7);
 
-    if (themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() < windowWidth * 0.3) {
+    } else if (navbarToggleNum !== 0 && windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() < windowWidth * 0.3) {
 
       $("nav").css("width", themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width());
 
-    } else {
+    } else if (navbarToggleNum !== 0 && windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() > windowWidth * 0.3) {
 
       $("nav").css("width", windowWidth * 0.3);
 
     }
-
-  }
 
 }
 
@@ -144,7 +153,30 @@ window.addEventListener("resize", function () {
 
 });
 
-// NavBar - Close Dropdown Menus When Out Of Focus
+navbarToggle.addEventListener("click", function () {
+  
+  if (navbarToggleNum === 0){
+  
+    navbarToggleImg.classList.remove("navbar-toggle-rotate-0")
+    
+    navbarToggleImg.classList.add("navbar-toggle-rotate-180");
+
+    navbarToggleNum++;
+  
+  } else {
+  
+    navbarToggleImg.classList.remove("navbar-toggle-rotate-180")
+
+    navbarToggleImg.classList.add("navbar-toggle-rotate-0");
+
+    navbarToggleNum--;
+  
+  }
+
+  navBarWidthChanger();
+  
+});
+
 const nav = document.querySelector("nav");
 
 const navDropdownMenu = document.querySelectorAll(".nav-dropdown-menu");
@@ -163,7 +195,6 @@ navDropdownMenu.forEach((navDropdownMenu) => {
 
 });
 
-// NavBar - Open Only Dropdown Menu 1 Menu At A Time
 navDropdownMenu.forEach((targetNavbarDropdownMenu) => {
 
   targetNavbarDropdownMenu.addEventListener("click", () => {
@@ -178,7 +209,6 @@ navDropdownMenu.forEach((targetNavbarDropdownMenu) => {
 
 });
 
-// NavBar - Dark Mode Toggle
 let theme = localStorage.getItem("theme") || "light";
 
 let applyTheme = (theme) => {
@@ -205,7 +235,7 @@ $(".theme-switch").click(function () {
 
 });
 
-// Footer - Discord Tag Popup
+// Footer
 $(".contact-link-icon-discord").click(function () {
 
   Swal.fire({
@@ -217,7 +247,6 @@ $(".contact-link-icon-discord").click(function () {
 
 });
 
-// Footer - Copy URL's URL Copier Popup
 $(".contact-link-icon-copy-url").click(function () {
 
   Swal.fire({
