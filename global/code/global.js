@@ -1,4 +1,4 @@
-// Google Analytics - Global Site Tag (gtag.js)
+// Google Analytics
 window.dataLayer = window.dataLayer || [];
 
 function gtag() {
@@ -40,24 +40,24 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
 
     } else {
 
-      // NavBar - Remove Bottom Fixed Page Padding
+      // NavBar
       $("nav").css("bottom", "0");
 
-      // Accept Cookies Popup - Remove Bottom Page Padding
+      // Accept Cookies Popup
       $(".sweet-alert-accept-cookies-page-padding").css("height", "0");
 
-      // Accept Cookies - Accepted
+      // Accept Cookies
       localStorage.setItem("acceptedCookies", "yes");
 
     }
 
   });
 
-  // NavBar - Bottom Padding
+  // NavBar
 
   $("nav").css("bottom", parseInt($(".swal2-accept-cookies").height(), 10) + 10);
 
-  // Accept Cookies Popup - Bottom Page Padding
+  // Accept Cookies Popup
   $(".sweet-alert-accept-cookies-page-padding").css("height", $(".swal2-accept-cookies").height());
 
   window.addEventListener("resize", function () {
@@ -74,14 +74,14 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
 
 }
 
-// Loading Screen - Fades Out
+// Loading Screen
 $(document).ready(function () {
 
   $("#loading-screen").remove();
 
 });
 
-// NavBar - Width
+// NavBar
 let themeSwitchButtonTextWidth;
 
 let windowWidth;
@@ -92,43 +92,31 @@ function navBarWidthChanger() {
 
   windowWidth = $(window).width();
 
-  if (windowWidth <= 768) {
-
-    if (themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() < windowWidth / 2) {
+    if (windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() < windowWidth / 2) {
 
       $("nav").css("width", themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width());
 
-    } else {
+    } else if (windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() > windowWidth / 2) {
 
       $("nav").css("width", windowWidth / 2);
 
-    }
-
-  } else if (windowWidth <= 993) {
-
-    if (themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() < windowWidth * 0.7) {
+    } else if (windowWidth <= 993 && themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() < windowWidth * 0.7) {
 
       $("nav").css("width", themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width());
 
-    } else {
+    } else if (windowWidth <= 993 && themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() > windowWidth * 0.7) {
 
       $("nav").css("width", windowWidth * 0.7);
 
-    }
-
-  } else {
-
-    if (themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() < windowWidth * 0.3) {
+    } else if (windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() < windowWidth * 0.3) {
 
       $("nav").css("width", themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width());
 
-    } else {
+    } else if (windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() > windowWidth * 0.3) {
 
       $("nav").css("width", windowWidth * 0.3);
 
     }
-
-  }
 
 }
 
@@ -144,7 +132,32 @@ window.addEventListener("resize", function () {
 
 });
 
-// NavBar - Close Dropdown Menus When Out Of Focus
+let navbarToggle = document.getElementsByClassName("navbar-toggle")[0];
+
+let navbarToggleNum = 0;
+
+navbarToggle.addEventListener("click", function () {
+  
+  if (navbarToggleNum === 0){
+  
+    navbarToggle.classList.remove("navbar-toggle-rotate-0")
+    
+    navbarToggle.classList.add("navbar-toggle-rotate-180");
+
+    navbarToggleNum++;
+  
+  } else {
+  
+    navbarToggle.classList.remove("navbar-toggle-rotate-180")
+
+    navbarToggle.classList.add("navbar-toggle-rotate-0");
+
+    navbarToggleNum--;
+  
+  }
+  
+});
+
 const nav = document.querySelector("nav");
 
 const navDropdownMenu = document.querySelectorAll(".nav-dropdown-menu");
@@ -163,7 +176,6 @@ navDropdownMenu.forEach((navDropdownMenu) => {
 
 });
 
-// NavBar - Open Only Dropdown Menu 1 Menu At A Time
 navDropdownMenu.forEach((targetNavbarDropdownMenu) => {
 
   targetNavbarDropdownMenu.addEventListener("click", () => {
@@ -178,7 +190,6 @@ navDropdownMenu.forEach((targetNavbarDropdownMenu) => {
 
 });
 
-// NavBar - Dark Mode Toggle
 let theme = localStorage.getItem("theme") || "light";
 
 let applyTheme = (theme) => {
@@ -205,7 +216,7 @@ $(".theme-switch").click(function () {
 
 });
 
-// Footer - Discord Tag Popup
+// Footer
 $(".contact-link-icon-discord").click(function () {
 
   Swal.fire({
@@ -217,7 +228,6 @@ $(".contact-link-icon-discord").click(function () {
 
 });
 
-// Footer - Copy URL's URL Copier Popup
 $(".contact-link-icon-copy-url").click(function () {
 
   Swal.fire({

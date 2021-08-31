@@ -135,8 +135,10 @@ body {
 }
 
 /* Accept Cookies Popup */
-.swal2-popup {
+.swal2-accept-cookies .swal2-html-container {
+  color: var(--primary-color) !important;
   background-color: var(--secondary-color) !important;
+  font-family: "Neucha", cursive !important;
 }
 
 .swal2-title,
@@ -144,7 +146,7 @@ body {
   color: var(--primary-color);
   background-color: var(--secondary-color);
   font-weight: 700 !important;
-  font-family: "Neucha", cursive;
+  font-family: "Neucha", cursive !important;
   line-height: 1.5;
   margin: 1rem;
 }
@@ -202,8 +204,7 @@ nav {
   font-size: 1.5rem;
   border-style: solid;
   border-color: var(--primary-color);
-  border-radius: 10px 25px;
-  padding: 0.75rem;
+  border-radius: 15px 25px;
 }
 
 nav summary {
@@ -230,15 +231,33 @@ nav details>summary::-webkit-details-marker {
   display: none;
 }
 
-nav details img {
+.navbar-toggle {
+  width: 2.75rem;
+  margin-top: -1.5rem;
+  margin-bottom: -1.25rem;
+}
+
+.navbar-toggle-rotate-180 {
+  animation-name: navbar-toggle-rotate-180;
+  animation-duration: 1.1s;
+  transform: rotate(180deg);
+}
+
+.navbar-toggle-rotate-0 {
+  animation-name: navbar-toggle-rotate-0;
+  animation-duration: 1.1s;
   transform: rotate(0deg);
 }
 
-nav details[open] img {
+nav>details>div {
+  margin: 0.75rem;
+}
+
+nav div details[open] img {
   transform: rotate(90deg);
 }
 
-nav>a {
+nav>details>div>a {
   font-weight: 900;
 }
 
@@ -250,7 +269,7 @@ nav a:hover {
   background-color: var(--primary-color);
 }
 
-nav button {
+nav>details>div>button {
   font-family: "Neucha", cursive;
   font-size: 1.5rem;
   color: var(--inverse-link-color);
@@ -276,7 +295,7 @@ nav img {
   width: 30px;
 }
 
-nav details>div {
+nav details>div div {
   border-style: solid;
   border-radius: 25px 10px;
   padding: 0.65rem;
@@ -286,7 +305,7 @@ nav details>div ul li {
   list-style-type: none;
 }
 
-nav details div a::before {
+nav ul>li>a::before {
   content: "\2022";
 }
 
@@ -514,4 +533,29 @@ footer {
     font-size: 1.1rem;
   }
 
+}
+
+/* CSS Animations */
+@keyframes navbar-toggle-rotate-180 {
+  
+  0% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(180deg);
+  }
+  
+}
+
+@keyframes navbar-toggle-rotate-0 {
+  
+  0% {
+    transform: rotate(180deg);
+  }
+  
+  100% {
+    transform: rotate(0deg);
+  }
+  
 }
