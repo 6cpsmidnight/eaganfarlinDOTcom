@@ -54,7 +54,10 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
   });
 
   // NavBar
+<<<<<<< HEAD
 
+=======
+>>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
   $("nav").css("bottom", parseInt($(".swal2-accept-cookies").height(), 10) + 10);
 
   // Accept Cookies Popup
@@ -86,12 +89,19 @@ let themeSwitchButtonTextWidth;
 
 let windowWidth;
 
+let navbarToggle = document.getElementsByClassName("navbar-toggle")[0];
+
+let navbarToggleNum = 0;
+
+let navbarToggleImg = document.getElementsByClassName("navbar-toggle-img")[0];
+
 function navBarWidthChanger() {
 
   themeSwitchButtonTextWidth = $(".theme-switch").text().length;
 
   windowWidth = $(window).width();
 
+<<<<<<< HEAD
     if (windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() < windowWidth / 2) {
 
       $("nav").css("width", themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width());
@@ -113,6 +123,45 @@ function navBarWidthChanger() {
       $("nav").css("width", themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width());
 
     } else if (windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() > windowWidth * 0.3) {
+=======
+    if (navbarToggleNum === 0 && windowWidth <= 768) {
+
+      $("nav").css("width", navbarToggleImg.offsetWidth * 1.8);
+
+    } else if (navbarToggleNum !== 0 && windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() < windowWidth / 2) {
+
+      $("nav").css("width", themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width());
+
+    } else if (navbarToggleNum === 0 && windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() > windowWidth / 2) {
+
+      $("nav").css("width", navbarToggleImg.offsetWidth * 1.5);
+
+    } else if (navbarToggleNum !== 0 && windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() > windowWidth / 2) {
+
+      $("nav").css("width", windowWidth / 2);
+
+    } else if (navbarToggleNum === 0 && windowWidth <= 992) {
+
+      $("nav").css("width", navbarToggleImg.offsetWidth * 1.75);
+
+    } else if (navbarToggleNum !== 0 && windowWidth <= 992 && themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() < windowWidth * 0.7) {
+
+      $("nav").css("width", themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width());
+
+    } else if (navbarToggleNum !== 0 && windowWidth <= 992 && themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() > windowWidth * 0.7) {
+
+      $("nav").css("width", windowWidth * 0.7);
+
+    } else if (navbarToggleNum === 0 && windowWidth > 992) {
+
+      $("nav").css("width", navbarToggleImg.offsetWidth * 1.7);
+
+    } else if (navbarToggleNum !== 0 && windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() < windowWidth * 0.3) {
+
+      $("nav").css("width", themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width());
+
+    } else if (navbarToggleNum !== 0 && windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() > windowWidth * 0.3) {
+>>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
 
       $("nav").css("width", windowWidth * 0.3);
 
@@ -132,29 +181,49 @@ window.addEventListener("resize", function () {
 
 });
 
+<<<<<<< HEAD
 let navbarToggle = document.getElementsByClassName("navbar-toggle")[0];
 
 let navbarToggleNum = 0;
 
+=======
+>>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
 navbarToggle.addEventListener("click", function () {
   
   if (navbarToggleNum === 0){
   
+<<<<<<< HEAD
     navbarToggle.classList.remove("navbar-toggle-rotate-0")
     
     navbarToggle.classList.add("navbar-toggle-rotate-180");
+=======
+    navbarToggleImg.classList.remove("navbar-toggle-rotate-0")
+    
+    navbarToggleImg.classList.add("navbar-toggle-rotate-180");
+>>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
 
     navbarToggleNum++;
   
   } else {
   
+<<<<<<< HEAD
     navbarToggle.classList.remove("navbar-toggle-rotate-180")
 
     navbarToggle.classList.add("navbar-toggle-rotate-0");
+=======
+    navbarToggleImg.classList.remove("navbar-toggle-rotate-180")
+
+    navbarToggleImg.classList.add("navbar-toggle-rotate-0");
+>>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
 
     navbarToggleNum--;
   
   }
+<<<<<<< HEAD
+=======
+
+  navBarWidthChanger();
+>>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
   
 });
 

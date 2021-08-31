@@ -188,7 +188,7 @@ body {
   z-index: 2;
   position: fixed;
   top: 0;
-  height: 0.2rem;
+  height: .2rem;
   background-color: var(--link-color);
 }
 
@@ -205,6 +205,10 @@ nav {
   border-style: solid;
   border-color: var(--primary-color);
   border-radius: 15px 25px;
+<<<<<<< HEAD
+=======
+  padding: 1.25rem;
+>>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
 }
 
 nav summary {
@@ -231,10 +235,15 @@ nav details>summary::-webkit-details-marker {
   display: none;
 }
 
+<<<<<<< HEAD
 .navbar-toggle {
   width: 2.75rem;
   margin-top: -1.5rem;
   margin-bottom: -1.25rem;
+=======
+.navbar-toggle-img {
+  width: 4rem;
+>>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
 }
 
 .navbar-toggle-rotate-180 {
@@ -249,10 +258,13 @@ nav details>summary::-webkit-details-marker {
   transform: rotate(0deg);
 }
 
+<<<<<<< HEAD
 nav>details>div {
   margin: 0.75rem;
 }
 
+=======
+>>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
 nav div details[open] img {
   transform: rotate(90deg);
 }
@@ -298,7 +310,7 @@ nav img {
 nav details>div div {
   border-style: solid;
   border-radius: 25px 10px;
-  padding: 0.65rem;
+  padding: .65rem;
 }
 
 nav details>div ul li {
@@ -420,8 +432,13 @@ footer {
   /* NavBar */
   nav {
     font-size: 1.55rem;
-    padding: 1.25rem;
     line-height: 1.5;
+    padding: 1.15rem;
+  }
+
+  .navbar-toggle-img {
+    width: 3.5rem;
+    margin: 0rem;
   }
 
   nav button {
@@ -434,10 +451,6 @@ footer {
 
   nav img {
     width: 30px;
-  }
-
-  nav details>div {
-    padding: 1rem;
   }
 
   /* Footer */
@@ -490,8 +503,13 @@ footer {
   /* NavBar */
   nav {
     font-size: 1.4rem;
-    padding: 0.9rem;
+    padding: .9rem;
     line-height: 1.6;
+  }
+
+  .navbar-toggle-img {
+    width: 2.75rem;
+    margin: 0;
   }
 
   nav button {
@@ -503,11 +521,7 @@ footer {
   }
 
   nav img {
-    width: 28.5px;
-  }
-
-  nav details>div {
-    padding: 0.7rem;
+    width: 1.78rem;
   }
 
   /* Footer */
@@ -537,6 +551,7 @@ footer {
 
 /* CSS Animations */
 @keyframes navbar-toggle-rotate-180 {
+<<<<<<< HEAD
   
   0% {
     transform: rotate(360deg);
@@ -558,4 +573,27 @@ footer {
     transform: rotate(0deg);
   }
   
+=======
+
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+
+}
+
+@keyframes navbar-toggle-rotate-0 {
+
+  0% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+
+>>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
 }
