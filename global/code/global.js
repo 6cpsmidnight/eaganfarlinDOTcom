@@ -33,7 +33,7 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
       denyButton: "vertical-buttons-top-margin",
       cancelButton: "vertical-buttons-top-margin"
     }
-
+ 
   }).then((result) => {
 
     if (result.isDenied) {
