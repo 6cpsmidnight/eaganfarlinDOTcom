@@ -6,6 +6,7 @@ Hosted on [eaganfarlin.com](https://eaganfarlin.com/). Stay as long as you want!
 
 ## To do list:
 
+```markdown
 - [X] make the whole website resposive
 - [X] add styles to every page
 - [X] start using SweetAlert
@@ -14,9 +15,11 @@ Hosted on [eaganfarlin.com](https://eaganfarlin.com/). Stay as long as you want!
 - [X] make terms popup for when the page is first ever loaded
 - [X] change file and folder capitalization formats
 - [X] remove Bootstrap entirely
+```
 
 ## Made using:
 
+```markdown
 * CSS
   * [Bootstrap](https://getbootstrap.com/ "Bootstrap")
   * [Bootswatch](https://bootswatch.com/ "Bootswatch")
@@ -25,3 +28,4 @@ Hosted on [eaganfarlin.com](https://eaganfarlin.com/). Stay as long as you want!
 * JavaScript
   * [jQuery](https://jquery.com/ "jQuery")
   * [SweetAlert2](https://sweetalert2.github.io/ "SweetAlert2")
+```
