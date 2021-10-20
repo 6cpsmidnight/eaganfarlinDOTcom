@@ -205,10 +205,7 @@ nav {
   border-style: solid;
   border-color: var(--primary-color);
   border-radius: 15px 25px;
-<<<<<<< HEAD
-=======
   padding: 1.25rem;
->>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
 }
 
 nav summary {
@@ -235,15 +232,14 @@ nav details>summary::-webkit-details-marker {
   display: none;
 }
 
-<<<<<<< HEAD
 .navbar-toggle {
   width: 2.75rem;
   margin-top: -1.5rem;
   margin-bottom: -1.25rem;
-=======
+}
+
 .navbar-toggle-img {
   width: 4rem;
->>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
 }
 
 .navbar-toggle-rotate-180 {
@@ -258,13 +254,10 @@ nav details>summary::-webkit-details-marker {
   transform: rotate(0deg);
 }
 
-<<<<<<< HEAD
 nav>details>div {
   margin: 0.75rem;
 }
 
-=======
->>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
 nav div details[open] img {
   transform: rotate(90deg);
 }
@@ -551,7 +544,6 @@ footer {
 
 /* CSS Animations */
 @keyframes navbar-toggle-rotate-180 {
-<<<<<<< HEAD
   
   0% {
     transform: rotate(360deg);
@@ -572,8 +564,6 @@ footer {
   100% {
     transform: rotate(0deg);
   }
-  
-=======
 
   0% {
     transform: rotate(360deg);
@@ -583,17 +573,4 @@ footer {
     transform: rotate(180deg);
   }
 
-}
-
-@keyframes navbar-toggle-rotate-0 {
-
-  0% {
-    transform: rotate(180deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-
->>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
 }

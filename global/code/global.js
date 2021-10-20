@@ -33,7 +33,7 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
       denyButton: "vertical-buttons-top-margin",
       cancelButton: "vertical-buttons-top-margin"
     }
- 
+
   }).then((result) => {
 
     if (result.isDenied) {
@@ -54,10 +54,6 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
   });
 
   // NavBar
-<<<<<<< HEAD
-
-=======
->>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
   $("nav").css("bottom", parseInt($(".swal2-accept-cookies").height(), 10) + 10);
 
   // Accept Cookies Popup
@@ -89,8 +85,6 @@ let themeSwitchButtonTextWidth;
 
 let windowWidth;
 
-let navbarToggle = document.getElementsByClassName("navbar-toggle")[0];
-
 let navbarToggleNum = 0;
 
 let navbarToggleImg = document.getElementsByClassName("navbar-toggle-img")[0];
@@ -101,29 +95,28 @@ function navBarWidthChanger() {
 
   windowWidth = $(window).width();
 
-<<<<<<< HEAD
-    if (windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() < windowWidth / 2) {
+  if (windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() < windowWidth / 2) {
 
-      $("nav").css("width", themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width());
+    $("nav").css("width", themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width());
 
-    } else if (windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() > windowWidth / 2) {
+  } else if (windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() > windowWidth / 2) {
 
-      $("nav").css("width", windowWidth / 2);
+    $("nav").css("width", windowWidth / 2);
 
-    } else if (windowWidth <= 993 && themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() < windowWidth * 0.7) {
+  } else if (windowWidth <= 993 && themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() < windowWidth * 0.7) {
 
-      $("nav").css("width", themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width());
+    $("nav").css("width", themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width());
 
-    } else if (windowWidth <= 993 && themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() > windowWidth * 0.7) {
+  } else if (windowWidth <= 993 && themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() > windowWidth * 0.7) {
 
-      $("nav").css("width", windowWidth * 0.7);
+    $("nav").css("width", windowWidth * 0.7);
 
-    } else if (windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() < windowWidth * 0.3) {
+  } else if (windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() < windowWidth * 0.3) {
 
-      $("nav").css("width", themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width());
+    $("nav").css("width", themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width());
 
-    } else if (windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() > windowWidth * 0.3) {
-=======
+  } else if (windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() > windowWidth * 0.3) {
+
     if (navbarToggleNum === 0 && windowWidth <= 768) {
 
       $("nav").css("width", navbarToggleImg.offsetWidth * 1.8);
@@ -161,150 +154,133 @@ function navBarWidthChanger() {
       $("nav").css("width", themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width());
 
     } else if (navbarToggleNum !== 0 && windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() > windowWidth * 0.3) {
->>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
 
       $("nav").css("width", windowWidth * 0.3);
 
     }
 
-}
-
-navBarWidthChanger();
-
-window.addEventListener("resize", function () {
-
-  setTimeout(() => {
-
-    navBarWidthChanger();
-
-  }, 200);
-
-});
-
-<<<<<<< HEAD
-let navbarToggle = document.getElementsByClassName("navbar-toggle")[0];
-
-let navbarToggleNum = 0;
-
-=======
->>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
-navbarToggle.addEventListener("click", function () {
-  
-  if (navbarToggleNum === 0){
-  
-<<<<<<< HEAD
-    navbarToggle.classList.remove("navbar-toggle-rotate-0")
-    
-    navbarToggle.classList.add("navbar-toggle-rotate-180");
-=======
-    navbarToggleImg.classList.remove("navbar-toggle-rotate-0")
-    
-    navbarToggleImg.classList.add("navbar-toggle-rotate-180");
->>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
-
-    navbarToggleNum++;
-  
-  } else {
-  
-<<<<<<< HEAD
-    navbarToggle.classList.remove("navbar-toggle-rotate-180")
-
-    navbarToggle.classList.add("navbar-toggle-rotate-0");
-=======
-    navbarToggleImg.classList.remove("navbar-toggle-rotate-180")
-
-    navbarToggleImg.classList.add("navbar-toggle-rotate-0");
->>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
-
-    navbarToggleNum--;
-  
   }
-<<<<<<< HEAD
-=======
 
   navBarWidthChanger();
->>>>>>> 83b785571d12722bc0a0721d1179aa865a9e5e14
-  
-});
 
-const nav = document.querySelector("nav");
+  window.addEventListener("resize", function () {
 
-const navDropdownMenu = document.querySelectorAll(".nav-dropdown-menu");
+    setTimeout(() => {
 
-navDropdownMenu.forEach((navDropdownMenu) => {
+      navBarWidthChanger();
 
-  document.addEventListener("click", (e) => {
-
-    if (!nav.contains(e.target)) {
-
-      navDropdownMenu.removeAttribute("open");
-
-    }
+    }, 200);
 
   });
 
-});
+  let navbarToggle = document.getElementsByClassName("navbar-toggle")[0];
 
-navDropdownMenu.forEach((targetNavbarDropdownMenu) => {
+  let navbarToggleNum = 0;
 
-  targetNavbarDropdownMenu.addEventListener("click", () => {
+  navbarToggle.addEventListener("click", function () {
 
-    navDropdownMenu.forEach((navbarDropdownMenu) => {
+    if (navbarToggleNum === 0) {
 
-      navbarDropdownMenu !== targetNavbarDropdownMenu && navbarDropdownMenu.removeAttribute("open");
+      navbarToggleImg.classList.remove("navbar-toggle-rotate-0")
+
+      navbarToggleImg.classList.add("navbar-toggle-rotate-180");
+
+      navbarToggleNum++;
+
+    } else {
+
+      navbarToggleImg.classList.remove("navbar-toggle-rotate-180")
+
+      navbarToggleImg.classList.add("navbar-toggle-rotate-0");
+
+      navbarToggleNum--;
+
+    }
+
+    navBarWidthChanger();
+
+  });
+
+  const nav = document.querySelector("nav");
+
+  const navDropdownMenu = document.querySelectorAll(".nav-dropdown-menu");
+
+  navDropdownMenu.forEach((navDropdownMenu) => {
+
+    document.addEventListener("click", (e) => {
+
+      if (!nav.contains(e.target)) {
+
+        navDropdownMenu.removeAttribute("open");
+
+      }
 
     });
 
   });
 
-});
+  navDropdownMenu.forEach((targetNavbarDropdownMenu) => {
 
-let theme = localStorage.getItem("theme") || "light";
+    targetNavbarDropdownMenu.addEventListener("click", () => {
 
-let applyTheme = (theme) => {
+      navDropdownMenu.forEach((navbarDropdownMenu) => {
 
-  document.documentElement.setAttribute("user-color-mode", theme);
+        navbarDropdownMenu !== targetNavbarDropdownMenu && navbarDropdownMenu.removeAttribute("open");
 
-  let themeSwitcherText = theme === "dark" ? "Let There Be Light!" : "The Light, It Burns!";
+      });
 
-  $(".theme-switcher-text").text(themeSwitcherText);
+    });
 
-  navBarWidthChanger();
+  });
 
-}
+  let theme = localStorage.getItem("theme") || "light";
 
-applyTheme(theme);
+  let applyTheme = (theme) => {
 
-$(".theme-switch").click(function () {
+    document.documentElement.setAttribute("user-color-mode", theme);
 
-  theme = theme === "light" ? "dark" : "light";
+    let themeSwitcherText = theme === "dark" ? "Let There Be Light!" : "The Light, It Burns!";
 
-  localStorage.setItem("theme", theme);
+    $(".theme-switcher-text").text(themeSwitcherText);
+
+    navBarWidthChanger();
+
+  }
 
   applyTheme(theme);
 
-});
+  $(".theme-switch").click(function () {
 
-// Footer
-$(".contact-link-icon-discord").click(function () {
+    theme = theme === "light" ? "dark" : "light";
 
-  Swal.fire({
+    localStorage.setItem("theme", theme);
 
-    title: "<img src=\"/global/images/discord-transparent-icon.svg\" class=\"contact-link-icons\">",
-    html: "Midnight#1695"
+    applyTheme(theme);
+
+  });
+
+  // Footer
+  $(".contact-link-icon-discord").click(function () {
+
+    Swal.fire({
+
+      title: "<img src=\"/global/images/discord-transparent-icon.svg\" class=\"contact-link-icons\">",
+      html: "Midnight#1695"
+
+    })
+
+  });
+
+  $(".contact-link-icon-copy-url").click(function () {
+
+    Swal.fire({
+
+      title: "<img src=\"/global/images/link-transparent-icon.svg\" class=\"contact-link-icon-copy-url\">",
+      html: "https://eaganfarlin.com",
+      confirmButtonText: "Done"
+
+    })
 
   })
 
-});
-
-$(".contact-link-icon-copy-url").click(function () {
-
-  Swal.fire({
-
-    title: "<img src=\"/global/images/link-transparent-icon.svg\" class=\"contact-link-icon-copy-url\">",
-    html: "https://eaganfarlin.com",
-    confirmButtonText: "Done"
-
-  })
-
-});
+}
