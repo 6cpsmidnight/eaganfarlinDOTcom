@@ -5,9 +5,9 @@ function gtag() {
   dataLayer.push(arguments);
 }
 
-gtag("js", new Date());
+gtag('js', new Date());
 
-gtag("config", "UA-176695618-1");
+gtag('config', 'G-YGEWE0HXT8');
 
 // Accept Cookies Popup
 if (localStorage.getItem("acceptedCookies") !== "yes") {
@@ -44,7 +44,7 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
       $("nav").css("bottom", "0");
 
       // Accept Cookies Popup
-      $(".sweet-alert-accept-cookies-page-padding").css("height", "0");
+      $(".sweet-alert-accept-cookies-bottom-page-padding").css("height", "0");
 
       // Accept Cookies
       localStorage.setItem("acceptedCookies", "yes");
@@ -57,7 +57,7 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
   $("nav").css("bottom", parseInt($(".swal2-accept-cookies").height(), 10) + 10);
 
   // Accept Cookies Popup
-  $(".sweet-alert-accept-cookies-page-padding").css("height", $(".swal2-accept-cookies").height());
+  $(".sweet-alert-accept-cookies-bottom-page-padding").css("height", $(".swal2-accept-cookies").height());
 
   window.addEventListener("resize", function () {
 
@@ -65,7 +65,7 @@ if (localStorage.getItem("acceptedCookies") !== "yes") {
 
       $("nav").css("bottom", parseInt($(".swal2-accept-cookies").height(), 10) + 10);
 
-      $(".sweet-alert-accept-cookies-page-padding").css("height", $(".swal2-accept-cookies").height());
+      $(".sweet-alert-accept-cookies-bottom-page-padding").css("height", $(".swal2-accept-cookies").height());
 
     }, 200);
 
@@ -91,45 +91,45 @@ let navbarToggleImg = document.getElementsByClassName("navbar-toggle-img")[0];
 
 function navBarWidthChanger() {
 
-  themeSwitchButtonTextWidth = $(".theme-switch").text().length;
+  themeSwitchButtonTextWidth = $(".light-dark-theme-switch").text().length;
 
   windowWidth = $(window).width();
 
-  if (windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() < windowWidth / 2) {
+  if (windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".light-dark-theme-switcher-img").width() < windowWidth / 2) {
 
-    $("nav").css("width", themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width());
+    $("nav").css("width", themeSwitchButtonTextWidth * 18 + $(".light-dark-theme-switcher-img").width());
 
-  } else if (windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() > windowWidth / 2) {
+  } else if (windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".light-dark-theme-switcher-img").width() > windowWidth / 2) {
 
     $("nav").css("width", windowWidth / 2);
 
-  } else if (windowWidth <= 993 && themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() < windowWidth * 0.7) {
+  } else if (windowWidth <= 993 && themeSwitchButtonTextWidth * 18.6 + $(".light-dark-theme-switcher-img").width() < windowWidth * 0.7) {
 
-    $("nav").css("width", themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width());
+    $("nav").css("width", themeSwitchButtonTextWidth * 18.6 + $(".light-dark-theme-switcher-img").width());
 
-  } else if (windowWidth <= 993 && themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() > windowWidth * 0.7) {
+  } else if (windowWidth <= 993 && themeSwitchButtonTextWidth * 18.6 + $(".light-dark-theme-switcher-img").width() > windowWidth * 0.7) {
 
     $("nav").css("width", windowWidth * 0.7);
 
-  } else if (windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() < windowWidth * 0.3) {
+  } else if (windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".light-dark-theme-switcher-img").width() < windowWidth * 0.3) {
 
-    $("nav").css("width", themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width());
+    $("nav").css("width", themeSwitchButtonTextWidth * 16.8 + $(".light-dark-theme-switcher-img").width());
 
-  } else if (windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() > windowWidth * 0.3) {
+  } else if (windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".light-dark-theme-switcher-img").width() > windowWidth * 0.3) {
 
     if (navbarToggleNum === 0 && windowWidth <= 768) {
 
       $("nav").css("width", navbarToggleImg.offsetWidth * 1.8);
 
-    } else if (navbarToggleNum !== 0 && windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() < windowWidth / 2) {
+    } else if (navbarToggleNum !== 0 && windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".light-dark-theme-switcher-img").width() < windowWidth / 2) {
 
-      $("nav").css("width", themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width());
+      $("nav").css("width", themeSwitchButtonTextWidth * 18 + $(".light-dark-theme-switcher-img").width());
 
-    } else if (navbarToggleNum === 0 && windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() > windowWidth / 2) {
+    } else if (navbarToggleNum === 0 && windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".light-dark-theme-switcher-img").width() > windowWidth / 2) {
 
       $("nav").css("width", navbarToggleImg.offsetWidth * 1.5);
 
-    } else if (navbarToggleNum !== 0 && windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".theme-switcher-img").width() > windowWidth / 2) {
+    } else if (navbarToggleNum !== 0 && windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".light-dark-theme-switcher-img").width() > windowWidth / 2) {
 
       $("nav").css("width", windowWidth / 2);
 
@@ -137,11 +137,11 @@ function navBarWidthChanger() {
 
       $("nav").css("width", navbarToggleImg.offsetWidth * 1.75);
 
-    } else if (navbarToggleNum !== 0 && windowWidth <= 992 && themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() < windowWidth * 0.7) {
+    } else if (navbarToggleNum !== 0 && windowWidth <= 992 && themeSwitchButtonTextWidth * 18.6 + $(".light-dark-theme-switcher-img").width() < windowWidth * 0.7) {
 
-      $("nav").css("width", themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width());
+      $("nav").css("width", themeSwitchButtonTextWidth * 18.6 + $(".light-dark-theme-switcher-img").width());
 
-    } else if (navbarToggleNum !== 0 && windowWidth <= 992 && themeSwitchButtonTextWidth * 18.6 + $(".theme-switcher-img").width() > windowWidth * 0.7) {
+    } else if (navbarToggleNum !== 0 && windowWidth <= 992 && themeSwitchButtonTextWidth * 18.6 + $(".light-dark-theme-switcher-img").width() > windowWidth * 0.7) {
 
       $("nav").css("width", windowWidth * 0.7);
 
@@ -149,11 +149,11 @@ function navBarWidthChanger() {
 
       $("nav").css("width", navbarToggleImg.offsetWidth * 1.7);
 
-    } else if (navbarToggleNum !== 0 && windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() < windowWidth * 0.3) {
+    } else if (navbarToggleNum !== 0 && windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".light-dark-theme-switcher-img").width() < windowWidth * 0.3) {
 
-      $("nav").css("width", themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width());
+      $("nav").css("width", themeSwitchButtonTextWidth * 16.8 + $(".light-dark-theme-switcher-img").width());
 
-    } else if (navbarToggleNum !== 0 && windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".theme-switcher-img").width() > windowWidth * 0.3) {
+    } else if (navbarToggleNum !== 0 && windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".light-dark-theme-switcher-img").width() > windowWidth * 0.3) {
 
       $("nav").css("width", windowWidth * 0.3);
 
@@ -161,126 +161,117 @@ function navBarWidthChanger() {
 
   }
 
-  navBarWidthChanger();
+}
 
-  window.addEventListener("resize", function () {
+navBarWidthChanger();
 
-    setTimeout(() => {
+window.addEventListener("resize", function () {
 
-      navBarWidthChanger();
-
-    }, 200);
-
-  });
-
-  let navbarToggle = document.getElementsByClassName("navbar-toggle")[0];
-
-  let navbarToggleNum = 0;
-
-  navbarToggle.addEventListener("click", function () {
-
-    if (navbarToggleNum === 0) {
-
-      navbarToggleImg.classList.remove("navbar-toggle-rotate-0")
-
-      navbarToggleImg.classList.add("navbar-toggle-rotate-180");
-
-      navbarToggleNum++;
-
-    } else {
-
-      navbarToggleImg.classList.remove("navbar-toggle-rotate-180")
-
-      navbarToggleImg.classList.add("navbar-toggle-rotate-0");
-
-      navbarToggleNum--;
-
-    }
+  setTimeout(() => {
 
     navBarWidthChanger();
 
-  });
+  }, 200);
 
-  const nav = document.querySelector("nav");
+});
 
-  const navDropdownMenu = document.querySelectorAll(".nav-dropdown-menu");
+let navbarToggle = document.getElementsByClassName("navbar-toggle")[0];
 
-  navDropdownMenu.forEach((navDropdownMenu) => {
+navbarToggle.addEventListener("click", function () {
 
-    document.addEventListener("click", (e) => {
+  if (navbarToggleNum === 0) {
 
-      if (!nav.contains(e.target)) {
+    navbarToggleImg.classList.remove("navbar-toggle-rotate-0")
 
-        navDropdownMenu.removeAttribute("open");
+    navbarToggleImg.classList.add("navbar-toggle-rotate-180");
 
-      }
+    navbarToggleNum++;
 
-    });
+  } else {
 
-  });
+    navbarToggleImg.classList.remove("navbar-toggle-rotate-180")
 
-  navDropdownMenu.forEach((targetNavbarDropdownMenu) => {
+    navbarToggleImg.classList.add("navbar-toggle-rotate-0");
 
-    targetNavbarDropdownMenu.addEventListener("click", () => {
-
-      navDropdownMenu.forEach((navbarDropdownMenu) => {
-
-        navbarDropdownMenu !== targetNavbarDropdownMenu && navbarDropdownMenu.removeAttribute("open");
-
-      });
-
-    });
-
-  });
-
-  let theme = localStorage.getItem("theme") || "light";
-
-  let applyTheme = (theme) => {
-
-    document.documentElement.setAttribute("user-color-mode", theme);
-
-    let themeSwitcherText = theme === "dark" ? "Let There Be Light!" : "The Light, It Burns!";
-
-    $(".theme-switcher-text").text(themeSwitcherText);
-
-    navBarWidthChanger();
+    navbarToggleNum--;
 
   }
 
+  navBarWidthChanger();
+
+});
+
+const nav = document.querySelector("nav");
+
+const navDropdownMenu = document.querySelectorAll(".nav-dropdown-menu");
+
+navDropdownMenu.forEach((navDropdownMenu) => {
+
+  document.addEventListener("click", (e) => {
+
+    if (!nav.contains(e.target)) {
+
+      navDropdownMenu.removeAttribute("open");
+
+    }
+
+  });
+
+});
+
+navDropdownMenu.forEach((targetNavbarDropdownMenu) => {
+
+  targetNavbarDropdownMenu.addEventListener("click", () => {
+
+    navDropdownMenu.forEach((navbarDropdownMenu) => {
+
+      navbarDropdownMenu !== targetNavbarDropdownMenu && navbarDropdownMenu.removeAttribute("open");
+
+    });
+
+  });
+
+});
+
+let theme = localStorage.getItem("theme") || "light";
+
+let applyTheme = (theme) => {
+
+  document.documentElement.setAttribute("user-color-mode", theme);
+
+  let themeSwitcherText = theme === "dark" ? "Let There Be Light!" : "The Light, It Burns!";
+
+  /*
+  Ignore (for future implementation):
+  <img src=\"\/global\/images\/light-dark-theme-transparent-icon.png\" class=\"light-dark-theme-switcher-img\" alt=\"theme icon\">
+  */
+
+  $(".light-dark-theme-switcher-text").text(themeSwitcherText);
+
+  navBarWidthChanger();
+
+}
+
+applyTheme(theme);
+
+$(".light-dark-theme-switch").click(function () {
+
+  theme = theme === "light" ? "dark" : "light";
+
+  localStorage.setItem("theme", theme);
+
   applyTheme(theme);
 
-  $(".theme-switch").click(function () {
+});
 
-    theme = theme === "light" ? "dark" : "light";
+// Footer
+$(".footer-contact-link-icon-discord").click(function () {
 
-    localStorage.setItem("theme", theme);
+  Swal.fire({
 
-    applyTheme(theme);
-
-  });
-
-  // Footer
-  $(".contact-link-icon-discord").click(function () {
-
-    Swal.fire({
-
-      title: "<img src=\"/global/images/discord-transparent-icon.svg\" class=\"contact-link-icons\">",
-      html: "Midnight#1695"
-
-    })
-
-  });
-
-  $(".contact-link-icon-copy-url").click(function () {
-
-    Swal.fire({
-
-      title: "<img src=\"/global/images/link-transparent-icon.svg\" class=\"contact-link-icon-copy-url\">",
-      html: "https://eaganfarlin.com",
-      confirmButtonText: "Done"
-
-    })
+    title: "<img src=\"/global/images/discord-transparent-icon.svg\" class=\"footer-contact-link-icons\">",
+    html: "Midnight#1695"
 
   })
 
-}
+});

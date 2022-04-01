@@ -1,5 +1,5 @@
-// Down Arrow - Scroll
-$(".arrow-down-1-button").click(function () {
+// Down Chevron - Scroll
+$(".chevron-down-button").click(function () {
 
   let widthOfScreen = $(window).width();
 

@@ -24,29 +24,27 @@
   font-family: "Neucha", cursive;
 }
 
-/* Arrow Down */
-.arrow-down-button {
-  background-color: var(--background-color);
+/* Chevron Down */
+.chevron-down-button {
+  color: vtransparent !important;
+  background-color: transparent !important;
   border-width: 0;
 }
 
-.arrow-down {
-  width: 6.5rem;
-  height: 6.2rem;
-  opacity: 80%;
-  transform: rotate(90deg);
+.chevron-down {
+  width: 13rem;
   cursor: pointer;
 }
 
-.arrow-down:hover {
-  opacity: 100%;
+.chevron-down:hover {
+  transform: scale(1.2);
 }
 
 /* About Me */
 #about-me {
   width: 100%;
   padding: 5% 25%;
-  margin-top: -5%;
+  margin-top: -10%;
 }
 
 .about-me {
@@ -95,11 +93,11 @@
     font-size: 1.65rem;
   }
 
-  /* Arrow Down */
-  .arrow-down {
-    opacity: 100%;
-    height: 5.5rem;
-    width: 5.5rem;
+  /* Chevron Down */
+  .chevron-down {
+    width: 11.5rem;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
   }
 
   /* About Me */
@@ -141,10 +139,9 @@
     margin-right: 10%;
   }
 
-  /* Arrow Down */
-  .arrow-down {
-    height: 5rem;
-    width: 5rem;
+  /* Chevron Down */
+  .chevron-down {
+    width: 8.5rem;
   }
 
   /* About Me */
