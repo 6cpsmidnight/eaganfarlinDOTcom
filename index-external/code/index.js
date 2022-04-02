@@ -3,34 +3,12 @@ $(".chevron-down-button").click(function () {
 
   let widthOfScreen = $(window).width();
 
-  if (widthOfScreen < 768) {
+  window.scrollTo({
 
-    window.scrollTo({
+    top: $("#im-eagan-farlin").height(),
+    behavior: "smooth"
 
-      top: 400,
-      behavior: "smooth"
-
-    });
-
-  } else if (widthOfScreen < 992) {
-
-    window.scrollTo({
-
-      top: 360,
-      behavior: "smooth"
-
-    });
-
-  } else {
-
-    window.scrollTo({
-
-      top: 450,
-      behavior: "smooth"
-
-    });
-
-  }
+  });
 
 });
 

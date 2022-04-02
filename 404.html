@@ -20,22 +20,22 @@
     <meta name="description" content="The page you were looking for was not found.">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/global/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/global/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/global/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/global/images/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="global/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="global/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="global/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="global/images/favicon/site.webmanifest">
 
     <!-- SweetAlert2 10.3.5 -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="global/code/sweetalert2.js"></script>
 
     <!-- Boostrap CSS 4.5.2/ Bootswatch Sketchy 4.5.2 -->
-    <link rel="stylesheet" href="/global/code/bootstrap.min.css">
+    <link rel="stylesheet" href="global/code/bootstrap.min.css">
 
     <!-- Global CSS -->
-    <link rel="stylesheet" href="/global/code/global.min.css">
+    <link rel="stylesheet" href="global/code/global.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="404-external-code/404.min.css">
+    <link rel="stylesheet" href="404-external/code/404.min.css">
 
 </head>
 
@@ -48,17 +48,21 @@
     <div id="loading-bar"></div>
 
     <!-- 404 -->
-    <div id="four-zero-four">
+    <main>
 
-        <h1 class="four-zero-four"><a href="/"><span class="four-1">4</span><span class="zero">0</span><span
-                    class="four-2">4</span></a></h1>
+        <div id="four-zero-four">
 
-        <p class="four-zero-four-explaination">The page you were looking for has become a magician and has
-            moved/dissapeared, or maybe it was the <a href="https://www.youtube.com/watch?v=kN_qT6V5CIg">Mandela
-                effect</a>! What ever happened,
-            if you wish to go back to the home page, click the 404.</p>
+            <h1 class="four-zero-four"><a href="/"><span class="four-1">4</span><span class="zero">0</span><span
+                        class="four-2">4</span></a></h1>
 
-    </div>
+            <p class="four-zero-four-explaination">The page you were looking for has become a magician and has
+                moved/dissapeared, or maybe it was the <a href="https://www.youtube.com/watch?v=kN_qT6V5CIg">Mandela
+                    effect</a>! What ever happened,
+                if you wish to go back to the home page, click the 404.</p>
+
+        </div>
+
+    </main>
 
     <!-- NavBar -->
     <nav>
@@ -67,21 +71,21 @@
 
             <summary class="navbar-toggle">
 
-                <img src="/global/images/atom-variant-transparent-icon.png" class="navbar-toggle-img"
+                <img src="global/images/atom-variant-transparent-icon.png" class="navbar-toggle-img"
                     alt="oirbit transparent icon">
 
             </summary>
 
             <div>
 
-                <a href="/" class="nav-home"><img src="/global/images/site-transparent-icon.png" class="info-logo"
+                <a href="/" class="nav-home"><img src="global/images/site-transparent-icon.png" class="info-logo"
                         alt="info logo">Eagan</a>
 
                 <details class="nav-dropdown-menu">
 
                     <summary>
 
-                        Websites<img src="/global/images/nav-arrow-transparent-icon.png" alt="nav arrow icon">
+                        Websites<img src="global/images/nav-arrow-transparent-icon.png" alt="nav arrow icon">
 
                     </summary>
 
@@ -98,7 +102,7 @@
                 </details>
 
                 <button class="light-dark-theme-switch"><span class="light-dark-theme-switcher-text">The Light, It
-                        Burns!</span><img src="/global/images/light-dark-theme-transparent-icon.png"
+                        Burns!</span><img src="global/images/light-dark-theme-transparent-icon.png"
                         class="light-dark-theme-switcher-img" alt="theme icon"></button>
 
             </div>
@@ -114,15 +118,15 @@
 
         <div class="footer-contact-links">
 
-            <a href="https://github.com/Cyber1012"><img src="/global/images/github-transparent-icon.png"
+            <a href="https://github.com/Cyber1012"><img src="global/images/github-transparent-icon.png"
                     class="footer-contact-link-icons footer-contact-link-icon-github" title="My Github"
                     alt="Github icon"></a>
 
-            <a href="mailto:farlineagan@gmail.com"><img src="/global/images/email-transparent-icon.png"
+            <a href="mailto:farlineagan@gmail.com"><img src="global/images/email-transparent-icon.png"
                     class="footer-contact-link-icons footer-contact-link-icon-email" title="My Professional Email"
                     alt="email icon"></a>
 
-            <a href="javascript:void(0);"><img src="/global/images/discord-transparent-icon.png"
+            <a href="javascript:void(0);"><img src="global/images/discord-transparent-icon.png"
                     class="footer-contact-link-icons footer-contact-link-icon-discord" title="My Discord Tag"
                     alt="Discord Icon"></a>
 
@@ -134,7 +138,7 @@
                     Farlin</span>.</p>
 
             <p>Thanks to my sister, <a href="https://www.pinterest.com/thislittleshadow"><img
-                        src="/global/images/pinterest-transparent-icon.png"
+                        src="global/images/pinterest-transparent-icon.png"
                         class="footer-text-icons footer-text-icons-pintrest" alt="Pintrest Icon"></a>
                 <span class="footer-text-elaine-farlin">Elaine Farlin</span>, for the site's logo.</p>
 
@@ -151,23 +155,15 @@
 </body>
 
 <!-- jQuery 3.5.1 -->
-<script src="/global/code/jquery.min.js"></script>
-
-<!-- Bootstrap JS 4.5.2 CDN -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-</script>
+<script src="global/code/jquery.min.js"></script>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176695618-1"></script>
 
 <!-- Global JavaScript -->
-<script src="/global/code/global.min.js"></script>
+<script src="global/code/global.min.js"></script>
 
 <!-- JavaScript -->
-<script src="404-external-code/404.min.js" charset="utf-8"></script>
+<script src="404-external/code/404.min.js" charset="utf-8"></script>
 
 </html>
