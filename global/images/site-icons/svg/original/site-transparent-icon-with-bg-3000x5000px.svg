@@ -4,10 +4,10 @@
 <rect y="4000" width="1000" height="1000" fill="#4895EF"/>
 <rect y="3000" width="1000" height="1000" fill="#4361EE"/>
 <rect x="2000" y="2000" width="1000" height="1000" fill="#3F37C9"/>
+<rect width="1000" height="1000" fill="#7209B7"/>
 <path d="M1000 2000H2000V3000H1000V2000Z" fill="#3A0CA3"/>
 <rect y="2000" width="1000" height="1000" fill="#480CA8"/>
 <rect y="1000" width="1000" height="1000" fill="#560BAD"/>
-<rect width="1000" height="1000" fill="#7209B7"/>
 <rect x="1000" width="1000" height="1000" fill="#B5179E"/>
 <rect x="2000" width="1000" height="1000" fill="#F72585"/>
 </svg>

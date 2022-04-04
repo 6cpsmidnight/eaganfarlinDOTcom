@@ -214,6 +214,18 @@ nav {
   padding: 1.25rem;
 }
 
+.nav-home:hover {
+  background-color: transparent;
+}
+
+.nav-website-icon {
+  width: 4rem;
+}
+
+.nav-website-icon:hover {
+  transform: scale(1.25);
+}
+
 nav summary {
   cursor: pointer;
 }
@@ -423,6 +435,10 @@ footer {
     padding: 1.15rem;
   }
 
+  .nav-website-icon {
+    width: 3.75rem;
+  }
+
   .navbar-toggle-img {
     width: 3.5rem;
     margin-top: 0.25rem;
@@ -488,6 +504,10 @@ footer {
     font-size: 1.4rem;
     padding: .9rem;
     line-height: 1.6;
+  }
+
+  .nav-website-icon {
+    width: 3rem;
   }
 
   .navbar-toggle-img {
