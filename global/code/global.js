@@ -269,7 +269,7 @@ $(".footer-contact-link-icon-discord").click(function () {
 
   Swal.fire({
 
-    title: "<img src=\"/global/images/discord-transparent-icon.svg\" class=\"footer-contact-link-icons\">",
+    title: "<img src=\"/global/images/discord-transparent-icon.png\" class=\"footer-contact-link-icons\">",
     html: "Midnight#1695"
 
   })
