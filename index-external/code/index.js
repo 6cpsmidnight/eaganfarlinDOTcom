@@ -6,18 +6,19 @@ $(".chevron-down-button").click(function () {
   });
 });
 
-window.addEventListener("scroll", function () {
+// TODO: When scrolling down after initial load automatically scroll to about me text
+// window.addEventListener("scroll", function () {
 
-  // let yLevel = window.scrollY;
+//   // let yLevel = window.scrollY;
 
-    if (window.scrollY < $("#im-eagan-farlin").height()) {
-      window.scrollTo({
-        top: $("#im-eagan-farlin").height(),
-        behavior: "smooth"
-      });
-    }
+//     if (window.scrollY < $("#im-eagan-farlin").height()) {
+//       window.scrollTo({
+//         top: $("#im-eagan-farlin").height(),
+//         behavior: "smooth"
+//       });
+//     }
 
-});
+// });
 
 // NavBar - Attacher
 navbarAttacher = () => {
