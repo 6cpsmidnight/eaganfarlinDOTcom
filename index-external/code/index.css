@@ -2,9 +2,7 @@
 #im-eagan-farlin {
   width: 100%;
   text-align: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  margin-bottom: 2.5rem;
+  padding: 2rem 0;
 }
 
 .im {
@@ -24,28 +22,10 @@
   font-family: "Neucha", cursive;
 }
 
-/* Chevron Down */
-.chevron-down-button {
-  color: vtransparent !important;
-  background-color: transparent !important;
-  border-width: 0;
-}
-
-.chevron-down {
-  width: 13rem;
-  cursor: pointer;
-}
-
-.chevron-down:hover {
-  transform: scale(1.2);
-}
-
 /* About Me */
 #about-me {
   width: 100%;
-  padding: 5% 25%;
-  margin-top: -12.5%;
-  margin-bottom: -5%;
+  padding: 0 25%;
 }
 
 .about-me {
@@ -58,8 +38,7 @@
 
   /* Eagan Farlin Container */
   #im-eagan-farlin {
-    padding-top: .05rem;
-    padding-bottom: .05rem;
+    padding: .05rem 0;
     margin-bottom: 0;
   }
 
@@ -71,23 +50,16 @@
 
   .eagan-farlin {
     font-size: 5.5rem;
-    margin-bottom: .05rem;
+    margin-bottom: -.25rem;
   }
 
   .quick-description-of-me {
     font-size: 1.65rem;
   }
 
-  /* Chevron Down */
-  .chevron-down {
-    width: 11.5rem;
-    margin-top: -2rem;
-    margin-bottom: -2rem;
-  }
-
   /* About Me */
   #about-me {
-    padding: 12% 22%;
+    padding: 3% 22%;
   }
 
   .about-me {
@@ -103,12 +75,11 @@
 
   /* Eagan Farlin Container */
   #im-eagan-farlin {
-    margin-bottom: 3.5rem;
+    padding: 1.5rem 0;
   }
 
   .im {
     font-size: 3.3rem;
-    margin-top: 1.5rem;
     margin-bottom: -1rem;
   }
 
@@ -124,14 +95,9 @@
     margin-right: 10%;
   }
 
-  /* Chevron Down */
-  .chevron-down {
-    width: 8.5rem;
-  }
-
   /* About Me */
   #about-me {
-    padding: 5% 20%;
+    padding: 0 20%;
   }
 
   .about-me {

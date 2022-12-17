@@ -70,19 +70,19 @@ let navBarWidthChanger = () => {
   themeSwitchButtonTextWidth = $(".light-dark-theme-switch").text().length * 20;
   windowWidth = $(window).width();
 
-  if (windowWidth <= 768 && themeSwitchButtonTextWidth+ $(".light-dark-theme-switcher-img").width() < windowWidth / 2) {
+  if (windowWidth < 768 && themeSwitchButtonTextWidth+ $(".light-dark-theme-switcher-img").width() < windowWidth / 2) {
 
     $("nav").css("width", themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width());
 
-  } else if (windowWidth <= 768 && themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() > windowWidth / 2) {
+  } else if (windowWidth < 768 && themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() > windowWidth / 2) {
 
     $("nav").css("width", windowWidth / 2);
 
-  } else if (windowWidth <= 993 && themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() < windowWidth * 0.7) {
+  } else if (windowWidth < 992 && themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() < windowWidth * 0.7) {
 
     $("nav").css("width", themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width());
 
-  } else if (windowWidth <= 993 && themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() > windowWidth * 0.7) {
+  } else if (windowWidth < 992 && themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() > windowWidth * 0.7) {
 
     $("nav").css("width", windowWidth * 0.7);
 
@@ -92,43 +92,43 @@ let navBarWidthChanger = () => {
 
   } else if (windowWidth <= themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() > windowWidth * 0.3) {
 
-    if (navbarToggleNum === 0 && windowWidth <= 768) {
+    if (navbarToggleNum === 0 && windowWidth < 768) {
 
       $("nav").css("width", navbarToggleImg.offsetWidth * 1.8);
 
-    } else if (navbarToggleNum !== 0 && windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".light-dark-theme-switcher-img").width() < windowWidth / 2) {
+    } else if (navbarToggleNum !== 0 && windowWidth < 768 && themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() < windowWidth / 2) {
 
       $("nav").css("width", themeSwitchButtonTextWidth * 18 + $(".light-dark-theme-switcher-img").width());
 
-    } else if (navbarToggleNum === 0 && windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".light-dark-theme-switcher-img").width() > windowWidth / 2) {
+    } else if (navbarToggleNum === 0 && windowWidth < 768 && themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() > windowWidth / 2) {
 
       $("nav").css("width", navbarToggleImg.offsetWidth * 1.5);
 
-    } else if (navbarToggleNum !== 0 && windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".light-dark-theme-switcher-img").width() > windowWidth / 2) {
+    } else if (navbarToggleNum !== 0 && windowWidth < 768 && themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() > windowWidth / 2) {
 
       $("nav").css("width", windowWidth / 2);
 
-    } else if (navbarToggleNum === 0 && windowWidth <= 992) {
+    } else if (navbarToggleNum === 0 && windowWidth < 992) {
 
       $("nav").css("width", navbarToggleImg.offsetWidth * 1.75);
 
-    } else if (navbarToggleNum !== 0 && windowWidth <= 992 && themeSwitchButtonTextWidth * 18.6 + $(".light-dark-theme-switcher-img").width() < windowWidth * 0.7) {
+    } else if (navbarToggleNum !== 0 && windowWidth < 992 && themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() < windowWidth * 0.7) {
 
       $("nav").css("width", themeSwitchButtonTextWidth * 18.6 + $(".light-dark-theme-switcher-img").width());
 
-    } else if (navbarToggleNum !== 0 && windowWidth <= 992 && themeSwitchButtonTextWidth * 18.6 + $(".light-dark-theme-switcher-img").width() > windowWidth * 0.7) {
+    } else if (navbarToggleNum !== 0 && windowWidth < 992 && themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() > windowWidth * 0.7) {
 
       $("nav").css("width", windowWidth * 0.7);
 
-    } else if (navbarToggleNum === 0 && windowWidth > 992) {
+    } else if (navbarToggleNum === 0 && windowWidth >= 992) {
 
       $("nav").css("width", navbarToggleImg.offsetWidth * 1.7);
 
-    } else if (navbarToggleNum !== 0 && windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".light-dark-theme-switcher-img").width() < windowWidth * 0.3) {
+    } else if (navbarToggleNum !== 0 && windowWidth <= themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() < windowWidth * 0.3) {
 
       $("nav").css("width", themeSwitchButtonTextWidth * 16.8 + $(".light-dark-theme-switcher-img").width());
 
-    } else if (navbarToggleNum !== 0 && windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".light-dark-theme-switcher-img").width() > windowWidth * 0.3) {
+    } else if (navbarToggleNum !== 0 && windowWidth <= themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() > windowWidth * 0.3) {
 
       $("nav").css("width", windowWidth * 0.3);
 

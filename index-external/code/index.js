@@ -1,10 +1,4 @@
-// Down Chevron - Scroll
-$(".chevron-down-button").click(function () {
-  window.scrollTo({
-    top: $("#im-eagan-farlin").height(),
-    behavior: "smooth"
-  });
-});
+// Scroll
 
 // TODO: When scrolling down after initial load automatically scroll to about me text
 // window.addEventListener("scroll", function () {

@@ -250,6 +250,10 @@ nav details>summary::-webkit-details-marker {
   display: none;
 }
 
+nav details p {
+  margin: 0;
+}
+
 .navbar-toggle {
   width: 2.75rem;
   margin-top: -1rem;
