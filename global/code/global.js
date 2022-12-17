@@ -214,7 +214,7 @@ let applyTheme = (theme) => {
 
   document.documentElement.setAttribute("user-color-mode", theme);
 
-  let themeSwitcherText = theme === "dark" ? "Let There Be Light!" : "The Light, It Burns!";
+  let themeSwitcherText = theme === "dark" ? "Dark Mode" : "Light Mode";
 
   /*
   Ignore (for future implementation):
