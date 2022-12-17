@@ -10,7 +10,7 @@ gtag('config', 'G-YGEWE0HXT8');
 // Accept Cookies Popup
 if (localStorage.getItem("acceptedCookies") !== "yes") {
   Swal.fire({
-    html: "This site uses cookies to see how many ♥ly tourists there are! By continuing with your life or closing this you are agreeing to these terms.",
+    html: "This site uses cookies, by cotinuing to use this site you are agreeing to the use of cookies on this site.",
     toast: true,
     position: "bottom",
     width: "100vw",
@@ -67,30 +67,30 @@ let navbarToggleNum = 0;
 let navbarToggleImg = document.getElementsByClassName("navbar-toggle-img")[0];
 
 let navBarWidthChanger = () => {
-  themeSwitchButtonTextWidth = $(".light-dark-theme-switch").text().length;
+  themeSwitchButtonTextWidth = $(".light-dark-theme-switch").text().length * 20;
   windowWidth = $(window).width();
 
-  if (windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".light-dark-theme-switcher-img").width() < windowWidth / 2) {
+  if (windowWidth <= 768 && themeSwitchButtonTextWidth+ $(".light-dark-theme-switcher-img").width() < windowWidth / 2) {
 
-    $("nav").css("width", themeSwitchButtonTextWidth * 18 + $(".light-dark-theme-switcher-img").width());
+    $("nav").css("width", themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width());
 
-  } else if (windowWidth <= 768 && themeSwitchButtonTextWidth * 18 + $(".light-dark-theme-switcher-img").width() > windowWidth / 2) {
+  } else if (windowWidth <= 768 && themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() > windowWidth / 2) {
 
     $("nav").css("width", windowWidth / 2);
 
-  } else if (windowWidth <= 993 && themeSwitchButtonTextWidth * 18.6 + $(".light-dark-theme-switcher-img").width() < windowWidth * 0.7) {
+  } else if (windowWidth <= 993 && themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() < windowWidth * 0.7) {
 
-    $("nav").css("width", themeSwitchButtonTextWidth * 18.6 + $(".light-dark-theme-switcher-img").width());
+    $("nav").css("width", themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width());
 
-  } else if (windowWidth <= 993 && themeSwitchButtonTextWidth * 18.6 + $(".light-dark-theme-switcher-img").width() > windowWidth * 0.7) {
+  } else if (windowWidth <= 993 && themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() > windowWidth * 0.7) {
 
     $("nav").css("width", windowWidth * 0.7);
 
-  } else if (windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".light-dark-theme-switcher-img").width() < windowWidth * 0.3) {
+  } else if (windowWidth <= themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() < windowWidth * 0.3) {
 
-    $("nav").css("width", themeSwitchButtonTextWidth * 16.8 + $(".light-dark-theme-switcher-img").width());
+    $("nav").css("width", themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width());
 
-  } else if (windowWidth <= themeSwitchButtonTextWidth * 16.8 + $(".light-dark-theme-switcher-img").width() > windowWidth * 0.3) {
+  } else if (windowWidth <= themeSwitchButtonTextWidth + $(".light-dark-theme-switcher-img").width() > windowWidth * 0.3) {
 
     if (navbarToggleNum === 0 && windowWidth <= 768) {
 
