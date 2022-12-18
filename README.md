@@ -5,15 +5,9 @@
 
 <br/>
 
-## Made with the help of:
+## Resources used:
 
 <hr/>
-
-* ### CSS
   * #### [Google Fonts](https://fonts.google.com/ "Google Fonts")
-
-<br/>
-
-* ### JavaScript
   * #### [jQuery](https://jquery.com/ "jQuery")
   * #### [SweetAlert2](https://sweetalert2.github.io/ "SweetAlert2")
